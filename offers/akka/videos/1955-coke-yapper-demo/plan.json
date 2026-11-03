@@ -1,0 +1,204 @@
+{
+ "title": "Akka 1955 Brand Compare yapper, pipeline demo cut",
+ "source": "offers/akka/ads/1955-brand-compare-yapper-video-r1.md (locked hook A1 + r13 body, first beats and close only)",
+ "format": "yapper",
+ "talk_engine": "wan27-audio",
+ "broll_engine": "wan27-720",
+ "style_contract": "Plain iPhone photo look, deep focus with no background blur, flat natural indoor light, real skin with pores, fine lines and a few age spots, slightly imperfect framing, mild sensor noise, ordinary lived-in American home.",
+ "voice": {
+  "provider": "gemini",
+  "model": "google/gemini-3-8-flash-tts",
+  "speakers": {
+   "carol": {
+    "voice_name": "Gacrux",
+    "style": "A 66 year old Midwestern woman talking to her phone camera in her kitchen, telling her friends what happened to her. Warm, a little amazed, conversational. She speaks slowly and calmly, the way you talk to an older friend, and leaves a full beat of silence between sentences. Not an announcer, not polished."
+   }
+  }
+ },
+ "captions": {
+  "enabled": true,
+  "size": 88,
+  "y": 1150,
+  "max_words": 3
+ },
+ "frames": {
+  "carol_master": {
+   "prompt": "A 66 year old American woman, a retired teacher: shoulder-length ash blonde hair going gray, soft round face, light makeup, small gold stud earrings, a coral pink short-sleeve knit top. She stands at her kitchen counter filming a selfie video (the phone is not in the shot), looking straight into the lens, lips closed, relaxed, a hint of a smile. Head and shoulders, face centered in the upper half of the frame, front view at eye level. White cabinets, a toaster, a window with daylight in front of her, no harsh shadows."
+  },
+  "carol_cokes": {
+   "refs": [
+    "carol_master"
+   ],
+   "prompt": "Image 1 is the reference. The same woman from Image 1, same kitchen, same clothes, same hair, same light. Keep her facial features exactly the same as Image 1. Change only this: the framing is slightly wider, waist up, and she holds up two cola bottles at chest height, one in each hand: in her right hand a small old-fashioned 1950s glass cola bottle with dark cola, in her left hand a modern plastic cola bottle. Plain bottles with no readable labels and no logos. All fingers visible and relaxed. Both bottles sit below her chin, nothing covers her mouth. She looks into the lens, lips closed."
+  },
+  "carol_table": {
+   "refs": [
+    "carol_master"
+   ],
+   "prompt": "Image 1 is the reference. The same woman from Image 1, same clothes and hair. Keep her facial features exactly the same as Image 1. Change only the setting and position: she now sits at her kitchen table by the window with the phone propped in front of her, both hands wrapped around a coffee mug that rests on the table, well below her chin. Head and shoulders plus the mug, her face in the upper half of the frame, front view. Same daylight. Lips closed, looking into the lens."
+  },
+  "before_photo": {
+   "refs": [
+    "carol_master"
+   ],
+   "prompt": "Bathroom mirror selfie photo of the same woman from Image 1, four months earlier and about fifty pounds heavier. Keep her facial features the same as Image 1 but with a fuller face and a tired, unhappy expression. She stands side-on to a bathroom mirror holding her phone at chest height in one hand, the phone does not cover her face, wearing a fitted gray t-shirt and jeans, her belly hanging over the waistband of the jeans. View from head to mid thigh. Small ordinary bathroom: beige tile, white sink, a towel on a hook, overhead vanity light. A slightly unflattering phone photo."
+  },
+  "after_photo": {
+   "refs": [
+    "before_photo",
+    "carol_master"
+   ],
+   "prompt": "Image 1 is a bathroom mirror selfie. Recreate the exact same photo: same bathroom, same mirror, same lighting, same pose, same gray t-shirt and jeans, same phone position. Change only her body and expression: she is now much slimmer, about a size twelve, with a flat stomach, the t-shirt hangs loose, the jeans fit with room at the waist, her face is slimmer like Image 2 and she has a small proud smile. Keep everything else exactly the same as Image 1."
+  },
+  "joan_lunch": {
+   "prompt": "A 62 year old woman with short silver pixie hair, reading glasses on a beaded chain, a navy cardigan over a white blouse, sitting across a diner booth table, seen from the seat opposite at eye level. She looks down toward the plate in front of the viewer with one eyebrow raised, lips closed, skeptical. Red vinyl booth seat, window light from the side, two iced tea glasses on the table."
+  },
+  "salad": {
+   "prompt": "Phone photo looking down at a sad plain lunch salad on a white diner plate: dry iceberg lettuce, a few tomato wedges and cucumber slices, no dressing, no cheese, no croutons. A fork beside the plate, a glass of ice water, a paper napkin, a laminate diner table."
+  },
+  "phone": {
+   "prompt": "Close phone photo of a smartphone lying face up on a white kitchen counter beside a coffee mug. The screen is dark. A woman's hand with a plain wedding band rests on the counter next to it."
+  }
+ },
+ "beats": [
+  {
+   "id": "b01",
+   "visual": "talk",
+   "frame": "carol_cokes",
+   "zoom": 1.0,
+   "text": "This is my grandmother's Coke and this is mine... she stayed thin on hers and I got a belly on mine, until four months ago.",
+   "performance": "She lifts the small glass bottle a little as she starts, then the plastic bottle, talking straight to the camera, wry and matter of fact."
+  },
+  {
+   "id": "b02",
+   "visual": "broll",
+   "text": "So this is me four months ago, and look at that belly hanging over my jeans, because that's what I saw every morning getting dressed.",
+   "shots": [
+    {
+     "id": "s02",
+     "frame": "before_photo",
+     "still": true,
+     "push": [
+      1.0,
+      1.06
+     ],
+     "focus": [
+      0.5,
+      0.45
+     ]
+    },
+    {
+     "id": "s02b",
+     "on": "look at that belly",
+     "frame": "before_photo",
+     "still": true,
+     "push": [
+      1.45,
+      1.6
+     ],
+     "focus": [
+      0.55,
+      0.66
+     ]
+    },
+    {
+     "id": "s02c",
+     "on": "because that's what I saw",
+     "frame": "before_photo",
+     "still": true,
+     "push": [
+      1.12,
+      1.2
+     ],
+     "focus": [
+      0.5,
+      0.3
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b03",
+   "visual": "broll",
+   "text": "And this is me now, same bathroom, same lighting.",
+   "shots": [
+    {
+     "id": "s03",
+     "frame": "after_photo",
+     "still": true,
+     "push": [
+      1.0,
+      1.1
+     ],
+     "focus": [
+      0.5,
+      0.55
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b04",
+   "visual": "talk",
+   "frame": "carol_master",
+   "zoom": 1.0,
+   "text": "My friend Joan has been a nurse for thirty years, and a few months ago she watched me order a salad with no dressing at lunch and she's like, Carol, you need to stop with the salads.",
+   "performance": "Talks to the camera like she is telling a friend a story, natural, a small eye roll near the end.",
+   "cutaways": [
+    {
+     "id": "c04a",
+     "on": "Joan has been a nurse for thirty years",
+     "frame": "joan_lunch",
+     "motion": "The woman slowly shakes her head once and raises one eyebrow, lips closed. Locked-off camera, single continuous shot, no cuts."
+    },
+    {
+     "id": "c04b",
+     "on": "order a salad with no dressing at lunch",
+     "frame": "salad",
+     "motion": "A woman's hand slides the plate of salad an inch closer. Locked-off camera, single continuous shot, no cuts."
+    }
+   ]
+  },
+  {
+   "id": "b05",
+   "visual": "talk",
+   "frame": "carol_master",
+   "zoom": 1.14,
+   "text": "I'm like, what are you talking about, I eat less than anyone I know and I still can't lose it.",
+   "performance": "Talks with disbelief, eyebrows up, shaking her head slightly."
+  },
+  {
+   "id": "b06",
+   "visual": "talk",
+   "frame": "carol_table",
+   "zoom": 1.0,
+   "text": "And she goes, I know, that's exactly why you need to read this, and she sent me an article.",
+   "performance": "Talks warmly with a small shrug, hands stay on the mug.",
+   "cutaways": [
+    {
+     "id": "c06a",
+     "on": "she sent me an article",
+     "frame": "phone",
+     "tail": 0.5,
+     "motion": "The phone screen lights up and the hand picks the phone up off the counter. Locked-off camera, single continuous shot, no cuts."
+    }
+   ]
+  },
+  {
+   "id": "b07",
+   "visual": "talk",
+   "frame": "carol_master",
+   "zoom": 1.0,
+   "text": "So I'm linking the article below because you ladies need to see this. It ranks all five foods, worst to least,",
+   "performance": "Talks directly and sincerely to the camera, leaning in slightly."
+  },
+  {
+   "id": "b08",
+   "visual": "talk",
+   "frame": "carol_master",
+   "zoom": 1.14,
+   "text": "and number one is the one I'd been eating every morning thinking it was helping me lose weight. Read that one first.",
+   "performance": "Talks directly to the camera with a knowing look, ends with a small nod."
+  }
+ ]
+}

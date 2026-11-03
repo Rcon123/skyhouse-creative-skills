@@ -1,0 +1,411 @@
+{
+ "title": "Akka 1955 Brand Compare yapper, full script, v2 (native voice, real Coke, Ryan's picked Carol)",
+ "source": "offers/akka/ads/1955-brand-compare-yapper-video-r1.md: locked hook A1 + body r13, word for word (numbers spelled out for speech)",
+ "format": "yapper",
+ "broll_engine": "wan27-720",
+ "style_contract": "Real camera-roll iPhone photo, flat indoor light, deep focus, real skin with lines and pores, slightly imperfect framing, an ordinary lived-in American home.",
+ "voice": {
+  "mode": "native",
+  "engine": "seedance2-mini",
+  "fx": "native-kitchen",
+  "speakers": {
+   "carol": {
+    "frame": "carol_selfie",
+    "voice": "A woman of 66 with a Midwestern American accent, recording a selfie video for her friends at home. A lived-in, slightly husky mid-low voice with a little rasp on the low notes. Chatty and continuous, half laughing, with audible breath, uneven pauses and slightly swallowed word endings. Close to the phone mic, with the natural sound of a real house around her. She sounds like a person talking, not a person reading. One take."
+   }
+  }
+ },
+ "captions": {
+  "enabled": true,
+  "size": 88,
+  "y": 1150,
+  "max_words": 3,
+  "replace": {
+   "nineteen fifty-five": "1955",
+   "over sixty": "over 60",
+   "over forty": "over 40",
+   "an eighteen": "an 18",
+   "a twelve": "a 12"
+  }
+ },
+ "frames": {
+  "carol_selfie": {
+   "prompt": "(Ryan's picked image, already in frames/)"
+  },
+  "carol_cokes": {
+   "prompt": "(rendered 10-05 from the picked selfie + IMG92 real Coke bottles, already in frames/)"
+  },
+  "before_photo": {
+   "prompt": "(Ryan's picked BEFORE, already in frames/)"
+  },
+  "after_photo": {
+   "prompt": "(Ryan's picked AFTER, already in frames/)"
+  },
+  "carol_kitchen": {
+   "refs": [
+    "carol_selfie"
+   ],
+   "prompt": "Image 1 is the reference. The same woman from Image 1, same face, same gray wavy hair, same cream cable-knit cardigan and white tee. Keep her facial features exactly the same as Image 1. Change only the place: the same kind of selfie-video still, one arm up holding the phone slightly above her (the phone and that arm are out of frame), standing in her kitchen with wooden cabinets and a fridge covered in magnets behind her. Mid-sentence, looking into the lens. Nothing covers her mouth."
+  },
+  "joan_lunch": {
+   "prompt": "A 62 year old woman with short silver pixie hair, reading glasses on a beaded chain, a navy cardigan over a white blouse, sitting across a diner booth table, seen from the seat opposite at eye level. She looks down toward the plate in front of the viewer with one eyebrow raised, lips closed, skeptical. Red vinyl booth seat, window light from the side, two iced tea glasses on the table."
+  },
+  "salad": {
+   "prompt": "Phone photo looking down at a sad plain lunch salad on a white diner plate: dry iceberg lettuce, a few tomato wedges and cucumber slices, no dressing, no cheese, no croutons. A fork beside the plate, a glass of ice water, a paper napkin, a laminate diner table, a woman's hand resting at the edge."
+  },
+  "phone_counter": {
+   "prompt": "Close phone photo of a smartphone lying face up on a kitchen counter beside a coffee mug. The screen is dark. A woman's hand with a plain wedding band rests on the counter next to it."
+  },
+  "sneakers": {
+   "prompt": "Phone photo looking down at a woman's own feet in worn white walking sneakers and gray sweatpants on a suburban sidewalk at dawn, long shadows, dew on the grass edge."
+  },
+  "phone_nightstand": {
+   "prompt": "Phone photo of a smartphone face down on a wooden nightstand at night beside a lamp that is off, reading glasses and a glass of water, a dark bedroom, the edge of a quilt."
+  },
+  "reading_bed": {
+   "refs": [
+    "carol_selfie"
+   ],
+   "prompt": "Image 1 defines the woman: keep her face and gray wavy hair exactly. A candid photo of her at night propped on pillows in bed in a faded sleep shirt, reading glasses on, holding her phone in front of her chest and reading it, her face lit by the screen, lips closed. The phone's back faces the camera so no screen is visible. A dark bedroom, one small lamp."
+  },
+  "pie": {
+   "prompt": "Phone photo of a slice of homemade apple pie on a small white plate with a fork, on a kitchen table with a checked cloth, the rest of the pie in its tin behind it, evening light."
+  },
+  "jeans": {
+   "prompt": "Phone photo from her own point of view looking down: a woman's hands fastening the button of a pair of dark blue jeans at her waist, an olive green long-sleeve top tucked in, standing on a bathroom tile floor. Only her midsection and hands are in frame."
+  },
+  "husband_hands": {
+   "prompt": "Candid phone photo from behind and to the side in a home kitchen: a woman with gray wavy shoulder-length hair in an olive green top and jeans stands at the stove, and a man in a flannel shirt stands close behind her with both of his hands resting on her waist. Their faces are turned away from the camera. Warm evening kitchen light."
+  },
+  "hall_mirror": {
+   "refs": [
+    "carol_selfie"
+   ],
+   "prompt": "Image 1 defines the woman: keep her face, gray wavy hair, cream cable-knit cardigan and white tee exactly. A candid photo of her in her front hallway catching her own reflection in a wall mirror as she walks past, head turned toward the mirror, a small surprised look, lips closed. Coats on hooks, a white front door, daylight."
+  }
+ },
+ "beats": [
+  {
+   "id": "b01",
+   "visual": "talk",
+   "frame": "carol_cokes",
+   "zoom": 1.0,
+   "text": "This is my grandmother's Coke and this is mine... she stayed thin on hers and I got a belly on mine, until four months ago.",
+   "performance": "She lifts the small glass Coke bottle a little as she starts, then the plastic one, talking straight to the camera, wry and matter of fact."
+  },
+  {
+   "id": "b02",
+   "visual": "broll",
+   "text": "So this is me four months ago, and look at that belly hanging over my jeans, because that's what I saw every morning getting dressed.",
+   "shots": [
+    {
+     "id": "s02a",
+     "frame": "before_photo",
+     "still": true,
+     "push": [
+      1.0,
+      1.06
+     ],
+     "focus": [
+      0.45,
+      0.4
+     ]
+    },
+    {
+     "id": "s02b",
+     "on": "look at that belly",
+     "frame": "before_photo",
+     "still": true,
+     "push": [
+      1.5,
+      1.65
+     ],
+     "focus": [
+      0.45,
+      0.58
+     ]
+    },
+    {
+     "id": "s02c",
+     "on": "because that's what I saw",
+     "frame": "before_photo",
+     "still": true,
+     "push": [
+      1.15,
+      1.22
+     ],
+     "focus": [
+      0.42,
+      0.25
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b03",
+   "visual": "broll",
+   "text": "And this is me now, same bathroom, same lighting.",
+   "shots": [
+    {
+     "id": "s03a",
+     "frame": "after_photo",
+     "still": true,
+     "push": [
+      1.0,
+      1.08
+     ],
+     "focus": [
+      0.5,
+      0.45
+     ]
+    },
+    {
+     "id": "s03b",
+     "on": "same bathroom",
+     "frame": "after_photo",
+     "still": true,
+     "push": [
+      1.45,
+      1.55
+     ],
+     "focus": [
+      0.5,
+      0.6
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b04",
+   "visual": "talk",
+   "frame": "carol_selfie",
+   "zoom": 1.0,
+   "text": "My friend Joan has been a nurse for thirty years, and a few months ago she watched me order a salad with no dressing at lunch and she's like, Carol, you need to stop with the salads.",
+   "performance": "Talks like she is telling a friend a story, natural, a small eye roll near the end.",
+   "cutaways": [
+    {
+     "id": "c04a",
+     "on": "Joan has been a nurse for thirty years",
+     "frame": "joan_lunch",
+     "motion": "The woman slowly shakes her head once and raises one eyebrow, lips closed. Locked-off camera, single continuous shot, no cuts."
+    },
+    {
+     "id": "c04b",
+     "on": "order a salad with no dressing at lunch",
+     "frame": "salad",
+     "motion": "The woman's hand slides the plate of salad an inch closer. Locked-off camera, single continuous shot, no cuts."
+    }
+   ]
+  },
+  {
+   "id": "b05",
+   "visual": "talk",
+   "frame": "carol_selfie",
+   "zoom": 1.14,
+   "text": "I'm like, what are you talking about, I eat less than anyone I know and I still can't lose it.",
+   "performance": "Talks with disbelief, eyebrows up, a short shake of the head."
+  },
+  {
+   "id": "b06",
+   "visual": "talk",
+   "frame": "carol_kitchen",
+   "zoom": 1.0,
+   "text": "And she goes, I know, that's exactly why you need to read this, and she sent me an article.",
+   "performance": "Talks warmly with a small shrug.",
+   "cutaways": [
+    {
+     "id": "c06a",
+     "on": "she sent me an article",
+     "frame": "phone_counter",
+     "tail": 0.4,
+     "motion": "The phone screen lights up and the hand picks the phone up off the counter. Locked-off camera, single continuous shot, no cuts."
+    }
+   ]
+  },
+  {
+   "id": "b07",
+   "visual": "talk",
+   "frame": "carol_kitchen",
+   "zoom": 1.14,
+   "text": "I didn't open it. Honestly, I was done. I'd done the salads, I'd done the shots, I'd walked every morning for two years, and I was done being told what to try.",
+   "performance": "Flat and tired at first, counting them off, then firm.",
+   "cutaways": [
+    {
+     "id": "c07a",
+     "on": "I'd walked every morning for two years",
+     "frame": "sneakers",
+     "motion": "The feet walk forward along the sidewalk at an easy pace, seen from above. Handheld phone view, single continuous shot, no cuts."
+    }
+   ]
+  },
+  {
+   "id": "b08",
+   "visual": "talk",
+   "frame": "carol_selfie",
+   "zoom": 1.0,
+   "text": "But she kept texting me, just read it, just read it, so one night I finally did.",
+   "performance": "A little exasperated, then gives in with a small smile.",
+   "cutaways": [
+    {
+     "id": "c08a",
+     "on": "she kept texting me",
+     "frame": "phone_nightstand",
+     "dur": 1.8,
+     "motion": "The phone buzzes and shifts slightly on the nightstand, a glow leaking from under it. Locked-off camera, single continuous shot, no cuts."
+    }
+   ]
+  },
+  {
+   "id": "b09",
+   "visual": "talk",
+   "frame": "carol_selfie",
+   "zoom": 1.14,
+   "text": "It was from a top gut doctor in New York, and it was about the five foods keeping women over sixty fat by destroying their liver.",
+   "performance": "Talks plainly, leaning in a little on the last words.",
+   "cutaways": [
+    {
+     "id": "c09a",
+     "on": "It was from a top gut doctor in New York",
+     "frame": "reading_bed",
+     "motion": "She scrolls the phone once with her thumb and her eyebrows lift, lips closed. Locked-off camera, single continuous shot, no cuts."
+    }
+   ]
+  },
+  {
+   "id": "b10",
+   "visual": "talk",
+   "frame": "carol_kitchen",
+   "zoom": 1.0,
+   "text": "And I'm like, liver? That sounded weird to me. What does my liver have to do with my belly?",
+   "performance": "Skeptical, squints, one shoulder up."
+  },
+  {
+   "id": "b11",
+   "visual": "talk",
+   "frame": "carol_kitchen",
+   "zoom": 1.14,
+   "text": "But I kept reading, and it started to make sense. She said look at any photo from nineteen fifty-five. Nobody was fat, and they ate pie every night. Something changed, and it wasn't willpower.",
+   "performance": "Thinking it through out loud, slower on the last sentence.",
+   "cutaways": [
+    {
+     "id": "c11a",
+     "on": "they ate pie every night",
+     "frame": "pie",
+     "motion": "A fork presses down into the tip of the pie slice and lifts a bite. Locked-off camera, single continuous shot, no cuts."
+    }
+   ]
+  },
+  {
+   "id": "b12",
+   "visual": "talk",
+   "frame": "carol_selfie",
+   "zoom": 1.0,
+   "text": "She said your liver is the thing that burns fat, and five everyday foods have shut it off, and in most women over forty it's barely running.",
+   "performance": "Explains it simply, like passing on what she read."
+  },
+  {
+   "id": "b13",
+   "visual": "talk",
+   "frame": "carol_selfie",
+   "zoom": 1.14,
+   "text": "Then she ranked the five, and three of them were sitting in my kitchen. Number one I was eating every single morning because I thought it was helping me lose weight. I couldn't argue with that.",
+   "performance": "A beat of disbelief on three of them, then rueful."
+  },
+  {
+   "id": "b14",
+   "visual": "talk",
+   "frame": "carol_kitchen",
+   "zoom": 1.0,
+   "text": "So I got them out and did what she says to do about them, no diet and no shot, and honestly I expected nothing.",
+   "performance": "Matter of fact, a small shrug at the end."
+  },
+  {
+   "id": "b15",
+   "visual": "talk",
+   "frame": "carol_kitchen",
+   "zoom": 1.14,
+   "text": "The first week, nothing happened, and I'm like, of course.",
+   "performance": "Dry, a little eye roll."
+  },
+  {
+   "id": "b16",
+   "visual": "talk",
+   "frame": "carol_selfie",
+   "zoom": 1.0,
+   "text": "Then maybe two weeks in I'm getting dressed and my jeans go up without the little hop I've done for fifteen years, and I just stood there. I didn't trust it.",
+   "performance": "Builds, then goes quiet on the last line.",
+   "cutaways": [
+    {
+     "id": "c16a",
+     "on": "my jeans go up without the little hop",
+     "frame": "jeans",
+     "motion": "Her hands pull the waistband together and fasten the button easily, then let go. Locked-off camera, single continuous shot, no cuts."
+    }
+   ]
+  },
+  {
+   "id": "b17",
+   "visual": "talk",
+   "frame": "carol_selfie",
+   "zoom": 1.14,
+   "text": "A month in they buttoned standing up, no lying on the bed, and I called Joan from the bathroom floor crying like an idiot.",
+   "performance": "Laughing at herself, eyes a little wet."
+  },
+  {
+   "id": "b18",
+   "visual": "talk",
+   "frame": "carol_kitchen",
+   "zoom": 1.0,
+   "text": "By three months my husband came up behind me in the kitchen and put both hands on my waist and said, where did you go? I hadn't felt that in ten years.",
+   "performance": "Soft, almost shy, slower on the last line.",
+   "cutaways": [
+    {
+     "id": "c18a",
+     "on": "put both hands on my waist",
+     "frame": "husband_hands",
+     "motion": "The man's hands settle on her waist and she leans back into him slightly. Locked-off camera, single continuous shot, no cuts."
+    }
+   ]
+  },
+  {
+   "id": "b19",
+   "visual": "talk",
+   "frame": "carol_kitchen",
+   "zoom": 1.14,
+   "text": "Now it's four months and I'm down from an eighteen to a twelve, I'm eating more than I have in years, pie included, and I still catch myself in the hallway mirror like, is that me?",
+   "performance": "Proud and amused, a small laugh at the end.",
+   "cutaways": [
+    {
+     "id": "c19a",
+     "on": "I still catch myself in the hallway mirror",
+     "frame": "hall_mirror",
+     "motion": "She stops, turns her head a little more toward the mirror and touches her waist with one hand, lips closed. Locked-off camera, single continuous shot, no cuts."
+    }
+   ]
+  },
+  {
+   "id": "b20",
+   "visual": "talk",
+   "frame": "carol_selfie",
+   "zoom": 1.0,
+   "text": "My sister-in-law stopped me at Easter like, what did you do, and when I told her I just changed what's in my kitchen, she literally didn't believe me.",
+   "performance": "Animated, imitating her sister-in-law, then a shrug."
+  },
+  {
+   "id": "b21",
+   "visual": "talk",
+   "frame": "carol_selfie",
+   "zoom": 1.14,
+   "text": "So I'm linking the article below because you ladies need to see this. It ranks all five foods, worst to least,",
+   "performance": "Talks directly and sincerely to the camera."
+  },
+  {
+   "id": "b22",
+   "visual": "talk",
+   "frame": "carol_kitchen",
+   "zoom": 1.0,
+   "text": "and number one is the one I'd been eating every morning thinking it was helping me lose weight. Read that one first.",
+   "performance": "A knowing look, ends with a small nod."
+  }
+ ]
+}

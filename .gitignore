@@ -1,0 +1,14 @@
+.env
+.DS_Store
+__pycache__/
+tools/video/.venv/
+tools/video/.upload_cache.json
+tools/video/_scratch/
+offers/*/videos/*/frames/
+offers/*/videos/*/clips/
+offers/*/videos/*/voice/
+offers/*/videos/*/build/
+offers/*/videos/*/qa/
+offers/*/videos/*/ref/
+*.mp4
+*.bak-*

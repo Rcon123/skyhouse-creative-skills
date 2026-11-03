@@ -1,0 +1,410 @@
+[
+ {
+  "voice": "Riko",
+  "group": "Storyteller",
+  "hz": 86,
+  "wpm": 152
+ },
+ {
+  "voice": "Elio",
+  "group": "Professional",
+  "hz": 90,
+  "wpm": 139
+ },
+ {
+  "voice": "Milo",
+  "group": "Call center",
+  "hz": 91,
+  "wpm": 122
+ },
+ {
+  "voice": "Bodi",
+  "group": "Tutor",
+  "hz": 92,
+  "wpm": 127
+ },
+ {
+  "voice": "Gero",
+  "group": "Digital assistant",
+  "hz": 92,
+  "wpm": 145
+ },
+ {
+  "voice": "Neno",
+  "group": "Digital assistant",
+  "hz": 93,
+  "wpm": 142
+ },
+ {
+  "voice": "Cruz",
+  "group": "Professional",
+  "hz": 95,
+  "wpm": 145
+ },
+ {
+  "voice": "Ludo",
+  "group": "Instructional",
+  "hz": 98,
+  "wpm": 139
+ },
+ {
+  "voice": "Jett",
+  "group": "Tech support",
+  "hz": 101,
+  "wpm": 132
+ },
+ {
+  "voice": "Algieba",
+  "group": "Digital assistant",
+  "hz": 103,
+  "wpm": 133
+ },
+ {
+  "voice": "Arlo",
+  "group": "Concierge",
+  "hz": 103,
+  "wpm": 145
+ },
+ {
+  "voice": "Rami",
+  "group": "Podcast",
+  "hz": 103,
+  "wpm": 161
+ },
+ {
+  "voice": "Sadaltager",
+  "group": "Tutor",
+  "hz": 103,
+  "wpm": 153
+ },
+ {
+  "voice": "Zubenelgenubi",
+  "group": "Storyteller",
+  "hz": 104,
+  "wpm": 128
+ },
+ {
+  "voice": "Brio",
+  "group": "Podcast",
+  "hz": 107,
+  "wpm": 130
+ },
+ {
+  "voice": "Puck",
+  "group": "Call center",
+  "hz": 107,
+  "wpm": 151
+ },
+ {
+  "voice": "Sadachbia",
+  "group": "Tech support",
+  "hz": 107,
+  "wpm": 153
+ },
+ {
+  "voice": "Finn",
+  "group": "Concierge",
+  "hz": 108,
+  "wpm": 123
+ },
+ {
+  "voice": "Enceladus",
+  "group": "Digital assistant",
+  "hz": 110,
+  "wpm": 148
+ },
+ {
+  "voice": "Zeno",
+  "group": "Commercial voiceover",
+  "hz": 110,
+  "wpm": 136
+ },
+ {
+  "voice": "Knox",
+  "group": "Tech support",
+  "hz": 111,
+  "wpm": 130
+ },
+ {
+  "voice": "Charon",
+  "group": "Call center",
+  "hz": 112,
+  "wpm": 149
+ },
+ {
+  "voice": "Mako",
+  "group": "Instructional",
+  "hz": 113,
+  "wpm": 129
+ },
+ {
+  "voice": "Orus",
+  "group": "Concierge",
+  "hz": 113,
+  "wpm": 132
+ },
+ {
+  "voice": "Iapetus",
+  "group": "Digital assistant",
+  "hz": 114,
+  "wpm": 144
+ },
+ {
+  "voice": "Daro",
+  "group": "Call center",
+  "hz": 116,
+  "wpm": 137
+ },
+ {
+  "voice": "Schedar",
+  "group": "Professional",
+  "hz": 116,
+  "wpm": 132
+ },
+ {
+  "voice": "Alnilam",
+  "group": "Podcast",
+  "hz": 117,
+  "wpm": 155
+ },
+ {
+  "voice": "Umbriel",
+  "group": "Digital assistant",
+  "hz": 119,
+  "wpm": 160
+ },
+ {
+  "voice": "Achird",
+  "group": "Storyteller",
+  "hz": 120,
+  "wpm": 140
+ },
+ {
+  "voice": "Algenib",
+  "group": "Instructional",
+  "hz": 122,
+  "wpm": 143
+ },
+ {
+  "voice": "Fenrir",
+  "group": "Concierge",
+  "hz": 123,
+  "wpm": 131
+ },
+ {
+  "voice": "Enzo",
+  "group": "Storyteller",
+  "hz": 123,
+  "wpm": 139
+ },
+ {
+  "voice": "Koda",
+  "group": "Commercial voiceover",
+  "hz": 123,
+  "wpm": 128
+ },
+ {
+  "voice": "Rasalgethi",
+  "group": "Instructional",
+  "hz": 124,
+  "wpm": 133
+ },
+ {
+  "voice": "Pulcherrima",
+  "group": "Professional",
+  "hz": 130,
+  "wpm": 154
+ },
+ {
+  "voice": "Gacrux",
+  "group": "Professional",
+  "hz": 139,
+  "wpm": 141
+ },
+ {
+  "voice": "Olin",
+  "group": "Digital assistant",
+  "hz": 144,
+  "wpm": 132
+ },
+ {
+  "voice": "Sami",
+  "group": "Storyteller",
+  "hz": 149,
+  "wpm": 137
+ },
+ {
+  "voice": "Kira",
+  "group": "Instructional",
+  "hz": 151,
+  "wpm": 142
+ },
+ {
+  "voice": "Zali",
+  "group": "Storyteller",
+  "hz": 152,
+  "wpm": 144
+ },
+ {
+  "voice": "Callirrhoe",
+  "group": "Digital assistant",
+  "hz": 155,
+  "wpm": 133
+ },
+ {
+  "voice": "Erinome",
+  "group": "Instructional",
+  "hz": 155,
+  "wpm": 150
+ },
+ {
+  "voice": "Lumi",
+  "group": "Tutor",
+  "hz": 155,
+  "wpm": 139
+ },
+ {
+  "voice": "Cleo",
+  "group": "Concierge",
+  "hz": 160,
+  "wpm": 149
+ },
+ {
+  "voice": "Kore",
+  "group": "Commercial voiceover",
+  "hz": 160,
+  "wpm": 146
+ },
+ {
+  "voice": "Laomedeia",
+  "group": "Podcast",
+  "hz": 160,
+  "wpm": 149
+ },
+ {
+  "voice": "Lora",
+  "group": "Concierge",
+  "hz": 162,
+  "wpm": 144
+ },
+ {
+  "voice": "Tavi",
+  "group": "Commercial voiceover",
+  "hz": 163,
+  "wpm": 125
+ },
+ {
+  "voice": "Aoede",
+  "group": "Digital assistant",
+  "hz": 165,
+  "wpm": 153
+ },
+ {
+  "voice": "Tova",
+  "group": "Professional",
+  "hz": 165,
+  "wpm": 153
+ },
+ {
+  "voice": "Veda",
+  "group": "Podcast",
+  "hz": 165,
+  "wpm": 134
+ },
+ {
+  "voice": "Zuri",
+  "group": "Professional",
+  "hz": 167,
+  "wpm": 137
+ },
+ {
+  "voice": "Vindemiatrix",
+  "group": "Tech support",
+  "hz": 168,
+  "wpm": 144
+ },
+ {
+  "voice": "Zephyr",
+  "group": "Tutor",
+  "hz": 168,
+  "wpm": 146
+ },
+ {
+  "voice": "Rina",
+  "group": "Instructional",
+  "hz": 170,
+  "wpm": 122
+ },
+ {
+  "voice": "Sola",
+  "group": "Tutor",
+  "hz": 170,
+  "wpm": 134
+ },
+ {
+  "voice": "Enya",
+  "group": "Tech support",
+  "hz": 172,
+  "wpm": 129
+ },
+ {
+  "voice": "Jori",
+  "group": "Podcast",
+  "hz": 172,
+  "wpm": 121
+ },
+ {
+  "voice": "Fola",
+  "group": "Call center",
+  "hz": 176,
+  "wpm": 133
+ },
+ {
+  "voice": "Tari",
+  "group": "Digital assistant",
+  "hz": 179,
+  "wpm": 122
+ },
+ {
+  "voice": "Autonoe",
+  "group": "Digital assistant",
+  "hz": 180,
+  "wpm": 143
+ },
+ {
+  "voice": "Nyla",
+  "group": "Tech support",
+  "hz": 181,
+  "wpm": 136
+ },
+ {
+  "voice": "Nika",
+  "group": "Commercial voiceover",
+  "hz": 182,
+  "wpm": 128
+ },
+ {
+  "voice": "Hali",
+  "group": "Call center",
+  "hz": 184,
+  "wpm": 141
+ },
+ {
+  "voice": "Sulafat",
+  "group": "Tutor",
+  "hz": 184,
+  "wpm": 142
+ },
+ {
+  "voice": "Despina",
+  "group": "Instructional",
+  "hz": 188,
+  "wpm": 142
+ },
+ {
+  "voice": "Leda",
+  "group": "Concierge",
+  "hz": 188,
+  "wpm": 127
+ }
+]
