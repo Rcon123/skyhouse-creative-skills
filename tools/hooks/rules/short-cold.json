@@ -1,0 +1,183 @@
+{
+  "lane": "short-cold",
+  "about": "Ryan's rules for the first line of a cold static or short ad. Ryan's words, 2026-10-29. This file is the law; the skill only summarizes it. Add a rule only with Ryan's yes, in his words. check = a script decides. judge = a stranger answers about one line. taste = shown to the writer, never gates.",
+  "rules": [
+    {
+      "id": "SC-1",
+      "said": "6 to 12 words, 15 max.",
+      "date": "2026-10-29",
+      "type": "check",
+      "spec": {
+        "primitive": "words",
+        "min": 6,
+        "max": 15
+      }
+    },
+    {
+      "id": "SC-2",
+      "said": "One sentence. It can be joined by an ellipsis, that is allowed, not required. Never a period in the middle.",
+      "date": "2026-10-29",
+      "type": "check",
+      "spec": {
+        "primitive": "one_sentence"
+      }
+    },
+    {
+      "id": "SC-3",
+      "said": "The first five words are the most important real estate. It's the opportunity to really grab attention, so it's got to be super vicious in those first few words.",
+      "date": "2026-10-29",
+      "type": "taste",
+      "spec": {
+        "question": "Is there something ugly, physical or shocking in the first five words, or do they open on a doctor, a test, a number, a date or some setup before the point?",
+        "answers": [
+          "ugly thing first",
+          "setup first"
+        ],
+        "fail_when": "setup first"
+      },
+      "encoding_note": "2026-10-29 r1 grade: 'very, very boring and weak'. Polite doctor/lab openers passed the old question; this is the tighter encoding of the same rule. 10-29 r4: as a literal check it killed an 8 ('My Doctor thinks I'm an Alcoholic...'); SC-7 (score vs examples) now carries it. Shown to the writer, no longer a kill on its own."
+    },
+    {
+      "id": "SC-4",
+      "said": "Cold hooks open on the wound. Hope is for pages.",
+      "date": "2026-10-29",
+      "type": "judge",
+      "spec": {
+        "question": "Does this line open on a problem you have, or on a promise of something good?",
+        "answers": [
+          "problem",
+          "promise"
+        ],
+        "fail_when": "promise"
+      },
+      "status": "retired",
+      "retired": "2026-10-29, Ryan: 'Of course it can' (a hook can start with the good news; six of his approved examples do)"
+    },
+    {
+      "id": "SC-5",
+      "said": "Draft 25+, deliver 8 to 10, at least 2 you'd call holy shit.",
+      "date": "2026-10-29",
+      "type": "check",
+      "spec": {
+        "primitive": "set",
+        "min_drafted": 25,
+        "max_shown": 10,
+        "min_stars": 2
+      }
+    },
+    {
+      "id": "SC-6",
+      "said": "The big issue we're running into is that every single hook has an ellipsis in it.",
+      "date": "2026-10-29",
+      "type": "check",
+      "spec": {
+        "primitive": "set_max",
+        "regex": "\\.\\.\\.|…",
+        "max_per_10": 3,
+        "what": "hooks with an ellipsis"
+      },
+      "note": "An ellipsis is allowed, not the default. A round where every hook has one is wrong (Ryan 10-29). Older memory files that taught the ellipsis as house style are marked superseded (dreaming 2026-11-02)."
+    },
+    {
+      "id": "SC-7",
+      "said": "These are so weak and bad and lame and boring and trash, and nowhere near as good as the examples.",
+      "date": "2026-10-29",
+      "type": "judge",
+      "spec": {
+        "primitive": "score_vs_examples",
+        "examples": "offers/_examples/short-cold-approved.md",
+        "min": 8,
+        "question": "Score this line 1 to 10 against the example lines, which are all a 10. A 10 would make you say it out loud to someone. An 8 you would read twice. A 5 is a complaint you have heard before. A 2 is an ad."
+      },
+      "status": "retired",
+      "retired": "2026-10-29, Ryan: 'Let's get rid of the judge because it's breaking things.' The stranger read is off; the mechanical gate stays."
+    },
+    {
+      "id": "SC-8",
+      "said": "I just don't know how they're relevant to the offer.",
+      "date": "2026-10-29",
+      "type": "check",
+      "spec": {
+        "primitive": "require",
+        "from": "language.core",
+        "what": "one of the offer's core words (## Core words in LANGUAGE.md)"
+      }
+    },
+    {
+      "id": "SC-9",
+      "said": "I probably would start one with something like, 'My brother's an alcoholic and had better liver numbers than me.' Blah blah, something like that. (on the unfair idea; the keeper is 'My Liver test came back worse than my Alcoholic Brother's and I drink one glass.')",
+      "date": "2026-10-29",
+      "type": "taste",
+      "note": "His sketch is direction, not copy: a flat plain statement, the person's status first, the comparison second, no clever words. He killed all six 'clever' versions (Drunk, Rehab, the Alcoholic question)."
+    },
+    {
+      "id": "WS-1",
+      "said": "No em dashes. (workspace rule, already enforced by copygate)",
+      "date": "2026-10-27",
+      "type": "check",
+      "spec": {
+        "primitive": "forbid",
+        "regex": "[—–]|&mdash;|&ndash;"
+      }
+    },
+    {
+      "id": "WS-2",
+      "said": "No words from the offer's LANGUAGE.md Never list. (workspace rule, already enforced by copygate)",
+      "date": "2026-10-27",
+      "type": "check",
+      "spec": {
+        "primitive": "forbid",
+        "from": "language.never"
+      }
+    },
+    {
+      "id": "SC-10",
+      "said": "I really don't like that you start with 43 or Vet at all. (on the ProDenta root-canal r5 set, every line opening 43-year Vet: / A Vet of 43 years / I'm a Vet)",
+      "date": "2026-10-29",
+      "type": "check",
+      "spec": {
+        "primitive": "forbid",
+        "regex": "^\\s*\\W*(\\d+[- ]year|\\d+ years|a |the |i'm a |i am a )?\\s*(vet|doctor|dentist|dr\\.?)\\b|^\\s*\\W*\\d+[- ]year"
+      },
+      "note": "A hook never opens on the authority or a years-of-experience number. The expert may appear later in the line."
+    },
+    {
+      "id": "SC-11",
+      "said": "I wonder if we had batched hooks, when we're coming up with an idea, into a heartbreaking category (a literal heartbreaking category), and then one that's like a miracle category. You'd have to come up with some other categories, but I think that would be sick. ... Yeah, I think that's cool. If it did 5 per category, let's try it out.",
+      "date": "2026-10-29",
+      "type": "check",
+      "spec": {
+        "primitive": "categories",
+        "names": [
+          "Heartbreaking",
+          "Miracle",
+          "Betrayal",
+          "Unfair",
+          "Gross",
+          "Shame"
+        ],
+        "per_category": 5
+      },
+      "note": "Trial from osteoshield nursing-home r5. The six names are the writer's read of his approved examples (Heartbreaking, Miracle were his; Betrayal, Unfair, Gross, Shame filled in and he said cool). Hooks file groups them under '## <Category>' lines; 5 drafted per category; the report shows them batched by category so he grades a batch, not a pile. A category that dies two rounds running gets cut from names. Gates only a file that has '## Category' lines; an unbatched file passes and the report says 'unbatched'.",
+      "scope": "Ryan 2026-10-30: 'For these categories, I really only want to do it when I'm coming up with ideas for hooks, not if I'm giving you the idea, because otherwise it becomes too confusing.' So: batch by category only when Ryan asks for ideas with no angle given. When he hands over the idea, one flat list on that idea, no categories."
+    },
+    {
+      "id": "SC-11",
+      "said": "I'm beginning to think that the thing that works best with hooks is having as many keywords as humanly possible in a way that makes sense for the line. Keywords can be both part of the research in the market and in the VSL, or anything on our end that we came up with. (OsteoShield, 2026-10-30 02:44; he wants to test it)",
+      "date": "2026-10-30",
+      "type": "taste",
+      "note": "Pack the hook with the market's keywords (the drug, the body part, the fear, the price, the place) while it still reads as one spoken line. Capitalize the ones that pop."
+    },
+    {
+      "id": "SC-12",
+      "said": "You keep doing the same hooks over and over again, trying to improve them instead of just doing new hooks. That is because I already told you I don't like these fucking hooks. (10-28) / Why are you doing 'vet stunned' every single time? I don't want the same headline every single time. I was just telling you that I thought number 12 was good. (10-29)",
+      "date": "2026-11-02",
+      "type": "check",
+      "spec": {
+        "primitive": "new_lines",
+        "what": "a hook that repeats an earlier round of this angle: the same line, or the same first five words"
+      },
+      "note": "A hook Ryan called weak is dead, never rewritten. The next round is 100 percent new lines; the counts file says how many carried over, and the rule is 0. Liked = locked verbatim in KEPT.md, never a template for the next round. Dreaming 2026-11-02, sessions 10-28_66850cc4, 10-29_ccab9cfb, 10-27 (the vets keep asking who cleaned them)."
+    }
+  ]
+}

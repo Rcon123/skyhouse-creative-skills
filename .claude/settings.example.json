@@ -1,0 +1,42 @@
+{
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "Write|Edit|MultiEdit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 \"$CLAUDE_PROJECT_DIR/tools/copygate/hook_post_write.py\"",
+            "timeout": 30,
+            "statusMessage": "copygate: cold-read check"
+          }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 \"$CLAUDE_PROJECT_DIR/tools/hooks/hook_stop.py\"",
+            "timeout": 15,
+            "statusMessage": "hook-writer: checking the judge stamp"
+          }
+        ]
+      }
+    ],
+    "PreToolUse": [
+      {
+        "matcher": "Write|Edit|MultiEdit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 \"$CLAUDE_PROJECT_DIR/tools/copygate/hook_skill_first.py\"",
+            "timeout": 20,
+            "statusMessage": "skill-first: was the lane's skill read?"
+          }
+        ]
+      }
+    ]
+  }
+}

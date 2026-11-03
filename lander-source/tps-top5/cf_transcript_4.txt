@@ -1,0 +1,521 @@
+Impromptu Zoom Meeting - May 27
+VIEW RECORDING - 20 mins (No highlights)
+@0:00 - Ryan Connolly (inthewindowmarketing.com)
+This meeting is being recorded.
+@0:03 - Fernando Meza
+Yo, what up?
+@0:06 - Ryan Connolly (inthewindowmarketing.com)
+Yeah, I just talking to Jason, and I've been seeing all these landers go up, so I need to steal
+your process.
+@0:14 - Fernando Meza
+Yeah, well, luckily, it's a very easy process. It does not use the lander dashboard. It's a little
+thing called cloud design.
+It's on it. I think it's because I think the speed of it, it's because like when I make the I use
+the bots in Genesis and I make the copy and I don't really review it.
+That's the thing. The only thing I throw a couple things, the anti-AI module and the natural
+flow one to get rid of the hyphens or the M dashes, whatever you call them.
+@0:42 - Ryan Connolly (inthewindowmarketing.com)
+
+-- 1 of 23 --
+
+I hate those. So it sounds human because all those bots, they have them, but I feel like right
+now, Claw's being a little dummy with memory.
+@0:51 - Fernando Meza
+Because for some reason, every time I use the poe bots, like after like three chats, it just
+forgets what the I was talking about.
+@0:57 - Ryan Connolly (inthewindowmarketing.com)
+Yeah.
+@0:58 - Fernando Meza
+So I learned that like. Not the hard way, but I learned that last week, kind of like the hard
+way, when I was like, dude, remember the , and I spent so much time on one little thing.
+So at least my po process has been more like, I'm trying to one-shot it as much as possible.
+So I do one task on one bot, as soon as I'm done, I save it, I make a new chat, and I do that.
+And once I get all, whatever I need, like whether he's reviewing it, whether he's giving me an
+idea, whatever, I compile all this idea, and then I try to one-shot it when it gives me the final
+lander.
+At least that's what I've been doing with the po-bots for now, because I don't know why, like
+the memory just sucks now on those .
+It's because Claude, well I know why, because Claude's being a dummy for now.
+@1:38 - Ryan Connolly (inthewindowmarketing.com)
+Yeah.
+@1:39 - Fernando Meza
+
+-- 2 of 23 --
+
+So I mean, that's the process on the writing.
+@1:42 - Ryan Connolly (inthewindowmarketing.com)
+Which bot are you using?
+@1:43 - Fernando Meza
+and I just , what's that?
+@1:47 - Ryan Connolly (inthewindowmarketing.com)
+Which bot are you using?
+@1:49 - Fernando Meza
+Depends on the lander, like if I'm doing a listicle, I use a listicle one. If I'm doing top five, I
+use a top five.
+Like I just choose their thing. The only one that I do for like those long Story ones is the
+advertorial one.
+I mean, probably. There's other pages, but yeah. But in Claude Design, I literally, it's because
+I just look at any link I like.
+I'm like, hey, recreate this template. So like when I saw your New York one, I'm like, hey, let
+me give you, recreate it.
+Cool. Now let me just give you the copy and then make it to our stuff. And it literally
+basically one shots it.
+After that, like I'm making little tweaks that I forget or I'm like, hmm, what if a chart looks
+Looks cool here.
+And I just upload the images. Right.
+
+-- 3 of 23 --
+
+@2:33 - Ryan Connolly (inthewindowmarketing.com)
+How are you doing? How are you coming up with your images? Like, are you just like, what
+are you doing for the images?
+@2:39 - Fernando Meza
+So the, all those bots, they give you image ideas. And I literally just started them at
+ChatGPT 2.0. So it looks realistic.
+Um, I just literally throw that in there. I put it in there and I use the images there. So I'm just
+using the concept that they give me already.
+Um, and that's it. Like, it's because the thing is like, I'm not really reviewing it.
+@2:59 - Ryan Connolly (inthewindowmarketing.com)
+I'm just trying to like pump like
+@3:01 - Fernando Meza
+Yeah, I'm like, hey, give me four intro headline iterations, and I'm just gonna upload. again,
+Cloudflare, once you train your cloud design to just give you the zip folder, and it's as easy
+as just downloading, dragging out Cloudflare, and you're done.
+@3:16 - Ryan Connolly (inthewindowmarketing.com)
+Wait, so you're doing all of it in cloud design, right?
+@3:18 - Fernando Meza
+Not in projects? Yeah, I'm using cloud design.
+
+-- 4 of 23 --
+
+@3:21 - Ryan Connolly (inthewindowmarketing.com)
+I make my own folders, obviously. Or sorry, cloud code? Are you using cloud code or no?
+SCREEN SHARING: Fernando started screen sharing - WATCH
+@3:26 - Fernando Meza
+No, I'm using cloud design, like the actual...
+@3:28 - Ryan Connolly (inthewindowmarketing.com)
+Okay, okay.
+@3:28 - Fernando Meza
+Yeah, so like I come here, like for example, this native path one. Again, the thing is, I abuse
+each one.
+Like if, like once I get a template down, like each folder is like a template. So like the New
+York , now I know it's like just come here for New York .
+Well, this is the wrong one. What is it called? You probably want to name them, because I
+have a tendency to not name .
+But yeah, but like I made this one. It's because like, it gets to the point where like, it already
+knows the template.
+So I'm like, hey, here's a new copy. and i pump it out right again this one's like the one
+because i was playing around with it luckily i mean that's the one that's losing but um i
+mean i just make it right like can you just can you quickly just walk me through like um like
+plugging in the like because i want the images to be compressed right so like can you just
+walk me through like putting the images into claude design and then um uploading it to
+claude flare because i i still don't know how to do like the the full process yeah so um yeah
+so that i think that's a couple things i do so what it's because once you do it once on each
+
+-- 5 of 23 --
+
+session it remembers it right so like at the very beginning like this is where i was playing
+around with so i was kind of going all over the place but let me try to find it but basically in
+short i said three things i'm like hey number one make sure this is mobile optimized i
+literally tell it 95 percent of my people on this are gonna be mobile on paid traffic you
+Like, you better not me up, blah, blah, blah, blah. Like, I just give it, like, the big point, make
+sure this is mobile-optimized, right?
+Number two, I'm like, make sure the page speed and quality is maxed the out, right? Like,
+because I literally tell them, the page traffic, one second can mean a million dollars for me.
+Like, over-exaggerate, obviously. But I keep telling it, like, make sure the page speed and
+the quality is maxed out, right?
+@5:22 - Ryan Connolly (inthewindowmarketing.com)
+So those two things, mobile-optimized, page speed quality.
+@5:25 - Fernando Meza
+And make sure you give examples. Like, so that means give a , make sure the images are
+properly the right images, right?
+Like, the slow, the lazy loading. Like, notice how when you scroll, well, if you do it on a new
+one, like, if you scroll down, right?
+Like, they kind of, well, it doesn't do it on here, but it depends.
+@5:44 - Ryan Connolly (inthewindowmarketing.com)
+Yeah, I know what you mean.
+@5:45 - Fernando Meza
+
+-- 6 of 23 --
+
+Yeah, yeah. But, like, you just give an example. Like, hey, make sure the images are right.
+Make sure every, whatever, just, you just start brain dumping it, right?
+That's what I do. I just scream at it. Are you compressing the images, though, before you
+put them in?
+No, I tell them to do it.
+@5:59 - Ryan Connolly (inthewindowmarketing.com)
+Because, well.
+@6:00 - Fernando Meza
+Yeah, because again, when you do GPT, just make sure it's always like your square ratio.
+And again, it's going to come up PNG, right?
+But I just tell like, hey, that's when I say page speed quality test. I'm like, make sure to do the
+images too.
+@6:14 - Ryan Connolly (inthewindowmarketing.com)
+Because if you don't tell the images, you won't do it.
+@6:16 - Fernando Meza
+Yeah, or she or it. But yeah, that's number two. And then number three is just, again, make
+sure you put the proper links like the red track links.
+And that's it. Those are the three things I told at like the beginning, right? Or once I got the
+template down.
+So once I have it, once I train, it's like any clock session. Once you train your bot, then I'm
+like, okay, cool.
+
+-- 7 of 23 --
+
+Hey, here's my new copy. Now give me another version. And I tell him to save it. Like you
+can see he saves them for me, right?
+So like, you know what I mean? So I keep telling him, hey, once you're done, save it as a
+folder, upload it the next one.
+And then he gives you the .
+@6:56 - Ryan Connolly (inthewindowmarketing.com)
+Do you tell it to save the chats too?
+@6:59 - Fernando Meza
+Oh,
+@7:00 - Ryan Connolly (inthewindowmarketing.com)
+Like, the chat history, so it remembers, like, everything you were talking to it about?
+@7:04 - Fernando Meza
+It's probably not, because at the end of the day, like, you can't, it's, like, too much content.
+I'm just clawed, right?
+@7:09 - Ryan Connolly (inthewindowmarketing.com)
+Yeah.
+@7:10 - Fernando Meza
+
+-- 8 of 23 --
+
+And if I brought this anywhere else, cool. But, like, here, again, I told it to name it like this,
+but HTML, images.
+All I do is I go to Cloudflare, right? I can go to Cloudflare. Yeah. I've been using the RGV one
+because I'm too lazy to set up the new domain.
+It's probably, I probably should do that. So, my bad. Because your page is on here, too. I
+actually almost deleted it.
+@7:37 - Ryan Connolly (inthewindowmarketing.com)
+I got scared. was like, wait. Oh, my page is on here?
+@7:40 - Fernando Meza
+Where? On the RGV one. It's a top five new.
+@7:44 - Ryan Connolly (inthewindowmarketing.com)
+Where is it? Oh, that's why I was not, that's why I wasn't able to, okay. I was using the wrong.
+Okay, gotcha.
+@7:50 - Fernando Meza
+Yeah, because that's what I'm saying. Because those folders, you can make the folders, but
+the domain's not set up.
+So, you have to do it. It's on ClickUp. I have not been through it, but yours is. Um, it's
+somewhere here.
+@8:04 - Ryan Connolly (inthewindowmarketing.com)
+I mean, it's not even there.
+
+-- 9 of 23 --
+
+@8:06 - Fernando Meza
+Where the is it? Maybe you move, did you move it or? Oh, second page. Yeah. That's that
+one. Yeah.
+So all I do is come here and I just upload the folder and I'm done. Like again, um, that's it.
+Like that's literally all I do. So once you get like the right template, again, if you want
+another style, just open up a new tab, be like, Hey, do this template.
+And I just give it a copy. I think my, the reason why I'm quick with it is because I don't really
+review the copy.
+I just, I just, the only thing I do is I just throw these, um, I just throw these two, right?
+These. Cause I feel like each bot still lacks on the anti-AI words and then the natural
+language.
+@8:50 - Ryan Connolly (inthewindowmarketing.com)
+It's like, yeah, I'll send you this.
+@8:52 - Fernando Meza
+Um, the anti-AI one is to get rid of those, like embark on your journey. No hyphens or I hate
+hyphens.
+And then the natural language one, you can see it, like, it kind of talks, like, in mini
+sentences, or, like, it talks one topic, and then the next sentence, like, completely apples,
+and then oranges, and then bananas.
+This just makes it flow, right?
+@9:13 - Ryan Connolly (inthewindowmarketing.com)
+Yeah, yeah, yeah.
+
+-- 10 of 23 --
+
+@9:14 - Fernando Meza
+So, like, they work into it, and I just throw it in, like, hey, make this human. So that's my only
+speed thing on the languages, because, like, if you look at any pocha, right, yeah, I mean,
+that's all I do, right?
+I mean, again, I'm trying to, I'm working on the lander dashboard to be different, because
+there's a GitHub that's cloud design, so I'm trying to, like, it's because I need to, like, revamp
+my whole lander dashboard.
+That's the issue, so I'm like, bruh, but it's fine, because, but yeah, but that's all I do, I mean.
+@9:47 - Ryan Connolly (inthewindowmarketing.com)
+Can you just walk me through real quick, because I want to just throw this into AI, can you
+just go me through the Cloudflare, because there's, like, you said there's another process
+involved, which is why I wasn't working last time.
+@9:56 - Fernando Meza
+Yeah, so, you know how, um, you know How do have all these folders of your domains?
+@10:02 - Ryan Connolly (inthewindowmarketing.com)
+Yeah.
+@10:02 - Fernando Meza
+Right? So you know how last time I said, oh, just name it? We actually have to set it up.
+The thing is, I've never done it yet. It's on ClickUp. It's probably easy to do. I just haven't done
+it because I've been just using...
+Because Andre did my RGB one, but I haven't used RGB at all. So I've been using it for other .
+
+-- 11 of 23 --
+
+Again, it's smart to do this. like most of these, like these ones for me, like these do not
+work.
+@10:25 - Ryan Connolly (inthewindowmarketing.com)
+So I'm actually... How did you get mine to work though?
+@10:28 - Fernando Meza
+I put it on the RGB one because the domain is already set.
+@10:32 - Ryan Connolly (inthewindowmarketing.com)
+That's why it works. Can I just throw mine on the RGB one then?
+@10:36 - Fernando Meza
+I mean, I don't care, right?
+@10:37 - Ryan Connolly (inthewindowmarketing.com)
+Just we should probably...
+@10:38 - Fernando Meza
+It's going to get to the point where we probably should start labeling probably. Because if
+you see all this , I'm like, I don't even know what I'm looking at.
+Like where... Yeah.
+@10:46 - Ryan Connolly (inthewindowmarketing.com)
+
+-- 12 of 23 --
+
+Like these...
+@10:48 - Fernando Meza
+Yeah. Like I'm starting to label the native path ones properly now. Like intro one, intro two.
+But like I should probably have the date.
+Well, Red Track has a date. But because like, I think this is good enough, but like you can
+see.
+Like, I have SlimScope in here. ...
+@11:03 - Ryan Connolly (inthewindowmarketing.com)
+Wait, so does the link actually say RJV when you use the link?
+@11:06 - Fernando Meza
+No. So if we look at the actual link, right? Oh, okay. Yeah. So whatever your folder's name,
+that's going to be the name here.
+Whatever your HTML is name, it's going to be here. Again, I just put editorial because I don't
+know. Yeah.
+You can change it to something like anything. And then this part here, you just delete
+everything before the info, right?
+I don't know how it remembers them because I don't know, but yeah. So yeah, it's easy as
+that. So like, yeah, you see the link one, just everything before info goes away, right?
+And then you do one and then the editorial HTML and that's it. So all the links, you can see
+they have that two-step system.
+It's not like Unbounce where it's... Well, it is like Unbounce because that's what we do.
+Right? This is the HTML.
+And this is the thing, right?
+
+-- 13 of 23 --
+
+@12:02 - Ryan Connolly (inthewindowmarketing.com)
+Yeah. And for the images, you just number it one to one through whatever.
+@12:08 - Fernando Meza
+Yeah. Well, oh, yeah. And then, oh, third thing I told it is to, hey, I'm uploading these on
+Cloudflare.
+So make sure everything's labeled properly. It's all optimized for Cloudflare. So you just
+have to tell it. And then once it knows how to optimize it for Cloudflare, if you just say, if you
+just tell it.
+I said it, and it's been going good so far. So I hope so. Because I tested the speed. The
+speed quality is good because you had to tell it.
+If you don't tell it, it's going to be, you're going to see it. It's a big difference. But yeah.
+@12:37 - Ryan Connolly (inthewindowmarketing.com)
+And that's all I should also tell it. Jason also tells it to highlight the keyword, like the key
+things in the lander.
+@12:42 - Fernando Meza
+Oh, yeah.
+@12:43 - Ryan Connolly (inthewindowmarketing.com)
+That are important.
+@12:45 - Fernando Meza
+
+-- 14 of 23 --
+
+Yeah. So another bot I did is I told him, like, hey, give me a key of what to bold, what to
+italicize.
+Right. Because you can see some stuff is bolded. Like, some stuff is, like, it's because it
+does random bolding.
+And I want... I some type of control, so I'm like, hey, use bold for the scanners, only
+important phases, use italic when you're trying to, like, whisper.
+@13:06 - Ryan Connolly (inthewindowmarketing.com)
+Oh, stole my apartment, bro.
+@13:09 - Fernando Meza
+What? Your apartment? This ? That's my Oh, yeah, my bad.
+@13:12 - Ryan Connolly (inthewindowmarketing.com)
+Yeah, I stole this image, and I just swept the , I swapped it. Nah, I'm just kidding, it's fine.
+@13:16 - Fernando Meza
+Yeah, I didn't even know that was yours. I thought it was, like, an AI image. Is that your hand,
+actually?
+@13:21 - Ryan Connolly (inthewindowmarketing.com)
+Yeah, that's my hand.
+@13:22 - Fernando Meza
+
+-- 15 of 23 --
+
+You used a metaglasses or something for this?
+@13:25 - Ryan Connolly (inthewindowmarketing.com)
+No, I don't remember how I did it.
+@13:29 - Fernando Meza
+Yeah, because I'm like, I see two hands right here.
+@13:32 - Ryan Connolly (inthewindowmarketing.com)
+I think I, like, propped my phone up or some . I don't know.
+@13:35 - Fernando Meza
+Yeah. Either way, though, this is a good image, by the way, so sorry, I stole it for college.
+@13:39 - Ryan Connolly (inthewindowmarketing.com)
+No, it's good.
+@13:41 - Fernando Meza
+But, yeah, and then, again, do what you please, right? Again, the thing is with me is I just let,
+I just give it a copy.
+Like, it made this for me. Like, it's because that's what was on the copy, and because it
+gives you the image prompts.
+Like, hey, this is a comparison charter. So, like, ironically, those bots, like, already do all the
+hard work. You know what I mean?
+
+-- 16 of 23 --
+
+And then, again, here. Here I just said, I don't know, give me a bunch of before and afters,
+right?
+But yeah, again, that's all I do. It's claw design right now. I know it's ironic because I have the
+lander dashboard and I don't use it.
+But until I fix it, like, dude, unbounce. Like, really? Yeah, unbounce. Like, actually, the only
+reason why I'm doing it today is because I just need to make a CTA change on the PDP for
+lift.
+But yeah, the only downside is, is that I already hit my usage for claw design. So the rest of
+the usage is going to be by API.
+I'm not paying for it, but like, it will start getting expensive. You know what I mean?
+@14:38 - Ryan Connolly (inthewindowmarketing.com)
+Yeah, but I mean, if the agency is paying for it, then whatever.
+@14:40 - Fernando Meza
+yeah, it's probably, it's obviously more return. But like, say you're doing personal , like, you
+might hit like 100 bucks accidentally on a week.
+So again, but once you get it to the template, I think that's the only quote unquote trick I
+have is you just use the same template.
+But I'm like, hey. Here's a copy. Give me another version. And then you just have different
+folders of templates.
+So I should label these like New York. But yeah, so that's it, right? Again, main thing is just I
+just abused all the pobots, which you can see.
+They're all in the funnel, by the way. Because I don't know if you saw the new ones, but when
+they did the creative strategy workshop, they added a bunch more, like the listicle, the
+caveman, top five, art styles.
+I may have helped make those, by the way.
+
+-- 17 of 23 --
+
+@15:29 - Ryan Connolly (inthewindowmarketing.com)
+bridge, page, the squeeze. Oh, yeah.
+@15:32 - Fernando Meza
+Yeah. Oh, yeah. So like the bridge and the top five, these are ones I made, actually, because
+they're actually art type of styles.
+Yeah. So you would, if you want, you can use those. But again, like I've been using, I've just
+been using different bots, right?
+Like I've been using, this is like more art style, but I've actually been using affiliate one
+more, because it's more like, it's, it's, well, it's for, this is for VSL.
+@15:55 - Ryan Connolly (inthewindowmarketing.com)
+This one's for not VSL.
+@15:56 - Fernando Meza
+So for me, either way, you get what I'm playing. I'm being redundant, but yeah, again, you
+know this, probots are dope, right?
+@16:04 - Ryan Connolly (inthewindowmarketing.com)
+And yeah, that's it. yeah. No, this is great.
+@16:07 - Fernando Meza
+Thank you. Just remember the cloud first . Yeah, just those three things, mobile optimized,
+page speed test, and make sure it's cloud-free optimized.
+
+-- 18 of 23 --
+
+If you say those three things, then you just pump out. Like, hey, here's this link, make this
+the new template, or here's a copy, refresh it.
+Again, images, whatever.
+@16:25 - Ryan Connolly (inthewindowmarketing.com)
+How are you testing, what splits are you testing your landers at? Are you just doing
+everything even?
+@16:31 - Fernando Meza
+It depends. like, I did a toxic ones. I did four of them, so I did 25 split, 25 split, 25 split.
+The way, this is where I don't know yet, and especially with Jason's new thing, right, where I
+think when we do those new landers, what I'm testing is only the headline and intro for the
+new iteration.
+Because if I test a top five, a listicle, a long form, it's too many variables. I think you still
+keep it one style and just change the headline and the intro, because those are the most, I
+think, the big swings for a new land.
+@17:00 - Ryan Connolly (inthewindowmarketing.com)
+I think the big swing is you test the format first, so you figure out which format works best,
+and then you test the headline, lead, image.
+@17:10 - Fernando Meza
+Yeah, yeah, that's a good point, because I raw dog it. It's because you already did the New
+York one, so I'm like, oh, it has good landing page guitar, so that means the format is tested
+already.
+So yeah, that's a good point, too, because some styles, like, yeah. But I think this New York ,
+it matches American history a lot, so I think...
+
+-- 19 of 23 --
+
+@17:29 - Ryan Connolly (inthewindowmarketing.com)
+Yeah.
+@17:30 - Fernando Meza
+This is a good template. I think this is a good new template we can just bully, abuse.
+@17:34 - Ryan Connolly (inthewindowmarketing.com)
+It's great. Yeah. I'm going to do one that's, like, more feminine a little bit for TPS to see how
+that does, because I feel like it's, like, kind of masculine, but...
+@17:44 - Fernando Meza
+Yeah, yeah, mine's... Yeah, because I have men and women, but you should definitely do,
+like, skin one. It's weird because, yeah, like, here, it's more like SCR, so I think more...
+@17:53 - Ryan Connolly (inthewindowmarketing.com)
+I also did a Healthline template, like, you know, like, Healthline, the website?
+@17:59 - Fernando Meza
+No, I don't.
+@18:00 - Ryan Connolly (inthewindowmarketing.com)
+Well, Healthine is like a, it's like a medical website, but it's like another clean template.
+
+-- 20 of 23 --
+
+@18:06 - Fernando Meza
+So it's like, there's a bunch of them. Okay, cool. Yeah. I mean, that's the thing. Just steal any
+template.
+just tell Glazada, you design it. Just say, just remember, tell it, because it's going to be like,
+oh, I can't copy it.
+Just keep screaming and it'll copy it. Because they'll tell you like, no, I can't do that. And
+then I'll do it eventually.
+@18:25 - Ryan Connolly (inthewindowmarketing.com)
+Sick.
+@18:26 - Fernando Meza
+Yeah. So that's, that's been my new process as of two days ago. And I just abuse Claude
+design. I don't think nobody else is doing it right now too.
+it's like, it's kind of probably.
+@18:36 - Ryan Connolly (inthewindowmarketing.com)
+Jason wants to go crazy with Landers and I want to, yeah, I want to go crazy with Landers,
+especially for Protoflow.
+Because I think that's the unlock.
+@18:43 - Fernando Meza
+Dude, Landers in general have always been the biggest unlock. It's just the reason why we
+don't do is because we're not spending all day on Unbounce to make one Lander.
+Even if you make the copy in two seconds, the building.
+
+-- 21 of 23 --
+
+@18:56 - Ryan Connolly (inthewindowmarketing.com)
+This is also such an easy thing to teach to the image designers. designers too. So.
+@19:00 - Fernando Meza
+Yeah, that's what Diana, that's why I had Diana do. She had to do the long way, because
+there's no claw design yet.
+The thing is, I abandoned it, because like, I just, I don't know, it wasn't, the landing page CTR
+wasn't there.
+But now I realize, you have to tell it to be page speed.
+@19:16 - Ryan Connolly (inthewindowmarketing.com)
+Yeah.
+@19:16 - Fernando Meza
+If you don't tell it that dude, your landing page CTR drops like crazy.
+@19:20 - Ryan Connolly (inthewindowmarketing.com)
+So yeah, yeah, mine's pretty fast.
+@19:24 - Fernando Meza
+But yeah, that's all I do. Again, I'm not reviewing the copy. That's also the biggest thing too.
+@19:30 - Ryan Connolly (inthewindowmarketing.com)
+
+-- 22 of 23 --
+
+But sweet.
+@19:31 - Fernando Meza
+Yeah.
+@19:33 - Ryan Connolly (inthewindowmarketing.com)
+Appreciate you, man.
+@19:34 - Fernando Meza
+Cool. Cool. All right. I have a call in two minutes. Wish me luck.
+@19:39 - Ryan Connolly (inthewindowmarketing.com)
+Enjoy it. Peace. See you, bro. Thanks.
+OTHER NOTES:
+Make sure you highlight the really important points of the advertorial to drive the point
+home. Use bolds to make it super readable.
+We also have to make sure that Microsoft Clarity is connected to this so we can look at the
+input, like the heat maps and everything like that.
+
+-- 23 of 23 --

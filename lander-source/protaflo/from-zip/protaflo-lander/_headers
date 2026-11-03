@@ -1,0 +1,7 @@
+# Images & static assets: 1 year (immutable). Versioning via filename.
+/assets/*
+  Cache-Control: public, max-age=31536000, immutable
+
+# HTML: short cache so copy changes go live within ~5 min.
+/*.html
+  Cache-Control: public, max-age=300, must-revalidate

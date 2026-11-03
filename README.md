@@ -1,8 +1,23 @@
-# SkyHouse one-shot video
+# SkyHouse creative skills
 
-Ryan's Claude Code skill that turns a finished script into a captioned, lip-synced AI video ad (`final.mp4`) on the Kie API with local ffmpeg. The video model speaks every line in one locked voice, every clip is machine-checked for exact words, same voice and lip sync, misses are rerolled, and a listening judge scores the voice.
+Ryan's Claude Code skills for ad creative: one-shot video, static images, landers and cold hooks. Each lives in `.claude/skills/<name>/SKILL.md` and is the whole method; read it before running anything.
 
-## What is in here
+## The four skills
+
+| Skill | Say | What it does | Needs |
+|---|---|---|---|
+| `oneshot-video` | "one-shot this video" | script in, lip-synced captioned `final.mp4` out on Kie | `tools/video/`, python env below, ffmpeg, whisper.cpp |
+| `strategist-images` | "strategist, make images for this ad" | ad statics, lander heroes, thumbnails, before/after pairs on Kie (gpt-image-2, z-image); `formats.md` is the graded format library | `tools/statics/`, `strategist-references/winning-statics-study.md` |
+| `strategist-lander` + `strategist-lander-qa` | "strategist, build the lander" / "QA this lander" | finished advertorial copy to a deploy-ready static HTML page in the house system, then a fresh-agent inspection; `tools/landers/deploy.sh` pushes to Cloudflare R2 behind a gate | `lander-source/` (Ryan's shipped pages), `strategist-references/swipe-learnings.md`, wrangler + Cloudflare keys in `.env` |
+| `hook-writer` | "hooks for <offer>" | short cold Facebook hooks under five rules in `tools/hooks/rules/short-cold.json`, each passed through a mechanical gate and a stranger judge (headless `claude`, needs `claude login`) | `tools/hooks/`, `offers/_examples/short-cold-approved.md` |
+
+`tools/copygate/` is the cold-read judge the lander and ad lanes call (`python3 tools/copygate/coldread.py judge <file>`), plus three Claude Code hooks. `.claude/settings.example.json` wires them (skill-first gate on copy writes, cold-read note after writes, hook-writer judge stamp on stop); copy it to `.claude/settings.json` if you want the same guardrails.
+
+## One-shot video
+
+Turns a finished script into a captioned, lip-synced AI video ad (`final.mp4`) on the Kie API with local ffmpeg. The video model speaks every line in one locked voice, every clip is machine-checked for exact words, same voice and lip sync, misses are rerolled, and a listening judge scores the voice.
+
+## What is in here (video)
 
 | Path | What |
 |---|---|

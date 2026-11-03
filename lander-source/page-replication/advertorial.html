@@ -1,0 +1,837 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex">
+<title>MOFO &mdash; Reclaim Your Testosterone</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800;900&family=IBM+Plex+Mono:ital,wght@0,500;0,600;1,500&family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+@charset "utf-8";
+html{scroll-behavior:smooth;}
+body{margin:0;padding:0;background:#ffffff;color:#16201b;text-align:center;font-family:'Inter',sans-serif;font-weight:400;}
+.mfp *{box-sizing:border-box;margin:0;padding:0;}
+.mfp section,.mfp header,.mfp footer{display:block;}
+.mfp a{outline:none;color:inherit;text-decoration:none;}
+.mfp img{border:none;height:auto;max-width:100%;}
+.mfp li{list-style:none;}
+.mfp{--ink:#15191c;--cream:#f4f5f6;--paper:#ffffff;--amber:#cc2b22;--amber-deep:#9a1f18;--olive:#3f7a45;--olive-bg:#e7f1e6;--clay:#c0382c;--clay-bg:#fbeceA;--muted:#565b5f;--line:#e3e3e3;--mono:'IBM Plex Mono',ui-monospace,monospace;--head:'Archivo',sans-serif;}
+.mfp .container{width:1170px;max-width:100%;margin:0 auto;padding:0;position:relative;}
+.mfp .header{width:100%;background:#ffffff;border-bottom:1px solid #ececec;}
+.mfp .header .container{display:flex;justify-content:center;align-items:center;min-height:74px;padding:16px 20px;}
+.mfp .logo{display:block;height:50px;width:auto;filter:brightness(0);}
+/* shared */
+.mfp .common-heading{font-family:var(--head);font-size:48px;line-height:1.08;font-weight:700;letter-spacing:-0.02em;color:var(--ink);}
+.mfp .common-heading.lt{color:#fff;}
+.mfp .common-text{font-family:var(--mono);font-size:17px;line-height:1.5;letter-spacing:-0.2px;color:var(--muted);font-weight:500;margin-top:18px;}
+.mfp .common-text.lt{color:#c4cace;}
+.mfp .btnwrap{display:inline-block;width:100%;max-width:560px;margin-top:30px;}
+.mfp .cta{display:flex;justify-content:center;align-items:center;gap:10px;width:100%;min-height:64px;background:var(--amber);color:#fff;font-family:var(--head);font-size:19px;font-weight:700;letter-spacing:.01em;text-transform:uppercase;border-radius:8px;padding:14px 20px;transition:background .15s,transform .15s;box-shadow:0 6px 0 var(--amber-deep);}
+.mfp .cta:hover{background:var(--amber-deep);transform:translateY(2px);box-shadow:0 4px 0 var(--amber-deep);}
+.mfp .btn-sub{font-family:var(--mono);font-size:12px;line-height:1.4;color:var(--muted);margin-top:12px;letter-spacing:.02em;}
+.mfp .btn-sub.lt{color:#b7a991;}
+.mfp .tick,.mfp .cross{display:inline-flex;align-items:center;justify-content:center;flex-shrink:0;border-radius:50%;font-weight:800;color:#fff;}
+.mfp .tick{background:var(--olive);}
+.mfp .cross{background:var(--clay);}
+.mfp .stars{display:inline-flex;gap:3px;color:var(--amber);font-size:18px;letter-spacing:1px;}
+/* banner */
+.mfp .banner-section{width:100%;background:var(--paper);padding:46px 0 60px;}
+.mfp .banner-deal{display:inline-block;background:var(--ink);color:#f1e9da;font-family:var(--mono);font-weight:600;font-size:14px;letter-spacing:.04em;text-transform:uppercase;padding:7px 16px;border-radius:50px;margin-bottom:26px;}
+.mfp .banner-deal b{color:var(--amber);}
+.mfp .banner-heading{font-family:var(--head);font-size:56px;line-height:1.04;font-weight:700;letter-spacing:-0.025em;color:var(--ink);}
+.mfp .banner-heading span{color:var(--amber);}
+.mfp .banner-text1{font-family:var(--mono);font-size:18px;line-height:1.55;letter-spacing:-0.3px;color:#3a342c;font-weight:500;margin-top:22px;}
+.mfp .banner-row{width:100%;max-width:940px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:22px;margin:58px auto 0;}
+.mfp .banner-col{flex:1;min-width:240px;background:#fff;border:2px solid var(--ink);border-radius:14px;overflow:hidden;display:flex;flex-direction:column;}
+.mfp .banner-col-top{padding:30px 18px 18px;text-align:center;flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;}
+.mfp .banner-col-ic{width:56px;height:56px;margin:0 auto 14px;color:var(--clay);}
+.mfp .banner-col-ic svg{width:100%;height:100%;display:block;}
+.mfp .banner-col-heading{font-family:var(--head);font-size:23px;line-height:1.1;font-weight:700;text-transform:uppercase;color:var(--ink);letter-spacing:.01em;}
+.mfp .banner-col-btm{background:var(--ink);padding:14px 12px;min-height:78px;display:flex;align-items:center;justify-content:center;}
+.mfp .banner-col-btm p{font-family:var(--mono);font-size:13.5px;line-height:1.4;color:#e7dccb;font-weight:500;}
+.mfp .banner-text2{font-family:var(--head);font-size:29px;line-height:1.25;font-weight:600;color:var(--ink);margin-top:42px;}
+.mfp .banner-text2 span{background:linear-gradient(transparent 58%,rgba(200,119,46,.32) 58%);padding:0 4px;}
+.mfp .margintop18{margin-top:18px;}
+/* section1 */
+.mfp .section1{width:100%;background:var(--cream);padding:58px 0 66px;}
+.mfp .s1-heading{font-family:var(--head);font-size:34px;line-height:1.1;font-weight:700;text-transform:uppercase;color:var(--ink);display:flex;justify-content:center;align-items:center;gap:18px;max-width:940px;margin:0 auto;letter-spacing:-0.01em;}
+.mfp .s1-heading:before,.mfp .s1-heading:after{content:"";height:0;border-top:2px solid var(--amber);flex-grow:1;}
+.mfp .s1-row{width:100%;max-width:940px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:22px;margin:44px auto 0;}
+.mfp .s1-col{flex:1;min-width:250px;background:#fff;border:2px solid var(--ink);border-radius:14px;display:flex;flex-direction:column;overflow:hidden;}
+.mfp .s1-col-top{padding:22px 18px 24px;}
+.mfp .s1-col-text1{font-family:var(--mono);font-size:17px;line-height:1.4;font-style:italic;font-weight:500;color:var(--ink);}
+.mfp .s1-col-imgbx{padding:0 16px;}
+.mfp .s1-col-img{display:block;margin:0 auto;width:100%;border-radius:10px;}
+.mfp .s1-col-btm{padding:0 22px 22px;border-top:2px solid var(--line);margin-top:18px;position:relative;}
+.mfp .s1-col-cross{width:46px;height:46px;margin:-23px auto 0;}
+.mfp .s1-col-cross .cross{width:46px;height:46px;font-size:22px;border:4px solid #fff;}
+.mfp .s1-col-text2{font-size:16px;line-height:1.45;color:#3a342c;margin-top:14px;}
+/* section2 */
+.mfp .section2{width:100%;background:var(--paper);padding:60px 0 70px;}
+.mfp .compare{width:100%;max-width:840px;margin:42px auto 0;display:flex;border:2px solid var(--ink);border-radius:14px;overflow:hidden;}
+.mfp .cc{flex:1;}
+.mfp .cc1{flex:0 0 30%;}
+.mfp .cc-head{height:150px;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:8px;padding:14px 10px;font-family:var(--head);font-weight:700;font-size:19px;line-height:1.15;text-transform:uppercase;}
+.mfp .cc1 .cc-head{background:transparent;}
+.mfp .cc2 .cc-head{background:#6b7178;color:#fff;}
+.mfp .cc3 .cc-head{background:var(--olive);color:#fff;}
+.mfp .cc-bottle{width:42px;height:54px;}
+.mfp .cc ul li{height:88px;display:flex;flex-wrap:wrap;align-items:center;justify-content:center;text-align:center;padding:8px 12px;font-size:16px;line-height:1.3;border-top:1px solid var(--line);}
+.mfp .cc1 ul li{justify-content:flex-start;text-align:left;font-family:var(--head);font-weight:600;font-size:18px;color:var(--ink);}
+.mfp .cc2 ul li{background:#eef0f2;color:var(--muted);}
+.mfp .cc3 ul li{background:#eaf5e7;color:var(--ink);font-weight:600;}
+.mfp .cc3{border-left:3px solid var(--olive);border-right:3px solid var(--olive);box-shadow:0 0 22px rgba(63,122,69,.22);}
+/* section3 */
+.mfp .section3{width:100%;background:var(--ink);padding:60px 0 0;}
+.mfp .pc{width:100%;max-width:940px;margin:40px auto 0;border-radius:14px;overflow:hidden;border:2px solid #2f3a31;}
+.mfp .pc-heads{display:flex;}
+.mfp .pc-heads div{width:50%;text-align:center;padding:16px;font-family:var(--head);font-size:22px;font-weight:700;text-transform:uppercase;color:#fff;}
+.mfp .pc-h-pro{background:var(--olive);}
+.mfp .pc-h-con{background:var(--clay);}
+.mfp .pc-row{display:flex;border-top:2px solid #2f3a31;}
+.mfp .pc-row li{width:50%;display:flex;gap:12px;align-items:center;text-align:left;padding:18px 16px;}
+.mfp .pc-row .tick,.mfp .pc-row .cross{width:26px;height:26px;font-size:14px;}
+.mfp .pc-row li p{font-size:17px;line-height:1.35;color:var(--ink);font-weight:500;}
+.mfp .pc-pro{background:var(--olive-bg);}
+.mfp .pc-con{background:var(--clay-bg);}
+.mfp .s3-text1{font-family:var(--head);font-size:23px;line-height:1.3;font-weight:600;color:#fff;margin-top:54px;}
+.mfp .s3-hand{display:block;margin:36px auto 0;width:1050px;max-width:100%;border-radius:14px 14px 0 0;}
+/* section4 */
+.mfp .section4{width:100%;background:var(--cream);padding:60px 0 70px;}
+.mfp .s4-row{width:100%;max-width:940px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:22px;margin:48px auto 0;}
+.mfp .s4-col{flex:1;min-width:270px;background:#fff;border-radius:14px;border:2px solid var(--ink);padding:24px 22px;text-align:left;display:flex;flex-direction:column;}
+.mfp .s4-num{font-family:var(--head);font-size:46px;line-height:1;font-weight:700;color:var(--amber);}
+.mfp .s4-t1{font-size:17px;line-height:1.35;color:var(--ink);font-weight:600;margin-top:12px;}
+.mfp .s4-t2{font-family:var(--mono);font-size:12.5px;line-height:1.4;color:var(--muted);margin-top:16px;padding-top:14px;border-top:2px solid var(--line);}
+.mfp .s4-src{display:inline-block;margin-top:10px;font-family:var(--mono);font-size:11px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--olive);background:var(--olive-bg);padding:4px 10px;border-radius:5px;}
+/* section5 */
+.mfp .section5{width:100%;background:var(--paper);padding:60px 0 70px;}
+.mfp .jbox{width:100%;max-width:840px;display:flex;flex-direction:column;gap:24px;margin:38px auto 0;}
+.mfp .jrow{box-shadow:0 4px 20px rgba(22,32,27,.08);border-radius:12px;overflow:hidden;text-align:left;border:1px solid var(--line);}
+.mfp .jhead{padding:12px 18px;display:flex;align-items:center;gap:12px;}
+.mfp .jhead .jname{font-family:var(--head);font-weight:700;font-size:16px;letter-spacing:.02em;color:#fff;}
+.mfp .jhead .jtag{font-family:var(--mono);font-size:11px;color:rgba(255,255,255,.75);margin-left:auto;text-transform:uppercase;letter-spacing:.05em;}
+.mfp .jhead-a{background:#2f6d63;}
+.mfp .jhead-b{background:#244a7a;}
+.mfp .jhead-c{background:#5a4a78;}
+.mfp .jhead-d{background:#7a5320;}
+.mfp .jdot{width:34px;height:34px;border-radius:50%;border:1px solid rgba(255,255,255,.6);display:flex;align-items:center;justify-content:center;color:#fff;}
+.mfp .jinfo{background:#fff;padding:16px 22px 20px;}
+.mfp .jt1{font-size:19px;line-height:1.55;color:#1a1a1a;font-weight:500;font-style:italic;}
+.mfp .jt1 span{background:rgba(200,119,46,.26);box-decoration-break:clone;-webkit-box-decoration-break:clone;padding:0 4px;}
+.mfp .jt2{font-family:var(--mono);font-size:12px;line-height:1.4;color:#8a8478;font-style:italic;margin-top:14px;}
+/* section6 */
+.mfp .section6{width:100%;background:var(--ink);padding:60px 0 70px;overflow-x:clip;}
+.mfp .ing-outer{width:100%;margin-top:42px;position:relative;}
+.mfp .ing-prod{position:absolute;right:-90px;top:-20px;width:320px;filter:drop-shadow(0 18px 30px rgba(0,0,0,.5));}
+.mfp .ing-box{width:100%;max-width:820px;display:flex;flex-direction:column;gap:14px;margin:0 auto;}
+.mfp .ing-row{display:flex;border:1px solid #2f3a31;border-radius:12px;overflow:hidden;background:#1b261f;}
+.mfp .ing-imgbx{width:160px;flex-shrink:0;display:flex;align-items:center;justify-content:center;padding:14px;}
+.mfp .ing-img{width:100%;border-radius:10px;}
+.mfp .ing-info{text-align:left;padding:20px 30px;border-left:1px solid #2f3a31;}
+.mfp .ing-hrow{display:flex;flex-direction:column;align-items:flex-start;gap:4px;}
+.mfp .ing-h{font-family:var(--head);font-size:25px;font-weight:800;text-transform:uppercase;color:#fff;letter-spacing:.01em;line-height:1.1;}
+.mfp .ing-sub{display:block;font-family:var(--head);font-size:16px;line-height:1.15;font-weight:700;color:var(--amber);background:none;padding:0;border-radius:0;text-transform:none;margin-top:3px;}
+.mfp .ing-text{font-size:16px;line-height:1.5;color:#c4cace;margin-top:13px;}
+/* section7 timeline */
+.mfp .section7{width:100%;background:var(--paper);padding:60px 0 70px;overflow:hidden;}
+.mfp .s7-inner{display:inline-block;width:100%;max-width:940px;position:relative;}
+.mfp .timeline__mid{margin:30px auto 0;width:100%;display:flex;flex-direction:column;}
+.mfp .timeline__mid_row{width:100%;position:relative;display:flex;flex-wrap:wrap;justify-content:space-between;padding:40px 0;}
+.mfp .timeline__mid_row.reverse{flex-direction:row-reverse;}
+.mfp .timeline__mid_row.timeline__entry_point:before{position:absolute;top:60px;content:'';border-right:4px solid var(--amber);left:50%;bottom:0;margin-left:-2px;height:var(--timeline-height-dynamic,0px);z-index:1;transition:height .3s ease-out;}
+.mfp .timeline__mid_row.timeline__entry_point:after{position:absolute;top:60px;content:'';border-right:4px solid var(--line);left:50%;bottom:0;margin-left:-2px;height:var(--timeline-height,0px);z-index:0;}
+.mfp .timeline__row_center_step{position:absolute;left:50%;margin-left:-20px;width:40px;height:40px;border-radius:50%;z-index:2;border:none;background:var(--ink);transform:scale(.95);transition:all .3s ease-out;}
+.mfp .timeline__row_center_step.viewing{background:var(--amber);transform:scale(1);}
+.mfp .timeline__row_center_step.viewing:before{content:'';position:absolute;left:14px;top:9px;width:8px;height:15px;border:solid #fff;border-width:0 3px 3px 0;transform:rotate(45deg);}
+.mfp .tl-weekbx{width:42%;text-align:right;margin-top:4px;}
+.mfp .timeline__mid_row.reverse .tl-weekbx{text-align:left;}
+.mfp .tl-week{font-family:var(--head);font-size:29px;line-height:1.15;font-weight:700;color:var(--ink);display:inline-flex;align-items:center;gap:12px;}
+.mfp .tl-cal{width:32px;height:32px;color:var(--amber);}
+.mfp .tl-content{width:43%;border-radius:12px;position:relative;background:#fff;border:2px solid var(--ink);padding:30px 24px;text-align:left;opacity:0;transition:opacity .5s ease-out,transform .5s ease-out;transform:translateX(50px);}
+.mfp .timeline__mid_row.reverse .tl-content{transform:translateX(-50px);}
+.mfp .tl-content.viewing{opacity:1;transform:translateX(0);}
+.mfp .tl-h{font-family:var(--head);font-size:25px;line-height:1.15;font-weight:700;color:var(--ink);}
+.mfp .tl-p{font-size:17px;line-height:1.45;color:#3a342c;margin-top:10px;}
+/* receipt */
+.mfp .receipt-box{width:100%;background:var(--ink);border-radius:16px;padding:24px;margin-top:62px;}
+.mfp .receipt-inner{border:3px solid var(--amber);border-radius:10px;padding:44px 48px 56px;}
+.mfp .receipt-head{font-family:var(--head);font-size:46px;line-height:1.1;font-weight:700;color:#fff;letter-spacing:-0.02em;}
+.mfp .receipt-row{display:flex;flex-wrap:wrap;justify-content:center;gap:26px;margin:54px auto 0;}
+.mfp .rcol{flex:1;min-width:300px;max-width:460px;background:#f6f6f6;border-radius:12px;padding:30px 28px 34px;box-shadow:0 10px 30px rgba(0,0,0,.3);}
+.mfp .rcol-h{font-family:var(--head);font-size:27px;line-height:1.15;font-weight:700;text-transform:uppercase;color:var(--ink);border-bottom:2px dashed #c9c9c9;padding-bottom:18px;}
+.mfp .rcol-h span{font-family:var(--mono);font-size:15px;text-transform:none;font-weight:500;color:var(--muted);display:block;margin-top:4px;}
+.mfp .rlist{padding:18px 4px;}
+.mfp .rlist li{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:10px 0;font-family:var(--mono);font-size:17px;font-weight:500;color:var(--ink);}
+.mfp .rcol2 .rlist li{border-bottom:2px dashed #c9c9c9;}
+.mfp .rcol2 .rlist li:last-child{border-bottom:none;}
+.mfp .rtot{border-top:2px dashed #c9c9c9;border-bottom:2px dashed #c9c9c9;padding:14px 4px;display:flex;justify-content:space-between;align-items:center;}
+.mfp .rtot-l{font-family:var(--mono);font-size:18px;font-weight:600;text-transform:uppercase;color:var(--ink);}
+.mfp .rprice{font-family:var(--head);font-weight:700;color:#fff;background:var(--clay);border-radius:50px;padding:12px 22px;font-size:26px;}
+.mfp .rprice small{font-size:15px;font-weight:500;}
+.mfp .rcol2 .rprice{background:var(--olive);font-size:40px;padding:12px 28px;}
+.mfp .rcol2 .rprice small{font-size:20px;}
+.mfp .rfoot{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-top:22px;padding:0 4px;}
+.mfp .rfoot .rf{display:flex;align-items:center;gap:7px;font-family:var(--mono);font-size:15px;font-weight:500;color:var(--ink);}
+.mfp .rfoot svg{width:22px;height:22px;color:var(--amber-deep);flex-shrink:0;}
+.mfp .rprod{display:block;margin:14px auto 0;width:84px;filter:drop-shadow(0 -2px 10px rgba(0,0,0,.3));}
+.mfp .receipt-text1{font-family:var(--head);font-size:38px;line-height:1.3;font-weight:600;color:var(--amber);margin:54px 0 8px;}
+/* section8 testimonials */
+.mfp .section8{width:100%;background:var(--cream);padding:60px 0 70px;}
+.mfp .testi-row{width:100%;display:flex;flex-wrap:wrap;justify-content:space-between;gap:24px;margin:48px auto 0;}
+.mfp .testi-col{flex:1;min-width:280px;background:#fff;border:2px solid var(--ink);border-radius:14px;box-shadow:0 8px 0 rgba(200,119,46,.25);padding:28px 26px;display:flex;flex-direction:column;text-align:left;position:relative;}
+.mfp .testi-q{position:absolute;top:-18px;right:24px;font-family:var(--head);font-size:64px;line-height:1;color:var(--amber);}
+.mfp .testi-t1{font-size:18px;line-height:1.45;color:var(--ink);font-style:italic;margin-top:12px;}
+.mfp .testi-v{display:flex;align-items:center;gap:14px;margin-top:24px;}
+.mfp .testi-img{width:48px;height:48px;border-radius:50%;object-fit:cover;flex-shrink:0;}
+.mfp .testi-name{font-size:14px;font-weight:700;color:var(--ink);}
+.mfp .testi-vp{font-family:var(--mono);font-size:11.5px;color:var(--olive);font-weight:500;display:inline-flex;align-items:center;gap:5px;margin-top:2px;}
+.mfp .testi-vp svg{width:13px;height:13px;}
+/* section9 */
+.mfp .section9{width:100%;background:var(--ink);padding:64px 0;overflow:hidden;}
+.mfp .s9-img1{position:absolute;left:-70px;top:40px;width:300px;border-radius:14px;object-fit:cover;}
+.mfp .s9-img2{position:absolute;right:-110px;top:70px;width:380px;border-radius:14px;object-fit:cover;}
+.mfp .wbox{display:flex;flex-wrap:wrap;width:100%;max-width:960px;margin:40px auto 0;border:2px solid #2f3a31;border-radius:14px;overflow:hidden;position:relative;z-index:2;}
+.mfp .wcol1{width:50%;min-width:300px;background:var(--clay-bg);flex:1;}
+.mfp .wcol1-in{padding:24px 28px;text-align:left;border-bottom:1px solid #d9c6bd;}
+.mfp .wcol1-in:last-child{border:none;}
+.mfp .wcol1-in h3{font-family:var(--head);font-size:22px;line-height:1.2;color:var(--ink);font-weight:700;}
+.mfp .wcol1-in p{font-size:17px;line-height:1.35;color:#4a4038;margin-top:8px;}
+.mfp .wcol2{width:50%;min-width:300px;background:var(--olive-bg);flex:1;padding:24px 32px 28px;text-align:left;}
+.mfp .wmid{flex:0 0 156px;display:flex;align-items:center;justify-content:center;background:#11150f;padding:16px;border-left:2px solid #2f3a31;border-right:2px solid #2f3a31;}
+.mfp .wmid-img{width:122px;filter:drop-shadow(0 12px 20px rgba(0,0,0,.55));}
+.mfp .wor{font-family:var(--head);font-size:24px;font-weight:700;color:var(--ink);padding-left:46px;}
+.mfp .wlist{display:flex;flex-direction:column;gap:24px;margin-top:14px;}
+.mfp .wlist li{position:relative;padding-left:46px;text-align:left;}
+.mfp .wlist li:before{position:absolute;left:8px;top:14px;bottom:-36px;border-left:2px dotted var(--ink);content:"";}
+.mfp .wlist li:last-child:before{display:none;}
+.mfp .wlist li:after{position:absolute;left:18px;top:18px;width:26px;border-bottom:2px dotted var(--ink);content:"";}
+.mfp .wdot{position:absolute;left:0;top:8px;width:18px;height:18px;background:var(--ink);border-radius:50%;border:5px solid var(--amber);}
+.mfp .wnum{display:inline-block;background:var(--amber);font-family:var(--head);font-size:20px;font-weight:700;color:#fff;border-radius:6px;padding:4px 12px;}
+.mfp .wabout{font-size:17px;line-height:1.35;color:var(--ink);margin-top:6px;}
+.mfp .wrefund{font-size:17px;line-height:1.45;color:var(--ink);font-weight:600;margin-top:24px;text-align:left;}
+/* section10 offer */
+.mfp .section10{width:100%;background:var(--paper);padding:64px 0;}
+.mfp .offer-box{display:inline-block;width:100%;max-width:980px;border:3px solid var(--ink);border-radius:16px;overflow:hidden;margin-top:48px;}
+.mfp .offer-top{background:#fff;padding:30px 28px 40px;}
+.mfp .offer-wrap{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:20px;}
+.mfp .offer-list{flex:1;min-width:300px;}
+.mfp .offer-list li{display:flex;gap:16px;align-items:center;text-align:left;padding:18px 0;border-bottom:1px solid var(--line);}
+.mfp .offer-list li:last-child{border:none;}
+.mfp .offer-ic{width:54px;height:54px;flex-shrink:0;border-radius:50%;background:var(--cream);display:flex;align-items:center;justify-content:center;color:var(--amber-deep);}
+.mfp .offer-ic svg{width:28px;height:28px;}
+.mfp .offer-c h3{font-family:var(--head);font-size:21px;line-height:1.2;color:var(--ink);font-weight:700;}
+.mfp .offer-c p{font-size:16px;line-height:1.35;color:var(--muted);margin-top:4px;}
+.mfp .offer-prod{flex:0 0 36%;min-width:200px;text-align:center;}
+.mfp .offer-prod img{width:100%;max-width:240px;filter:drop-shadow(0 18px 22px rgba(0,0,0,.28));}
+.mfp .offer-btm{background:var(--ink);padding:30px 26px 44px;text-align:center;}
+.mfp .offer-case{font-size:18px;line-height:1.5;color:#e7dccb;margin-top:10px;}
+.mfp .red-c{color:#e98b6e;font-weight:700;text-transform:uppercase;}
+.mfp .grn-c{color:#9fd08a;font-weight:700;text-transform:uppercase;}
+/* section11 guarantee */
+.mfp .section11{width:100%;background:var(--ink);padding:64px 0;}
+.mfp .g-box{display:inline-block;width:100%;max-width:980px;border:2px solid var(--amber);border-radius:16px;overflow:hidden;margin-top:38px;}
+.mfp .g-top{background:var(--amber);padding:30px 60px;}
+.mfp .g-top-in{display:flex;align-items:center;gap:30px;flex-wrap:wrap;justify-content:center;}
+.mfp .g-seal{width:150px;height:150px;flex-shrink:0;border-radius:50%;background:#fff;border:4px dashed var(--amber-deep);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;color:var(--amber-deep);}
+.mfp .g-seal .gs1{font-family:var(--head);font-size:38px;font-weight:700;line-height:1;}
+.mfp .g-seal .gs2{font-family:'Inter',sans-serif;font-size:12px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;margin-top:4px;}
+.mfp .g-content{text-align:left;flex:1;min-width:260px;}
+.mfp .g-text{font-size:23px;line-height:1.3;color:var(--ink);font-weight:500;margin-top:14px;}
+.mfp .g-text.mt0{margin-top:0;}
+.mfp .g-text b{color:var(--amber);font-family:var(--head);font-weight:800;}
+.mfp .g-btm{background:var(--ink);padding:48px 60px 32px;}
+.mfp .g-terms{display:flex;flex-wrap:wrap;justify-content:center;gap:22px;}
+.mfp .g-tcol{flex:1;min-width:200px;max-width:280px;background:#fff;border-radius:12px;overflow:visible;}
+.mfp .g-tcol-top{background:var(--ink);padding:30px 14px 20px;position:relative;border-radius:12px 12px 0 0;}
+.mfp .g-check{width:34px;height:34px;position:absolute;left:50%;top:-17px;margin-left:-17px;border-radius:50%;background:var(--amber);border:4px solid var(--ink);display:flex;align-items:center;justify-content:center;color:#fff;}
+.mfp .g-tcol-top h3{font-family:var(--head);font-size:21px;font-weight:700;color:#fff;text-transform:uppercase;letter-spacing:.02em;}
+.mfp .g-tcol-btm{padding:14px 12px;}
+.mfp .g-tcol-btm p{font-family:'Inter',sans-serif;font-size:15px;line-height:1.45;color:var(--ink);font-weight:500;}
+.mfp .g-bt{font-size:16px;line-height:1.5;color:#c4cace;margin-top:26px;}
+/* faq */
+.mfp .faq-section{width:100%;background:var(--paper);padding:60px 0;}
+.mfp .faq-box{display:inline-block;width:100%;max-width:840px;margin:24px 0;}
+.mfp .faq-row{width:100%;margin-top:16px;border:2px solid var(--ink);border-radius:12px;text-align:left;overflow:hidden;background:#fff;}
+.mfp .accordion{width:100%;font-family:var(--head);font-size:20px;line-height:1.3;color:var(--ink);font-weight:700;padding:22px 56px 22px 24px;cursor:pointer;position:relative;}
+.mfp .accordion::before,.mfp .accordion::after{content:'';position:absolute;top:50%;background:var(--amber);border-radius:2px;}
+.mfp .accordion::before{right:24px;width:16px;height:3px;transform:translateY(-50%);}
+.mfp .accordion::after{right:30.5px;width:3px;height:16px;transform:translateY(-50%) scaleY(1);transform-origin:center;transition:transform .35s ease;}
+.mfp .accordion.accordion-open::after{transform:translateY(-50%) scaleY(0);}
+.mfp .acdn-content{width:100%;padding:0 24px;}
+.mfp .acdn-content p{font-size:17px;line-height:1.55;color:#3a342c;margin-bottom:22px;}
+.mfp .acdn-content p b{color:var(--ink);}
+/* footer */
+.mfp .footer{width:100%;background:var(--ink);padding:40px 0;}
+.mfp .footer-logo{display:block;margin:0 auto 26px;width:150px;}
+.mfp .footer-txt{font-family:var(--mono);font-size:13.5px;line-height:1.6;color:#9a907f;margin-top:12px;}
+.mfp .footer-txt a{color:#c9bca7;padding:0 8px;}
+.mfp .hidemob{display:inline;}
+.mfp .formob{display:none;}
+@media only screen and (max-width:1200px){
+.mfp .container{width:1004px;}
+.mfp .banner-heading{font-size:50px;}
+.mfp .common-heading{font-size:42px;}
+.mfp .receipt-head{font-size:40px;}
+.mfp .ing-prod{width:280px;right:-50px;}
+}
+@media only screen and (max-width:1023px){
+.mfp .container{width:760px;}
+.mfp .banner-heading{font-size:42px;}
+.mfp .banner-row,.mfp .s1-row{gap:16px;}
+.mfp .common-heading{font-size:36px;}
+.mfp .s1-heading{font-size:28px;}
+.mfp .compare{max-width:100%;}
+.mfp .cc ul li{font-size:14px;}
+.mfp .cc1 ul li{font-size:16px;}
+.mfp .pc-row li p{font-size:15px;}
+.mfp .ing-prod{position:static;display:block;margin:0 auto 20px;width:300px;}
+.mfp .ing-box{margin:0 auto;}
+.mfp .receipt-inner{padding:30px 24px 40px;}
+.mfp .receipt-head{font-size:34px;}
+.mfp .s9-img1,.mfp .s9-img2{display:none;}
+.mfp .g-top{padding:30px 30px;}
+.mfp .g-btm{padding:40px 24px 28px;}
+}
+@media only screen and (max-width:767px){
+.mfp .container{width:100%;padding:0 16px;}
+.mfp .hidemob{display:none;}
+.mfp .formob{display:block;}
+.mfp .header .container{min-height:58px;padding:12px 16px;}
+.mfp .logo{height:48px;width:auto;}
+.mfp .banner-section{padding:26px 0 34px;}
+.mfp .banner-deal{font-size:11px;padding:5px 12px;margin-bottom:18px;}
+.mfp .banner-col-ic{width:42px;height:42px;margin-bottom:9px;}
+.mfp .banner-col-top{padding:20px 14px 14px;}
+.mfp .banner-col-heading{font-size:19px;}
+.mfp .banner-col-btm{min-height:0;padding:11px 12px;}
+.mfp .banner-col-btm p{font-size:13px;}
+.mfp .banner-row{gap:14px;margin:28px auto 0;}
+.mfp .section1,.mfp .section2,.mfp .section3,.mfp .section4,.mfp .section5,.mfp .section6,.mfp .section7,.mfp .section8,.mfp .section9,.mfp .section10,.mfp .section11,.mfp .faq-section{padding-top:34px;padding-bottom:38px;}
+.mfp .banner-heading{font-size:31px;}
+.mfp .banner-text1{font-size:15px;}
+.mfp .banner-row{flex-direction:column;margin:40px auto 0;}
+.mfp .banner-col{min-width:0;}
+.mfp .banner-text2{font-size:21px;margin-top:30px;}
+.mfp .common-heading{font-size:28px;}
+.mfp .common-text{font-size:15px;}
+.mfp .s1-heading{font-size:22px;}
+.mfp .s1-heading:before,.mfp .s1-heading:after{display:none;}
+.mfp .s1-row{flex-direction:column;}
+.mfp .s1-col{min-width:0;}
+.mfp .compare{margin-top:28px;}
+.mfp .cc-head{height:104px;font-size:13px;}
+.mfp .cc ul li{height:80px;font-size:12.5px;padding:6px 7px;}
+.mfp .cc1 ul li{font-size:13.5px;padding:6px 9px;}
+.mfp .cc-bottle{width:32px;height:42px;}
+.mfp .pc-heads div{font-size:16px;padding:14px 8px;}
+.mfp .pc-row li{padding:14px 10px;gap:9px;}
+.mfp .pc-row li p{font-size:14px;}
+.mfp .s3-text1{font-size:18px;margin-top:30px;}
+.mfp .s4-row{flex-direction:column;margin-top:28px;}
+.mfp .s4-col{min-width:0;}
+.mfp .jt1{font-size:16px;}
+.mfp .ing-row{flex-direction:column;}
+.mfp .ing-imgbx{width:100%;}
+.mfp .ing-img{width:140px;}
+.mfp .ing-info{border-left:none;border-top:1px solid #2f3a31;padding:18px 18px;}
+.mfp .ing-prod{width:220px;}
+.mfp .timeline__mid_row{flex-direction:column !important;padding:0 0 0 50px;margin-top:36px;}
+.mfp .timeline__mid_row.timeline__entry_point:before{top:20px;left:14px;}
+.mfp .timeline__mid_row.timeline__entry_point:after{left:14px;top:25px;}
+.mfp .timeline__row_center_step{left:0;margin-left:0;width:30px;height:30px;top:0;}
+.mfp .timeline__row_center_step.viewing:before{left:10px;top:6px;width:7px;height:13px;}
+.mfp .tl-weekbx{width:100%;text-align:left !important;}
+.mfp .tl-week{font-size:23px;}
+.mfp .tl-content{width:100%;margin-top:14px;transform:none !important;padding:18px 18px;}
+.mfp .receipt-box{margin-top:40px;padding:12px;}
+.mfp .receipt-inner{padding:24px 16px 34px;}
+.mfp .receipt-head{font-size:26px;}
+.mfp .receipt-row{flex-direction:column;margin-top:32px;}
+.mfp .rcol{min-width:0;max-width:100%;}
+.mfp .receipt-text1{font-size:22px;margin-top:32px;}
+.mfp .testi-row{flex-direction:column;margin-top:28px;}
+.mfp .testi-col{min-width:0;}
+.mfp .wbox{flex-direction:column;}
+.mfp .wcol1,.mfp .wcol2{width:100%;}
+.mfp .wmid{width:100%;border-left:none;border-right:none;border-bottom:2px solid #2f3a31;padding:22px;}
+.mfp .wmid-img{width:118px;}
+.mfp .wcol1{border-bottom:2px solid #2f3a31;}
+.mfp .offer-wrap{flex-direction:column-reverse;}
+.mfp .offer-prod{flex:1;}
+.mfp .offer-prod img{max-width:160px;}
+.mfp .offer-list{width:100%;}
+.mfp .g-top{padding:24px 18px;}
+.mfp .g-seal{width:120px;height:120px;}
+.mfp .g-content{text-align:center;}
+.mfp .g-text{font-size:18px;}
+.mfp .g-btm{padding:36px 14px 24px;}
+.mfp .g-terms{flex-direction:column;align-items:center;}
+.mfp .g-tcol{max-width:100%;width:100%;}
+.mfp .accordion{font-size:17px;padding:18px 48px 18px 16px;}
+.mfp .acdn-content{padding:0 16px;}
+.mfp .footer{padding:28px 0;}
+.mfp .footer-logo{width:120px;}
+}
+</style>
+<script type="text/javascript">
+/* Microsoft Clarity — replace MOFO_CLARITY_ID with your real Clarity project ID to activate heatmaps/recordings */
+(function(c,l,a,r,i,t,y){if(!i||i==="MOFO_CLARITY_ID")return;c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window,document,"clarity","script","MOFO_CLARITY_ID");
+</script>
+</head>
+<body>
+<div class="mfp">
+<header class="header">
+  <div class="container">
+    <img loading="eager" fetchpriority="high" decoding="async" src="https://ancestralsupplements.com/cdn/shop/files/Logo-Ancestral-Supplements_500x_403d6664-777d-4291-a9bc-0fe453883ac4.png?v=1699962053" alt="Ancestral Supplements" class="logo">
+  </div>
+</header>
+
+<section class="banner-section">
+  <div class="container">
+    <p class="banner-deal">Limited-Time Offer · <b>Save 20% + Free Gifts</b></p>
+    <p class="banner-heading">Your Body Can’t Make Testosterone <br>From Herbs. <span>It Needs Raw Materials.</span></p>
+    <p class="banner-text1">You don’t need herbs that “support” testosterone. You need the nutrients your body <br class="hidemob">uses to BUILD it, and you’ve been missing every one of them.</p>
+    <div class="banner-row">
+      <div class="banner-col" style="min-width:168px;flex:1;">
+        <div class="banner-col-top">
+          <div class="banner-col-ic" style="color:var(--amber);"><svg viewBox="0 0 48 48" fill="none"><path d="M24 26a8 8 0 0 1 8 8H16a8 8 0 0 1 8-8Z" stroke="currentColor" stroke-width="3" stroke-linejoin="round"/><path d="M24 18V8m-9 13-3-3m24 3 3-3M6 34h6m24 0h6" stroke="currentColor" stroke-width="3" stroke-linecap="round"/></svg></div>
+          <p class="banner-col-heading">Morning Wood Daily</p>
+        </div>
+        <div class="banner-col-btm"><p>Wake up hard like you’re 25 again</p></div>
+      </div>
+      <div class="banner-col" style="min-width:168px;flex:1;">
+        <div class="banner-col-top">
+          <div class="banner-col-ic" style="color:var(--amber);"><svg viewBox="0 0 48 48" fill="none"><path d="M24 6c2 7-5 9-5 16a5 5 0 0 0 10 0c0-2-1-4-1-4 4 2 7 6 7 12a11 11 0 0 1-22 0C20 18 24 14 24 6Z" stroke="currentColor" stroke-width="3" stroke-linejoin="round"/></svg></div>
+          <p class="banner-col-heading">Beer Belly Melting</p>
+        </div>
+        <div class="banner-col-btm"><p>Fat burning off your waist and chest</p></div>
+      </div>
+      <div class="banner-col" style="min-width:168px;flex:1;">
+        <div class="banner-col-top">
+          <div class="banner-col-ic" style="color:var(--amber);"><svg viewBox="0 0 48 48" fill="none"><path d="M6 20v8m4-12v16m28-16v16m4-12v8M14 22h20M14 26h20" stroke="currentColor" stroke-width="3" stroke-linecap="round"/></svg></div>
+          <p class="banner-col-heading">Strength Exploding</p>
+        </div>
+        <div class="banner-col-btm"><p>Adding weight to the bar every week</p></div>
+      </div>
+      <div class="banner-col" style="min-width:168px;flex:1;">
+        <div class="banner-col-top">
+          <div class="banner-col-ic" style="color:var(--amber);"><svg viewBox="0 0 48 48" fill="none"><path d="M26 4 10 28h12l-2 16 18-26H26l2-14Z" stroke="currentColor" stroke-width="3" stroke-linejoin="round"/></svg></div>
+          <p class="banner-col-heading">Energy All Day</p>
+        </div>
+        <div class="banner-col-btm"><p>No more 3 PM crash</p></div>
+      </div>
+      <div class="banner-col" style="min-width:168px;flex:1;">
+        <div class="banner-col-top">
+          <div class="banner-col-ic" style="color:var(--amber);"><svg viewBox="0 0 48 48" fill="none"><path d="M24 42S6 31 6 18a9 9 0 0 1 18-4 9 9 0 0 1 18 4c0 13-18 24-18 24Z" stroke="currentColor" stroke-width="3" stroke-linejoin="round"/></svg></div>
+          <p class="banner-col-heading">Sex Drive Back</p>
+        </div>
+        <div class="banner-col-btm"><p>Confidence in bed, performance on lock</p></div>
+      </div>
+    </div>
+    <div class="btnwrap">
+      <a href="https://trk.skatrk02.com/click" class="cta">Get MOFO, 365-Day Guarantee</a>
+      <p class="btn-sub">365-Day Money-Back · 100,000+ Men · Grass-Fed New Zealand · Freeze-Dried</p>
+    </div>
+  </div>
+</section>
+
+<section class="section1">
+  <div class="container">
+    <p class="common-heading">Real Men. <br class="formob">Real Results.</p>
+    <div style="display:flex;flex-wrap:wrap;gap:24px;max-width:980px;margin:38px auto 0;">
+      <div style="flex:1;min-width:280px;background:#fff;border:2px solid var(--ink);border-radius:16px;padding:32px 26px;text-align:center;box-shadow:0 10px 0 rgba(204,43,34,.16);display:flex;flex-direction:column;align-items:center;">
+        <img loading="lazy" decoding="async" src="https://info.theamericanjournal.org/MOFO-SP1/image13.jpg" alt="" style="width:94px;height:94px;border-radius:50%;object-fit:cover;">
+        <span class="stars" style="font-size:19px;margin-top:15px;">★★★★★</span>
+        <p style="font-family:'Inter',sans-serif;font-style:italic;font-size:17px;line-height:1.5;color:var(--ink);margin-top:13px;">“Within 3 days I wasn’t dragging anymore. By day 7 I had more energy than I’ve had in years.”</p>
+        <div style="font-family:var(--head);font-weight:700;font-size:15px;color:var(--ink);margin-top:15px;">Kevin W., verified buyer, 42</div>
+      </div>
+      <div style="flex:1;min-width:280px;background:#fff;border:2px solid var(--ink);border-radius:16px;padding:32px 26px;text-align:center;box-shadow:0 10px 0 rgba(204,43,34,.16);display:flex;flex-direction:column;align-items:center;">
+        <img loading="lazy" decoding="async" src="https://info.theamericanjournal.org/MOFO-SP1/image16.jpg" alt="" style="width:94px;height:94px;border-radius:50%;object-fit:cover;">
+        <span class="stars" style="font-size:19px;margin-top:15px;">★★★★★</span>
+        <p style="font-family:'Inter',sans-serif;font-style:italic;font-size:17px;line-height:1.5;color:var(--ink);margin-top:13px;">“Week 2 I woke up hard for the first time in months. By week 3 it was almost every morning.”</p>
+        <div style="font-family:var(--head);font-weight:700;font-size:15px;color:var(--ink);margin-top:15px;">John O., verified buyer, 47</div>
+      </div>
+      <div style="flex:1;min-width:280px;background:#fff;border:2px solid var(--ink);border-radius:16px;padding:32px 26px;text-align:center;box-shadow:0 10px 0 rgba(204,43,34,.16);display:flex;flex-direction:column;align-items:center;">
+        <img loading="lazy" decoding="async" src="https://info.theamericanjournal.org/MOFO-SP1/image19.jpg" alt="" style="width:94px;height:94px;border-radius:50%;object-fit:cover;">
+        <span class="stars" style="font-size:19px;margin-top:15px;">★★★★★</span>
+        <p style="font-family:'Inter',sans-serif;font-style:italic;font-size:17px;line-height:1.5;color:var(--ink);margin-top:13px;">“By week 6 I’d dropped 12 lbs and added 20 to my bench. My wife noticed before I said a word.”</p>
+        <div style="font-family:var(--head);font-weight:700;font-size:15px;color:var(--ink);margin-top:15px;">Ronald K., verified buyer, 39</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section2">
+  <div class="container">
+    <p class="common-heading">MOFO vs. The T-Booster <br class="formob">In Your Cabinet</p>
+    <p class="common-text">Every line traces back to something real. Keep scrolling for the receipts.</p>
+    <div class="compare">
+      <div class="cc cc1">
+        <div class="cc-head">&nbsp;</div>
+        <ul>
+          <li>Absorption</li><li>Main ingredients</li><li>Source</li><li>Processing</li><li>Energy type</li><li>Hormone support</li><li>The result</li>
+        </ul>
+      </div>
+      <div class="cc cc2">
+        <div class="cc-head"><svg class="cc-bottle" viewBox="0 0 42 54" fill="none"><path d="M16 3h10v7h-10z" stroke="currentColor" stroke-width="2.5"/><path d="M12 14c0-2 2-4 4-4h10c2 0 4 2 4 4v33c0 2-2 4-4 4H16c-2 0-4-2-4-4V14Z" stroke="currentColor" stroke-width="2.5"/><path d="M12 26h18" stroke="currentColor" stroke-width="2.5"/></svg>Every T-Booster</div>
+        <ul>
+          <li>5–15% <br>(rest goes to waste)</li><li>Isolated herbs (ashwagandha, DAA, fenugreek)</li><li>Cheap overseas labs</li><li>High-heat, nutrients wrecked</li><li>Caffeine, then the 2 PM dip</li><li>No raw parts = nothing to build with</li><li>A $50–$100 placebo</li>
+        </ul>
+      </div>
+      <div class="cc cc3">
+        <div class="cc-head"><img loading="lazy" decoding="async" src="https://info.theamericanjournal.org/MOFO-SP1/image20.png" alt="MOFO" style="height:48px;width:auto;">MOFO</div>
+        <ul>
+          <li>Whole-food, readily absorbed</li><li>5 grass-fed organs (liver, heart, marrow, kidney, testicle)</li><li>New Zealand grass-fed · batch-tested</li><li>Freeze-dried, nutrients kept intact</li><li>Steady cellular energy, no dip</li><li>Real T-precursors, the parts your body uses</li><li>The base your body is built to run on</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section3">
+  <div class="container">
+    <p class="common-heading lt">Who This Helps, <br class="formob">And Who Should Pass</p>
+    <div class="pc">
+      <div class="pc-heads"><div class="pc-h-pro">This Works If You Want</div><div class="pc-h-con">This Won’t Work If</div></div>
+      <ul class="pc-row">
+        <li class="pc-pro"><span class="tick">✓</span><p>Man boobs and beer belly finally gone</p></li>
+        <li class="pc-con"><span class="cross">✕</span><p>You want instant overnight results (biology takes 2–4 weeks)</p></li>
+      </ul>
+      <ul class="pc-row">
+        <li class="pc-pro"><span class="tick">✓</span><p>Morning wood back, consistently</p></li>
+        <li class="pc-con"><span class="cross">✕</span><p>You’re looking for a stimulant buzz</p></li>
+      </ul>
+      <ul class="pc-row">
+        <li class="pc-pro"><span class="tick">✓</span><p>Strength in the gym actually increasing</p></li>
+        <li class="pc-con"><span class="cross">✕</span><p>You won’t take it for a fair 30–60 days</p></li>
+      </ul>
+      <ul class="pc-row">
+        <li class="pc-pro"><span class="tick">✓</span><p>Energy that lasts all day without crashing</p></li>
+        <li class="pc-con"><span class="cross">✕</span><p>You’re already on TRT (talk to your doctor first)</p></li>
+      </ul>
+      <ul class="pc-row">
+        <li class="pc-pro"><span class="tick">✓</span><p>To stop wasting money on pills that do nothing</p></li>
+        <li class="pc-con"><span class="cross">✕</span><p>You just want the cheapest option possible</p></li>
+      </ul>
+    </div>
+    <p class="s3-text1">If the left column describes you, MOFO is exactly what you’ve been missing.</p>
+  </div>
+</section>
+
+<section class="section4">
+  <div class="container">
+    <p class="common-heading">What Your Body Actually <br class="formob">Needs To Make Testosterone</p>
+    <p class="common-text">Your body makes testosterone from cholesterol, but it can’t do it without 5 specific vitamins and minerals.</p>
+    <div class="s4-row">
+      <div class="s4-col"><div class="s4-num" style="font-size:30px;">Vitamin A</div><p class="s4-t1">Turns cholesterol into testosterone</p></div>
+      <div class="s4-col"><div class="s4-num" style="font-size:30px;">Zinc</div><p class="s4-t1">Unlocks testosterone that’s stuck and unusable</p></div>
+      <div class="s4-col"><div class="s4-num" style="font-size:30px;">B Vitamins</div><p class="s4-t1">Produce energy and hormones</p></div>
+      <div class="s4-col"><div class="s4-num" style="font-size:30px;">CoQ10</div><p class="s4-t1">Powers your cells and your heart</p></div>
+      <div class="s4-col"><div class="s4-num" style="font-size:30px;">Selenium</div><p class="s4-t1">Protects and activates testosterone</p></div>
+    </div>
+    <p class="common-text" style="max-width:800px;margin-left:auto;margin-right:auto;">For 200,000 years, men got all five from organ meat, liver, heart, kidney, bone marrow, testicle. <b style="color:var(--ink);">Your T-booster has herbs and zero raw materials. That’s why it failed.</b></p>
+    <div class="btnwrap">
+      <a href="https://trk.skatrk02.com/click" class="cta">Get MOFO, 365-Day Guarantee</a>
+      <p class="btn-sub">365-Day Money-Back · 100,000+ Men · Grass-Fed New Zealand · Freeze-Dried</p>
+    </div>
+  </div>
+</section>
+
+<section class="section5">
+  <div class="container">
+    <p class="common-heading">Why MOFO Works <br class="formob">When Everything Else Failed</p>
+    <div style="display:flex;flex-wrap:wrap;gap:24px;max-width:940px;margin:40px auto 0;">
+      <div style="flex:1;min-width:300px;background:var(--clay-bg);border:2px solid var(--ink);border-radius:14px;padding:28px 26px;text-align:left;">
+        <h3 style="font-family:var(--head);font-weight:800;font-size:22px;color:var(--clay);text-transform:uppercase;margin-bottom:18px;line-height:1.15;">Most Organ Supplements Are Garbage</h3>
+        <ul style="display:flex;flex-direction:column;gap:15px;">
+          <li style="display:flex;gap:12px;align-items:flex-start;"><span class="cross" style="width:24px;height:24px;font-size:13px;flex-shrink:0;">✕</span><p style="font-size:16px;line-height:1.4;color:var(--ink);">Sourced from US feedlot cattle, grain-fed, hormone-injected, toxic</p></li>
+          <li style="display:flex;gap:12px;align-items:flex-start;"><span class="cross" style="width:24px;height:24px;font-size:13px;flex-shrink:0;">✕</span><p style="font-size:16px;line-height:1.4;color:var(--ink);">Desiccated with high heat, destroying 60–70% of the nutrients</p></li>
+          <li style="display:flex;gap:12px;align-items:flex-start;"><span class="cross" style="width:24px;height:24px;font-size:13px;flex-shrink:0;">✕</span><p style="font-size:16px;line-height:1.4;color:var(--ink);">Skip testicle, the single most important organ for men</p></li>
+          <li style="display:flex;gap:12px;align-items:flex-start;"><span class="cross" style="width:24px;height:24px;font-size:13px;flex-shrink:0;">✕</span><p style="font-size:16px;line-height:1.4;color:var(--ink);">Not third-party tested, you’re just trusting the label</p></li>
+        </ul>
+      </div>
+      <div style="flex:1;min-width:300px;background:var(--olive-bg);border:2px solid var(--ink);border-radius:14px;padding:28px 26px;text-align:left;">
+        <h3 style="font-family:var(--head);font-weight:800;font-size:22px;color:var(--olive);text-transform:uppercase;margin-bottom:18px;line-height:1.15;">MOFO Is Different</h3>
+        <ul style="display:flex;flex-direction:column;gap:15px;">
+          <li style="display:flex;gap:12px;align-items:flex-start;"><span class="tick" style="width:24px;height:24px;font-size:13px;flex-shrink:0;">✓</span><p style="font-size:16px;line-height:1.4;color:var(--ink);">New Zealand grass-fed, never hormones or grain, 3–5× more nutrient-dense</p></li>
+          <li style="display:flex;gap:12px;align-items:flex-start;"><span class="tick" style="width:24px;height:24px;font-size:13px;flex-shrink:0;">✓</span><p style="font-size:16px;line-height:1.4;color:var(--ink);">Freeze-dried, zero heat, 100% of nutrients preserved in raw form</p></li>
+          <li style="display:flex;gap:12px;align-items:flex-start;"><span class="tick" style="width:24px;height:24px;font-size:13px;flex-shrink:0;">✓</span><p style="font-size:16px;line-height:1.4;color:var(--ink);">Includes all 5 organs, especially testicle, the one most brands skip</p></li>
+          <li style="display:flex;gap:12px;align-items:flex-start;"><span class="tick" style="width:24px;height:24px;font-size:13px;flex-shrink:0;">✓</span><p style="font-size:16px;line-height:1.4;color:var(--ink);">Third-party tested, every batch, for purity, potency, metals &amp; contaminants</p></li>
+          <li style="display:flex;gap:12px;align-items:flex-start;"><span class="tick" style="width:24px;height:24px;font-size:13px;flex-shrink:0;">✓</span><p style="font-size:16px;line-height:1.4;color:var(--ink);">No fillers, no flow agents, no junk, just pure organ meat in a capsule</p></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section6">
+  <div class="container">
+    <p class="common-heading lt">Five Organs. <br class="formob">One Job Each.</p>
+    <p class="common-text lt">Each one pulls a different weight. Here’s the rundown.</p>
+    <div class="ing-outer">
+      <div class="ing-box">
+        <div class="ing-row">
+          <div class="ing-imgbx"><img loading="lazy" decoding="async" src="https://info.theamericanjournal.org/MOFO-SP1/image24.jpg" alt="" class="ing-img"></div>
+          <div class="ing-info"><div class="ing-hrow"><p class="ing-h">Grass-Fed Liver</p><span class="ing-sub">Wake Up Hard Again</span></div><p class="ing-text">Vitamin A (retinol), B12, iron, copper, choline. Liver is the richest source of vitamin A on Earth, and your Leydig cells need it to turn cholesterol into testosterone. It also carries compounds that keep testosterone from converting into estrogen (the hormone behind man boobs). <b style="color:#fff;">You feel it as morning wood returning, man boobs shrinking and energy climbing.</b></p></div>
+        </div>
+        <div class="ing-row">
+          <div class="ing-imgbx"><img loading="lazy" decoding="async" src="https://info.theamericanjournal.org/MOFO-SP1/image28.jpg" alt="" class="ing-img"></div>
+          <div class="ing-info"><div class="ing-hrow"><p class="ing-h">Grass-Fed Testicle</p><span class="ing-sub">Raises Testosterone Directly</span></div><p class="ing-text">Raw hormone precursors, peptides and trace minerals, the exact building blocks your body uses to make testosterone, in their most bioavailable form. No conversion needed; your body recognizes them instantly. It’s why warriors ate testicles first from every kill. <b style="color:#fff;">You feel it as morning wood within days, surging drive and performance anxiety fading.</b></p></div>
+        </div>
+        <div class="ing-row">
+          <div class="ing-imgbx"><img loading="lazy" decoding="async" src="https://info.theamericanjournal.org/MOFO-SP1/image25.jpg" alt="" class="ing-img"></div>
+          <div class="ing-info"><div class="ing-hrow"><p class="ing-h">Grass-Fed Heart</p><span class="ing-sub">Steady Energy, No Crash</span></div><p class="ing-text">CoQ10, L-Carnitine and taurine. Heart is loaded with CoQ10, what your mitochondria use to make cellular energy and what your heart uses to pump blood everywhere it needs to go. L-Carnitine hauls fat into your cells to be burned, which is why the beer belly starts melting. <b style="color:#fff;">You feel it as the 3 PM crash vanishing, steady energy all day and stubborn fat coming off.</b></p></div>
+        </div>
+        <div class="ing-row">
+          <div class="ing-imgbx"><img loading="lazy" decoding="async" src="https://info.theamericanjournal.org/MOFO-SP1/image27.jpg" alt="" class="ing-img"></div>
+          <div class="ing-info"><div class="ing-hrow"><p class="ing-h">Grass-Fed Kidney</p><span class="ing-sub">Unlock The T You Have</span></div><p class="ing-text">Selenium, zinc, B vitamins and the DAO enzyme. Up to 98% of your testosterone is bound to proteins and unusable, kidney delivers the selenium and zinc that FREE it up so your body can finally use it. Most men don’t have a production problem; they have an availability problem. <b style="color:#fff;">You feel it as rising strength, returning sex drive and real confidence.</b></p></div>
+        </div>
+        <div class="ing-row">
+          <div class="ing-imgbx"><img loading="lazy" decoding="async" src="https://info.theamericanjournal.org/MOFO-SP1/image26.jpg" alt="" class="ing-img"></div>
+          <div class="ing-info"><div class="ing-hrow"><p class="ing-h">Grass-Fed Bone Marrow</p><span class="ing-sub">Recover Faster, Build Muscle</span></div><p class="ing-text">Stem cells, collagen, glycine and healthy fats. Bone marrow’s stem cells and growth factors help your body repair tissue and build muscle, glycine drives deep sleep and collagen rebuilds joints and connective tissue, and the healthy fats support hormone production. <b style="color:#fff;">You feel it as faster recovery, easier muscle and waking up refreshed instead of stiff and sore.</b></p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section7">
+  <div class="container">
+    <p class="common-heading">What Actually Happens <br class="formob">When You Take MOFO</p>
+    <p class="common-text">No exaggeration, just what real organ nutrition tends to do.</p>
+    <div class="s7-inner">
+      <div class="timeline__mid">
+        <div class="timeline__mid_row timeline__entry_point">
+          <div class="timeline__row_center_step"></div>
+          <div class="tl-weekbx"><div class="tl-week"><svg class="tl-cal" viewBox="0 0 24 24" fill="none"><rect x="3" y="5" width="18" height="16" rx="2" stroke="currentColor" stroke-width="2"/><path d="M3 9h18M8 3v4M16 3v4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>Days 1–7</div></div>
+          <div class="tl-content"><p class="tl-h">Your Body Stops Starving</p><p class="tl-p">The nutrients hit fast. B vitamins and iron from liver lift oxygen delivery; CoQ10 from heart powers up your mitochondria. The 3 PM crash stops, sleep deepens, and you wake up actually rested.</p><p class="tl-p" style="font-style:italic;color:var(--muted);margin-top:10px;">“By day 7 I had more energy than I’ve had in years.”</p></div>
+        </div>
+        <div class="timeline__mid_row reverse">
+          <div class="timeline__row_center_step"></div>
+          <div class="tl-weekbx"><div class="tl-week"><svg class="tl-cal" viewBox="0 0 24 24" fill="none"><rect x="3" y="5" width="18" height="16" rx="2" stroke="currentColor" stroke-width="2"/><path d="M3 9h18M8 3v4M16 3v4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>Weeks 2–3</div></div>
+          <div class="tl-content"><p class="tl-h">Testosterone Production Ramps Up</p><p class="tl-p">Your Leydig cells finally have the vitamin A to make testosterone. Zinc and selenium from kidney start freeing up bound T, and precursors from testicle give your body raw materials to work with. Morning wood starts coming back and the mental fog lifts.</p><p class="tl-p" style="font-style:italic;color:var(--muted);margin-top:10px;">“Week 2 I woke up hard for the first time in months.”</p></div>
+        </div>
+        <div class="timeline__mid_row">
+          <div class="timeline__row_center_step"></div>
+          <div class="tl-weekbx"><div class="tl-week"><svg class="tl-cal" viewBox="0 0 24 24" fill="none"><rect x="3" y="5" width="18" height="16" rx="2" stroke="currentColor" stroke-width="2"/><path d="M3 9h18M8 3v4M16 3v4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>Weeks 4–8</div></div>
+          <div class="tl-content"><p class="tl-h">The Physical Transformation Starts</p><p class="tl-p">Testosterone is being produced AND freed up. Fat melts off, especially the belly and chest. Muscle comes easier, strength jumps in the gym, and your wife notices something’s different. You’re more confident, present and aggressive in a good way.</p><p class="tl-p" style="font-style:italic;color:var(--muted);margin-top:10px;">“By week 6 I’d lost 12 lbs and added 20 to my bench.”</p></div>
+        </div>
+        <div class="timeline__mid_row reverse">
+          <div class="timeline__row_center_step"></div>
+          <div class="tl-weekbx"><div class="tl-week"><svg class="tl-cal" viewBox="0 0 24 24" fill="none"><rect x="3" y="5" width="18" height="16" rx="2" stroke="currentColor" stroke-width="2"/><path d="M3 9h18M8 3v4M16 3v4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>Month 3+</div></div>
+          <div class="tl-content"><p class="tl-h">This Is Just How You Feel Now</p><p class="tl-p">Your body has the raw materials it needs and production is dialed in. You’re not “boosted”, you’re running at your real capacity. Man boobs gone, beer belly shrinking, stronger, leaner and more confident than you’ve been in years.</p><p class="tl-p" style="font-style:italic;color:var(--muted);margin-top:10px;">“At 3 months I barely recognized myself. This is who I was supposed to be.”</p></div>
+        </div>
+      </div>
+    </div>
+    <div class="btnwrap">
+      <a href="https://trk.skatrk02.com/click" class="cta">Get All 5 Organs, 365-Day Guarantee</a>
+      <p class="btn-sub">365-Day Money-Back · 100,000+ Men · Grass-Fed New Zealand · Freeze-Dried</p>
+    </div>
+    <div class="receipt-box">
+      <div class="receipt-inner">
+        <p class="receipt-head">A Shelf Full Of Bottles, A Drained Wallet, And You Still Feel Off.</p>
+        <div class="receipt-row">
+          <div class="rcol rcol1">
+            <div class="rcol-h">Your Current Lineup</div>
+            <ul class="rlist">
+              <li><span>Test Booster</span><span>$49.99</span></li>
+              <li><span>Zinc &amp; Magnesium</span><span>$24.99</span></li>
+              <li><span>Multivitamin</span><span>$29.99</span></li>
+              <li><span>Energy Pills</span><span>$44.99</span></li>
+              <li><span>Recovery Formula</span><span>$34.99</span></li>
+            </ul>
+            <div class="rtot"><span class="rtot-l">Lineup Total</span><span class="rprice">$184.95<small>/mo</small></span></div>
+            <div class="rfoot">
+              <span class="rf"><svg viewBox="0 0 24 24" fill="none"><path d="M5 8h14l-1 12H6L5 8Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M9 8V6a3 3 0 0 1 6 0v2" stroke="currentColor" stroke-width="2"/></svg>6–8 pills/day</span>
+              <span class="rf"><svg viewBox="0 0 24 24" fill="none"><path d="M12 3v18M3 12h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>Synthetic</span>
+            </div>
+          </div>
+          <div class="rcol rcol2">
+            <div class="rcol-h">MOFO <span>30-day supply</span></div>
+            <img loading="lazy" decoding="async" src="https://info.theamericanjournal.org/MOFO-SP1/image20.png" alt="MOFO" class="rprod">
+            <ul class="rlist">
+              <li><span>Per month</span><span>$45.00</span></li>
+              <li><span>Per day</span><span>$1.50</span></li>
+            </ul>
+            <div class="rtot"><span class="rtot-l">Total</span><span class="rprice">$45<small> total</small></span></div>
+            <div class="rfoot">
+              <span class="rf"><svg viewBox="0 0 24 24" fill="none"><path d="M5 8h14l-1 12H6L5 8Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M9 8V6a3 3 0 0 1 6 0v2" stroke="currentColor" stroke-width="2"/></svg>6 capsules/day</span>
+              <span class="rf"><svg viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4 10-10" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>Whole-Food</span>
+            </div>
+          </div>
+        </div>
+        <p class="receipt-text1">Less than the price of a daily coffee, and it replaces <br class="hidemob">a whole cabinet of pills that did nothing.</p>
+        <div class="btnwrap">
+          <a href="https://trk.skatrk02.com/click" class="cta">Start Your Transformation, 365-Day Guarantee</a>
+          <p class="btn-sub lt">365-Day Money-Back · 100,000+ Men · Grass-Fed New Zealand · Freeze-Dried</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section8">
+  <div class="container">
+    <p class="common-heading">Straight From The Men <br class="formob">Who Take It</p>
+    <div class="testi-row">
+      <div class="testi-col">
+        <span class="testi-q">“</span>
+        <span class="stars">★★★★★</span>
+        <p class="testi-t1">“Felt it inside the first week. Energy holds steady and the afternoon slump just isn’t there anymore.”</p>
+        <div class="testi-v"><img loading="lazy" decoding="async" src="https://info.theamericanjournal.org/MOFO-SP1/image13.jpg" alt="" class="testi-img"><div><div class="testi-name">Kevin W., 42</div><span class="testi-vp"><svg viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4 10-10" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>Verified Purchase</span></div></div>
+      </div>
+      <div class="testi-col">
+        <span class="testi-q">“</span>
+        <span class="stars">★★★★★</span>
+        <p class="testi-t1">“47 here. A couple weeks in and I feel a decade younger. My wife asked what changed, told her I quit the junk.”</p>
+        <div class="testi-v"><img loading="lazy" decoding="async" src="https://info.theamericanjournal.org/MOFO-SP1/image16.jpg" alt="" class="testi-img"><div><div class="testi-name">John O., 47</div><span class="testi-vp"><svg viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4 10-10" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>Verified Purchase</span></div></div>
+      </div>
+      <div class="testi-col">
+        <span class="testi-q">“</span>
+        <span class="stars">★★★★★</span>
+        <p class="testi-t1">“Strength is climbing and I bounce back quicker between sessions. The New Zealand grass-fed sourcing is what won me over.”</p>
+        <div class="testi-v"><img loading="lazy" decoding="async" src="https://info.theamericanjournal.org/MOFO-SP1/image19.jpg" alt="" class="testi-img"><div><div class="testi-name">Ronald K., 39</div><span class="testi-vp"><svg viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4 10-10" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>Verified Purchase</span></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section9">
+  <div class="container">
+    <p class="common-heading lt">Two Ways This <br class="formob">Goes From Here</p>
+    <div style="max-width:760px;margin:34px auto 0;">
+      <img loading="lazy" decoding="async" src="https://info.theamericanjournal.org/MOFO-SP1/image33.jpg" alt="" style="width:100%;height:300px;object-fit:cover;border-radius:14px;border:2px solid #2f3a31;">
+    </div>
+    <div class="wbox">
+      <div class="wcol1">
+        <div class="wcol1-in"><h3>You keep doing what you’re doing.</h3><p>Same booster with ashwagandha and fenugreek. Same 5–15% absorption. Same 3 PM crash. Same man boobs and beer belly. Same dead bedroom.</p></div>
+        <div class="wcol1-in"><h3>You try another booster with a new label.</h3><p>New herbs, new marketing, same missing foundation. Same result: nothing.</p></div>
+        <div class="wcol1-in"><h3>Six months from now you’re still here.</h3><p>Still tired. Still weak. Still soft. Still wondering why nothing works, still spending $80 a month on pills that do nothing.</p></div>
+      </div>
+      <div class="wmid"><img loading="lazy" decoding="async" src="https://info.theamericanjournal.org/MOFO-SP1/image20.png" alt="MOFO supplement" class="wmid-img"></div>
+      <div class="wcol2">
+        <p class="wor">Or…</p>
+        <ul class="wlist">
+          <li><span class="wdot"></span><span class="wnum">Week 1</span><p class="wabout">Energy crash stops.</p></li>
+          <li><span class="wdot"></span><span class="wnum">Week 2</span><p class="wabout">Morning wood returns.</p></li>
+          <li><span class="wdot"></span><span class="wnum">Week 4</span><p class="wabout">Man boobs shrinking, beer belly melting.</p></li>
+          <li><span class="wdot"></span><span class="wnum">Week 6</span><p class="wabout">Strength jumping, wife noticing.</p></li>
+          <li><span class="wdot"></span><span class="wnum">Month 3</span><p class="wabout">This is just how you feel now.</p></li>
+        </ul>
+        <p class="wrefund">All for less than $3 a day, backed by a full 365-day refund if it doesn’t happen.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section10">
+  <div class="container">
+    <p class="common-heading">What Lands On <br class="formob">Your Doorstep</p>
+    <div class="offer-box">
+      <div class="offer-top">
+        <div class="offer-wrap">
+          <ul class="offer-list">
+            <li><span class="offer-ic"><svg viewBox="0 0 24 24" fill="none"><path d="M12 2l2.5 6.5L21 9l-5 4.5L17.5 21 12 17l-5.5 4L8 13.5 3 9l6.5-.5L12 2Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg></span><div class="offer-c"><h3>Save 20% + Free Gifts</h3><p>Limited-time pricing while it lasts.</p></div></li>
+            <li><span class="offer-ic"><svg viewBox="0 0 24 24" fill="none"><path d="M12 21s-7-4.3-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 11c0 5.7-7 10-7 10Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg></span><div class="offer-c"><h3>5 Grass-Fed Organs</h3><p>Liver, heart, marrow, kidney &amp; testicle.</p></div></li>
+            <li><span class="offer-ic"><svg viewBox="0 0 24 24" fill="none"><path d="M12 3c3 2 6 2.5 8 2.5 0 8-3 12-8 15-5-3-8-7-8-15C6 5.5 9 5 12 3Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg></span><div class="offer-c"><h3>New Zealand Grass-Fed</h3><p>Never hormones, never feedlots.</p></div></li>
+            <li><span class="offer-ic"><svg viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4 10-10" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span><div class="offer-c"><h3>365-Day Money-Back</h3><p>A full year to decide.</p></div></li>
+            <li><span class="offer-ic"><svg viewBox="0 0 24 24" fill="none"><path d="M3 7h11v8H3zM14 10h4l3 3v2h-7z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><circle cx="7" cy="17" r="2" stroke="currentColor" stroke-width="1.8"/><circle cx="17" cy="17" r="2" stroke="currentColor" stroke-width="1.8"/></svg></span><div class="offer-c"><h3>Free Shipping</h3><p>On every order.</p></div></li>
+            <li><span class="offer-ic"><svg viewBox="0 0 24 24" fill="none"><path d="M9 3h6v4l-4 5v6a2 2 0 0 0 4 0v-6l-4-5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span><div class="offer-c"><h3>Freeze-Dried &amp; Third-Party Tested</h3><p>Purity and potency, every batch.</p></div></li>
+          </ul>
+          <div class="offer-prod"><img loading="lazy" decoding="async" src="https://info.theamericanjournal.org/MOFO-SP1/image20.png" alt="MOFO"></div>
+        </div>
+      </div>
+      <div class="offer-btm">
+        <p class="offer-case"><span class="red-c">Worst case:</span> you feel nothing, full refund, no questions asked.</p>
+        <p class="offer-case"><span class="grn-c">Best case:</span> you finally feel like yourself again, and wonder why you waited so long.</p>
+        <div class="btnwrap">
+          <a href="https://trk.skatrk02.com/click" class="cta">Try MOFO, Zero Risk For 365 Days</a>
+          <p class="btn-sub lt">365-Day Money-Back · 100,000+ Men · Grass-Fed New Zealand · Freeze-Dried</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section11">
+  <div class="container">
+    <p class="common-heading lt">The 365-Day <br class="hidemob">“Feel It Or It’s Free” Promise</p>
+    <div class="g-box">
+      <div class="g-top">
+        <div class="g-top-in">
+          <div class="g-seal"><span class="gs1">365</span><span class="gs2">Day Promise</span></div>
+          <div class="g-content">
+            <p class="g-text mt0"><b style="color:var(--ink);">Try MOFO for a full year.</b></p>
+            <p class="g-text">If your energy, morning wood, strength or waistline haven’t changed, and your wife hasn’t noticed…</p>
+            <p class="g-text"><b>Email us. Get every dollar back. No questions asked.</b></p>
+          </div>
+        </div>
+      </div>
+      <div class="g-btm">
+        <div class="g-terms">
+          <div class="g-tcol"><div class="g-tcol-top"><span class="g-check"><svg viewBox="0 0 24 24" width="16" height="16" fill="none"><path d="M5 13l4 4 10-10" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span><h3>365 Days</h3></div><div class="g-tcol-btm"><p>A full year to decide.</p></div></div>
+          <div class="g-tcol"><div class="g-tcol-top"><span class="g-check"><svg viewBox="0 0 24 24" width="16" height="16" fill="none"><path d="M5 13l4 4 10-10" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span><h3>Full Refund</h3></div><div class="g-tcol-btm"><p>Every dollar. No partial refunds.</p></div></div>
+          <div class="g-tcol"><div class="g-tcol-top"><span class="g-check"><svg viewBox="0 0 24 24" width="16" height="16" fill="none"><path d="M5 13l4 4 10-10" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span><h3>No Forms</h3></div><div class="g-tcol-btm"><p>One email. Done.</p></div></div>
+        </div>
+        <p class="g-bt">We offer a full year because we’re that confident you’ll feel the difference.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="faq-section">
+  <div class="container">
+    <p class="common-heading">Quick Answers</p>
+    <div class="faq-box">
+      <div class="faq-row"><div class="accordion accordion-open">Do I still need a multivitamin?</div><div class="acdn-content"><p>Probably not. MOFO covers the critical nutrients men need for testosterone production, energy and recovery. Most multivitamins use synthetic forms that absorb at <b>5–15%</b> anyway.</p></div></div>
+      <div class="faq-row"><div class="accordion">Is it third-party tested?</div><div class="acdn-content" style="display:none;"><p>Yes. Every batch is tested for purity, potency, heavy metals and contaminants.</p></div></div>
+      <div class="faq-row"><div class="accordion">How long until I feel something?</div><div class="acdn-content" style="display:none;"><p>Most men notice changes within <b>7–14 days</b> (energy, sleep, mental clarity). Morning wood typically returns by week 2–4. Physical change, fat loss, muscle gain, by week 4–8.</p></div></div>
+      <div class="faq-row"><div class="accordion">Will this interfere with my medications?</div><div class="acdn-content" style="display:none;"><p>MOFO is food, real organ meat. But if you’re on medications, especially hormone-related, talk to your doctor first.</p></div></div>
+      <div class="faq-row"><div class="accordion">Why is this better than other beef organ supplements?</div><div class="acdn-content" style="display:none;"><p>Most are sourced from US feedlot cattle (grain-fed, hormone-injected) and desiccated, cooked, which destroys nutrients, and most skip testicle. MOFO is New Zealand grass-fed, freeze-dried, and includes all 5 critical organs.</p></div></div>
+      <div class="faq-row"><div class="accordion">Where is it made?</div><div class="acdn-content" style="display:none;"><p>MOFO is made in the USA with organs from grass-fed New Zealand cattle.</p></div></div>
+      <div class="faq-row"><div class="accordion">Can I take this if I’m on TRT?</div><div class="acdn-content" style="display:none;"><p>Talk to your doctor first. MOFO supports natural testosterone production, if you’re on TRT, your natural production is already shut down.</p></div></div>
+    </div>
+    <div class="btnwrap">
+      <p class="btn-sub">365-Day Money-Back · 100,000+ Men · Grass-Fed New Zealand · Freeze-Dried</p>
+      <a href="https://trk.skatrk02.com/click" class="cta">Get MOFO, 365-Day Guarantee</a>
+      <p class="btn-sub">Lock in your limited-time price while it lasts.</p>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <img loading="lazy" decoding="async" src="https://info.theamericanjournal.org/MOFO-SP1/image39.png" alt="MOFO" class="footer-logo">
+    <p class="footer-txt"><a href="https://trk.skatrk02.com/click">Terms</a> | <a href="https://trk.skatrk02.com/click">Privacy</a> | <a href="https://trk.skatrk02.com/click">Contact</a></p>
+    <p class="footer-txt">Copyright © 2026 MOFO, Ancestral Supplements. All Rights Reserved.</p>
+  </div>
+</footer>
+</div>
+<script>
+document.addEventListener('DOMContentLoaded',function(){
+  // ---- scroll timeline ----
+  (function(){
+    var dist=function(a,b){var r1=a.getBoundingClientRect(),r2=b.getBoundingClientRect();var x=(r2.left+r2.width/2)-(r1.left+r1.width/2),y=(r2.top+r2.height/2)-(r1.top+r1.height/2);return Math.sqrt(x*x+y*y);};
+    var steps=[].slice.call(document.querySelectorAll('.timeline__row_center_step'));
+    var boxes=[].slice.call(document.querySelectorAll('.tl-content'));
+    var section=document.querySelector('.timeline__mid');
+    var entry=document.querySelector('.timeline__mid_row');
+    if(!steps.length||!section||!entry)return;
+    var first=steps[0],last=steps[steps.length-1],between=0,stepDist=[],ticking=false;
+    function setH(){between=dist(first,last);entry.style.setProperty('--timeline-height',between+'px');stepDist=steps.map(function(s){return dist(first,s);});}
+    function update(){var rect=section.getBoundingClientRect();if(rect.bottom<0||rect.top>window.innerHeight){ticking=false;return;}var mid=window.innerHeight*0.85;var fromMid=rect.top-mid;var h=rect.height;var newH,view;if(fromMid>0){newH=0;view=false;}else if(fromMid<=-h){newH=between;view=true;}else{newH=Math.min(Math.abs(fromMid)/h,1)*between;view=null;}entry.style.setProperty('--timeline-height-dynamic',newH+'px');steps.forEach(function(s,i){var sv=view!==null?view:newH>=stepDist[i];s.classList.toggle('viewing',sv);if(boxes[i])boxes[i].classList.toggle('viewing',sv);});ticking=false;}
+    function onScroll(){if(!ticking){requestAnimationFrame(update);ticking=true;}}
+    setH();update();window.addEventListener('scroll',onScroll,{passive:true});window.addEventListener('resize',function(){setH();update();});
+  })();
+  // ---- accordion ----
+  (function(){
+    function up(el,d,cb){if(el.style.display==='none'){if(cb)cb();return;}el.style.overflow='hidden';el.style.maxHeight=el.scrollHeight+'px';el.offsetHeight;el.style.transition='max-height '+d+'ms ease';el.style.maxHeight='0';setTimeout(function(){el.style.display='none';el.style.removeProperty('max-height');el.style.removeProperty('overflow');el.style.removeProperty('transition');if(cb)cb();},d);}
+    function down(el,d){el.style.display='block';el.style.overflow='hidden';el.style.maxHeight='0';el.offsetHeight;el.style.transition='max-height '+d+'ms ease';el.style.maxHeight=el.scrollHeight+'px';setTimeout(function(){el.style.removeProperty('max-height');el.style.removeProperty('overflow');el.style.removeProperty('transition');},d);}
+    [].slice.call(document.querySelectorAll('.accordion')).forEach(function(h){h.addEventListener('click',function(){var c=h.nextElementSibling;if(!c||!c.classList.contains('acdn-content'))return;var open=h.classList.contains('accordion-open');[].slice.call(document.querySelectorAll('.acdn-content')).forEach(function(o){if(o!==c&&o.style.display!=='none'){up(o,450,function(){o.previousElementSibling.classList.remove('accordion-open');});}});if(open){up(c,450,function(){h.classList.remove('accordion-open');});}else{h.classList.add('accordion-open');down(c,450);}});});
+  })();
+});</script>
+</body>
+</html>
