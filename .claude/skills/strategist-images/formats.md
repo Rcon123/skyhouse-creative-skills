@@ -297,6 +297,625 @@ The same people photographed twice in the same spot and pose, months apart, the 
 A broadcast still: a red BREAKING NEWS bar, a LIVE tag, the anchor seen from behind facing the screens, a two-line chyron carrying the hook.
 ```
 
+## PENDING 2026-11-09: from Ryan's notes (UNGRADED until his first grade on the Earthling r4 renders)
+
+Source: Ryan's Apple Note, the X post by @alyshadotmd (2026-11-07, "This format is all over my explore feed rn"), two Instagram ads (coffeeandhair.co, dr.maria.saadeh). Ryan, 2026-11-09: "new static formats too that we could do... They're like writings, which I think would be great as well." His own Earthling line in the same notes: "I didn't wanna use a bar of soap for my hair cause ANNOYYING but…". Reference screenshot: offers/earthling/images/bar-vs-bottle-r4/ref/alyshadotmd-handwritten-ads.png
+
+### handwritten doodle note  (@alyshadotmd swipe, Ryan's notes 2026-11-09)
+```
+A real overhead phone photo of one sheet of slightly crumpled cream paper on a table, filling the frame, written by hand in BLUE BALLPOINT PEN: a casual first-person line in a real woman's mixed print and cursive, a few words underlined or in caps, and simple blue-ink doodles beside the words (stick figures, a little box drawn around a BEFORE sketch and an AFTER sketch, hearts, sparkle lines). No typed text, no colour except the blue ink, handwriting extremely legible.
+```
+The swipe's own opener is "I'm Sick of all the A.I. made ads! Here's mine! I'm a [job]..." with a Before / After doodle pair. Vary the paper (lined notebook, legal pad, index card, napkin, back of an envelope), never the blue-pen hand.
+
+## APPROVED 2026-11-05: Belesmé ad library (Ryan: "LOVE the formats in this ad library. Save them into our image skill"). Reference images, ranks and the study: `offers/agency/research/belesme-formats-2026-11-05/` (raw/NN = impression rank). Prompt blocks UNPROVEN until Ryan grades the first clones (osteoshield + prodenta `images/belesme-formats-r1/`).
+
+Source: Meta Ad Library, page Belesmé (tinnitus VSL + an anti-theft wallet), ~1,200 active ads sorted by total impressions. One image (the flat explainer card) holds 9 of the top 45 slots. Every top format shows the MECHANISM in one look (the spot on the body wired to the organ; the organ before and after; the old textbook page with the arrow). Buttons are drawn into the picture. **Default move: reference-clone.** Upload `raw/NN_*.jpg`, pass it as `input_urls`, prompt "Recreate this exact image... make exactly these substitutions: 1) ... 2) ... 3) ...". The blocks below are for when no reference is at hand.
+
+### flat explainer card  (rank 1; 9 of the top 45 slots under different story copies)
+```
+A flat minimalist medical explainer illustration on a plain warm beige background: thin dark outlines with soft flat fills, a simple object on the left with ONE small dark dot on it, a thin dotted line from the dot to the organ or body part drawn in profile on the right, inside the body part a tangled red scribble on the problem side and calm parallel blue waves on the fixed side. Headline top-left in a grey editorial sans-serif, three lines: "[Experts] Stunned By This Simple [X] Trick To [Outcome]". A small thin-outlined rounded button bottom-right reading "Watch The Demonstration". Nothing else in the frame, extremely legible.
+```
+Source anatomy: hand with a dot + dotted line + head profile with scribble/waves + "Neurologists Stunned By This Simple Hand Trick To Silence Tinnitus" + button. Swap the object (the fix or the villain), the organ (bone, the dog's mouth, the liver) and the headline nouns; keep the three-line grey headline, the dot, the dotted line, the red scribble vs blue waves and the button.
+
+### x-ray before/after viewer  (rank 2)
+```
+Two clinical X-ray films of the same body part side by side on a dark radiology viewer, thin vertical divider, small white labels top-left of each film reading "Before" and "After", faint patient-ID header text too small to read. The Before film carries the damage as a cloud of static noise or moth-eaten dark pockets inside the bone; the After film is the same view solid and clean. No headline, no colour.
+```
+Source: two skull X-rays, the before with a static cloud in the skull (the ringing). The proof labels are the only text.
+
+### ink-splat sketch  (rank 4; 8 of the top 45)
+```
+Black ink line drawing on plain white paper: one hand doing the action (pointing, pressing, holding the object) on the left, a thin dotted ink thread from the hand to the body part on the right, and the body part drawn as a black ink SPLATTER that drips and spatters down the page where the problem is. Headline in casual black hand lettering across the top, two lines: "Try This [X] Trick Tonight If [symptom]". No colour, no shading, no other text.
+```
+Source: "Try This Japanese Finger Trick Tonight If Your Ears Ring", hand + dotted thread + splattering brain.
+
+### removed-from-the-internet screenshot  (rank 5)
+```
+A phone screenshot: a thin status bar top (a time like 11:09, signal, battery 66%), filling the screen an old anatomy engraving from an antique medical textbook on yellowed paper (fine engraved lines, tiny serif labels), a thick hand-drawn RED ARROW pointing at the one spot, and two caption blocks in a chunky pixel/typewriter font on dark boxes: top "THIS WAS REMOVED FROM THE INTERNET IN 2019 (REPOSTING)", bottom "The one [thing] that [controls the problem] - and how to [fix] it."
+```
+Source: the ear engraving. Keep the top line verbatim; the bottom line names the one thing and the fix in the page's words.
+
+### scope photo compare  (rank 7; the otoscope pair)
+```
+Two real clinical scope photographs of the same body part side by side with a thin divider: the left raw, red and diseased, the right clean and healthy. Flat clinical light, no headline, at most a small label per side (IMAGE A / IMAGE B).
+```
+Sibling of "anatomy plate, ugly version" and "raw symptom photo"; the camera is the scope.
+
+### expert vs master card  (rank 8)
+```
+A clean VS comparison card on white: a bold black headline top, two lines, the second noun in colour: "[Experts] vs. [the folk source]: The [X] Trick for [Problem]". Two columns with a bold label each; left column a stethoscope and the organ in angry red with red lightning marks, right column the fix (a hand, a bowl, a food) and the same organ in calm glowing blue. A full-width blue rounded button at the bottom reading "Watch The Demonstration" with a play triangle. Flat clean vector-illustration style, extremely legible.
+```
+Source: "Neurologists vs. a Japanese Shiatsu Master: The Finger Trick for Ear Ringing".
+
+### labeled pressure-point plate  (rank 10)
+```
+A medical-textbook illustration of the body part with a real-looking finger pressing one glowing point on it, 3 to 5 sparse labels with thin pointer lines (the point, the bone under it, the relief area), soft painted anatomical style on white. Optional second panel: the inflamed pathways in red BEFORE, the calm pathways in blue AFTER.
+```
+
+### quoted-headline comment card  (rank 12)
+```
+A plain white card: the headline in single quotes in bold black sans across the top, a thin rule, then two Facebook-style comments with round avatars, a name, one short sentence of proof each, Like / Reply and a like count (842, 315). Nothing else.
+```
+Hand-build it (HTML to headless Chrome) when the OS chrome must be exact; `kie.fbpost` is the house helper.
+
+### kitchen counter culprits + note card  (rank 13)
+```
+A phone photo looking down at a wooden kitchen table: two famous household products she already owns standing side by side, and a handwritten index card propped beside them with one short line in pen. Natural light, nothing else on the table.
+```
+Sibling of "everyday culprit in hand"; two brands plus the note.
+
+### glow-point photo + impact headline  (rank 14)
+```
+A real close-up photo of a hand pressing one point on the body part, a soft blue glow at the point, a white Impact-caps headline across the top on the photo: "DO THIS IMMEDIATELY TO [outcome]".
+```
+
+### fake video player still  (rank 16)
+```
+A still framed as a paused video: black bars top and bottom, a white play triangle in a translucent circle at the centre, a thin red progress bar with a white dot, a small speaker icon, the top bar carrying a white caps headline and the bottom bar "Watch the video demonstration". The still itself is a real phone photo of the action.
+```
+
+### threat scene from behind  (rank 21; the wallet product, 10+ of the top 45)
+```
+A real photo of an older woman seen from behind in a public place she goes every week (checkout line, airport security bin), the threat visible in the frame (a stranger's hand near her purse, her bag alone in the bin), a white caption bar across the top carrying the hook as a plain sentence ("Checkout line. Purse on her shoulder."), a small white pill at the bottom reading "Watch the video demonstration".
+```
+The hook is the caption; she is the subject; the threat is the one wrong thing.
+
+### chalkboard with real hand  (rank 25)
+```
+A real blackboard with white chalk hand lettering (the headline), a chalk drawing of the body part with one red chalk circle on the point, and a REAL hand in front of the board doing the action. Photo of a real board, not an illustration.
+```
+
+### article preview card  (rank 24)
+```
+A news-article preview card: the site name in small caps top-left, a photo of the action, a grey meta line (a date, comment count, view count, reading time), a bold headline in the register "[Expert]: This [thing] Is Why the [problem] Won't Stop", a small yellow "Read Article" button.
+```
+
+### loud red poster  (rank 34)
+```
+A solid red poster, giant stacked white and yellow Impact caps filling the left two-thirds ("[PROBLEM] AFTER 65? TRY A [X] TRICK"), a real photo of the action on the right, a white rounded button at the bottom "Watch The Video To Learn It".
+```
+
+### woodblock poster  (rank 20)
+```
+An aged Japanese woodblock-print poster on cream paper: bamboo and a red sun, two boxed hand diagrams showing the point, a red rounded button "Watch The Video To See The Spot", and a real hand photo pressing the point at the bottom edge.
+```
+
+## APPROVED 2026-11-06: Belesmé network, every page (Ryan: "I want to look at all their pages, and I want to add all their different image formats to our image skill")
+
+Source: all 17 Facebook pages found running the Cardian Safe Card / Tinnito ads (the first six below; the other 11 under THE OTHER 11 NETWORK PAGES), pulled 2026-11-06 sorted by impressions: Belesmé (1,116 active ads, 672 unique images), Violet Lopez (139), Allison Parker (28), Abigail Davis (13), Genesis Roberts (6), Kennedy Turner (3). Persona pages are named women posting as the buyer. Every creative, cards.json (first line, body, landing link) and contact sheets: `offers/agency/research/belesme-formats-2026-11-05/pages/<page>/`. One example per format: `pages/_examples-sheet.jpg`. Their landers are bare VSL pages (video, "1,817 watching", four bullets, button); no image formats there. Prompt blocks UNPROVEN until Ryan grades a first clone. **Default move is still the reference-clone** (`input_urls` = the source file, substitutions only).
+
+What the volume says: on the wallet offer one shape carries hundreds of ads, a 3 to 6 word label in a white bar over a warm, specific phone photo of a 65+ person (a hobby, a place, a person in their life) holding the thing. The copy changes the persona every ad ("I build birdhouses", "Our knitting circle", "Fly tying table"); the picture changes with it. The threat formats (CCTV, scared in the car, the bin at security) sit at the top of the impression sort. The tinnitus side tests far more media: quizzes, screenshots of other platforms, scans, signs and notes on real objects.
+
+**THREAT FORMATS (HER FEAR, SHOT LITERALLY)**
+
+### CCTV security-cam still  (V8, V15, B302, B427: top of the persona pages)
+```
+A grainy overhead security-camera still of an ordinary public place (a checkout lane, the TSA queue): wide angle from a ceiling corner, slight fisheye, washed colour, a white timestamp top-left "10/11/2026 06:14:28" and "CAM 12" top-right. The older person and the threat both small but plain in frame. One red label box with white caps near the threat: "WATCH THE MAN".
+```
+
+### scared-in-the-car selfie  (V7, V18, A8, A12, B75, B144, B418)
+```
+A front-camera phone selfie of a woman in her 70s in the driver's seat of a parked car, face crumpled with fear, glasses, clutching her purse to her chest with both arms, a pharmacy sign with a green cross through the side window behind her. Flat daylight, no text.
+```
+The face IS the subject here (taste line 7 names faces as dead for us; this is their #2 most-run threat shape).
+
+### worried selfie in the parking lot  (AD4, AD12)
+```
+A front-camera selfie of a woman in her 60s with no makeup, standing in a store parking lot, mouth tight, eyes wet, the phone held a little low. Overcast light, cars and carts behind. No text.
+```
+
+### head in hands over the bills  (AD11)
+```
+A real phone photo from a doorway down a narrow hall into a small kitchen: an older person at a wooden table, head down on folded arms, papers and bank statements spread in front of them. Overhead kitchen light, nothing staged. No text.
+```
+
+### red circle on the threat  (A19, B105)
+```
+A candid wide phone photo of an ordinary place she goes (a church parking lot after service), the older women small in the frame, one figure off to the side circled in a thick hand-drawn red ring. Bold white two-line caption top with a dark shadow: "He targeted church parking lots. Here's why." Small white pill at the bottom "Watch the video demonstration".
+```
+
+### TV special report on her TV  (V35, A21, B406)
+```
+A phone photo of a living-room TV on a wooden stand showing a cable-news interview (an older expert and an anchor), a red "SPECIAL REPORT" tag and a white lower-third bar: "[EXPERT] WARNS SENIORS ABOUT [THREAT]". A coffee mug and the arm of a couch in the foreground. Small white pill below "Watch the video demonstration".
+```
+
+### face-hidden confession  (V19, B352)
+```
+A real photo of a man in a dark hoodie and cap talking with his hands beside an open work van, his face covered by a soft pixel blur. Thin white caption top: "A scammer's confession, face hidden". White pill bottom "Watch the video demonstration".
+```
+
+### confession behind frosted glass  (B209)
+```
+A dark interview room: a silhouette behind frosted glass, a studio mic on a stand in front, a mug on the desk. White two-line headline with a shadow: "The confession every senior should hear". White pill bottom.
+```
+
+**THE MONEY PROOF (PHONE SCREENS)**
+
+### bank app balance  (AD6, AD7, AD13)
+```
+A clean phone screenshot of a generic bank app: "Good afternoon, [first name]", Everyday Checking, the balance huge in red "-$126.15", a red "Your account is overdrawn" row, transaction list or menu below, tab bar at the bottom. No headline.
+```
+Hand-build it in HTML (law 10: AI cannot fake OS chrome).
+
+### SMS alert thread  (AD9)
+```
+An iPhone Messages screenshot from "Card Alerts": grey bubbles, "Bank Alert: $23.16 at QUICK STOP #88, card ending 0657." then "Today 6:15 PM" and "Bank Alert: $143.17 purchase at SUNRISE MARKET 117 on card ending in 0657. Available balance: $61.08." No headline.
+```
+
+### incoming call screen  (AD8)
+```
+An iPhone in-call screen on a dark blurred background: a 1-800 number as the caller, a running timer, the round speaker / FaceTime / mute / keypad buttons and the red end button. Nothing else.
+```
+
+### alert over an ordinary moment  (AD5, AD10)
+```
+A phone photo of an ordinary moment (sauce simmering on the stove, the bed at night with the phone in her hand) with a real-looking iOS push notification across the top: the bank icon, "Purchase Alert", "$64.89 at [store] on your card ending in 3390." Video-player scrub bar optional.
+```
+
+### phone held up with a warning screen  (B213)
+```
+A real hand holding a phone up in a garage or workshop, the screen filled with a yellow warning card: black condensed caps "THE NERVE DOESN'T 'HEAL ON ITS OWN' THE WAY YOU HOPE", small body line, a black bar "DRUG-FREE".
+```
+
+**BORROWED PLATFORMS (SCREENSHOTS OF OTHER PLACES)**
+
+### verified doctor tweet  (B230)
+```
+A clean X / Twitter post card on light grey: round headshot, "Dr. [Name]" with a blue check, @handle, three lines of text, the counts row (4.2K Reposts, 811 Quotes, 18.5K Likes, 3.1K Bookmarks) and the action icons.
+```
+
+### Instagram post screenshot  (B164)
+```
+A phone screenshot of an Instagram post from a health account (@hearing_wellness_hub): a pencil sketch of the body part with a hand drawing the point, a caption "The nerve behind your ear explained in 30s #selfcare", heart count 12.4k, the app's bottom bar, on a purple gradient.
+```
+
+### 2004 forum thread  (B182)
+```
+A screenshot of an old early-2000s web forum in a Windows browser frame: thread title "Finally Found Relief for Constant [Problem]!", three posts with pixel avatars (a cat, a sunset, a cartoon man), usernames, Posts / Join Date 2001, timestamps "Jan 14 2004", plain grey and blue boxes.
+```
+
+### Facebook post chrome  (B12)
+The quoted-headline comment card inside the blue Facebook header bar, with nested replies and reaction counts.
+
+### health-news site header  (B207, B447)
+```
+A news-site article top: a small coloured section tag ("NERVE"), a big serif headline "Pills And Amplifiers Do Not Reach The Nerve Stuck ON.", a byline "By [Name], Health Writer", a real photo below, a small teal "Keep Reading" button.
+```
+
+### news-sentence header photo  (V6, A24, A27, B85, B87)
+```
+Top third: a white block with a bold black news sentence of 25 to 35 words ("A stranger's scanner read the cards in a 78-year-old's purse after church. She lost $200,000. Her son shows how to stop it...") ending in a grey "more", like a Facebook caption cut off. Bottom two thirds: a candid close photo of the moment (a stranger's bag pressed against her purse).
+```
+
+**QUIZZES (SHE HAS TO ANSWER)**
+
+### palm quiz A / B / C  (B145)
+```
+A pencil drawing of an open hand on cream paper with three dots labelled A, B and C, a real pen tip touching one. Hand-lettered headline top "Which spot is linked to [problem]?" A small dark rounded button bottom "Watch the video demonstration".
+```
+
+### numbered points on a real photo  (B157)
+```
+A close real photo of the body part with three red numbered circles 1, 2, 3 on it, a finger pressing a glowing point, a red arrow and a red slanted callout "It's Not Where You Think...", a black-on-yellow brushed headline top "Which Spot Quiets The [Problem]?", a blue pill button with a play icon "Watch The Demonstration".
+```
+
+### left or right?  (B415, B434)
+```
+Overhead phone photo of two older hands each resting beside one of two near-identical objects on a wooden porch table, a dog asleep behind. White bar headline: "Left side or right side?"
+```
+
+### same person, two choices  (V131, B373, B404)
+```
+One frame split down the middle: the same older person in the same place, left side frowning with the bad result (burnt cookies, arms crossed), right side smiling with the good one. White bar headline as a question: "Burn it again, or follow the recipe?"
+```
+
+**THE SCIENCE LOOK**
+
+### brain scan before / after  (B127, B183, B204, B218, B293)
+```
+Two brain scans side by side on a clinic monitor (or one scan split down the middle): left glowing red and orange chaos labelled "[PROBLEM] BRAIN", right calm blue labelled "AFTER", faint clinical readouts and small numbers around them. Optional DAY 0 / DAY 30 at the bottom.
+```
+
+### textbook figure  (B99)
+```
+A plain line drawing of a hand at the body part on graph-paper grey, a thick curved red arrow showing the motion, a boxed hand-lettered title top-left ("CLEAR 'ZOMBIE CELLS'"), a small italic caption bottom "Figure 1.2: ..." like a page from a medical book.
+```
+
+### two-step comic  (B74)
+```
+Two square comic panels side by side in clean black line art, numbered 1 and 2, a man's head in profile with his finger on the spot, a small arrow showing the move, a caption under each panel ("Step 1: Point to Jawline" / "Step 2: Slide up behind Ear"), a blue headline top "The 'Wire' Reset Technique".
+```
+
+### 3D animation still  (B173)
+```
+A glossy 3D medical animation frame inside the body: soft pink tissue, a glowing blue arrow sweeping through, green round particles being pushed out, a big condensed caption at the bottom: "[NAME THE VILLAIN]: FLUSH THE [TOXIN]".
+```
+
+### practitioner + neural overlay  (B93, B314, B393)
+```
+A real clinical photo of a gloved hand pressing a spot on a patient's neck, a glowing blue nerve network drawn over the skin from the point, a bold white condensed headline top or a yellow bar bottom ("THE 'VOLUME SWITCH' TRICK").
+```
+
+### fire vs calm silhouettes  (B390)
+```
+A vertical split: left a dark silhouette of a woman with her head thrown back inside red-orange fire and jagged sound waves, right the same woman sitting cross-legged in calm blue flowing waves. No text.
+```
+
+**EXPERTS AND AUTHORITY**
+
+### white coat holding the organ  (B161)
+```
+A doctor in a white coat in a clinic holding a realistic model of the organ toward the camera, mid-sentence, a yellow-on-blue tabloid condensed headline across the top "TOP [EXPERT] REVEALS THE TRUE CAUSE OF [PROBLEM]", a red rounded "WATCH VIDEO" button at the bottom.
+```
+
+### doctor warning to camera  (B276)
+```
+A doctor in a white coat and stethoscope in his office, one finger raised, looking straight into the lens, giant white condensed caps across the top "DOCTORS ARE WARNING EVERYONE."
+```
+
+### expert selfie with a senior  (V9, A25, B150)
+```
+An influencer-style front-camera selfie: a smiling man in his 30s in the foreground pointing at an older woman beside him in a store parking lot, both looking at the camera. No text (it is a video cover).
+```
+
+### editorial portrait poster  (B255)
+```
+A painted editorial illustration: a stern older veteran in an olive polo in profile, a gloved finger pressing the spot behind his ear with a small glow, an American flag behind, serif caps on the right "VA DOCTORS DISCOVER: PRESS THIS SPOT FOR 10 SECONDS", a small subtitle "TREATMENT GUIDE".
+```
+
+**HANDWRITING ON REAL THINGS**
+
+### diner receipt / napkin  (B198, B258)
+```
+A phone photo of a diner table: a receipt with a line in red pen "The thumb trick to mute your ears." next to coins and the pen; or a paper napkin with a blue ballpoint drawing of the body part, an arrow and "Press Here", beside a plate of eggs and toast.
+```
+
+### sticky note on the dashboard  (B117)
+```
+A phone photo from the driver's seat: a pink sticky note on the steering wheel with a short line in pen ("Woke up to pure silence today"), a sunny street through the windshield. Nothing else.
+```
+
+### notebook page with coffee  (B359, B320)
+```
+Overhead phone photo of a rustic wooden table: a torn spiral-notebook page with one line in pen ("The 10-second military trick for tinnitus"), a black coffee in a saucer beside it.
+```
+
+### whiteboard headline  (B363)
+```
+A small whiteboard on an easel, the headline in neat marker handwriting, four lines: "How I Quieted my Ringing Ears in 30 Seconds (You're Welcome)".
+```
+
+### still life with a handwritten tag  (B113, B229)
+```
+Overhead photo of a few worn objects on rough cloth (ear muffs, a pen, a shell casing; dog tags and two pens) with a brown paper tag tied on, one line handwritten on it.
+```
+
+### kid's crayon checklist  (B416)
+```
+Over an older man's shoulder: on the table a child's crayon drawing taped up as a checklist (keys, glasses, wallet, a heart, a stick figure), the real keys and wallet in front of it. White bar headline "Grandpa's checklist, in crayon".
+```
+
+**SIGNS AND TYPE**
+
+### caution sign  (B312)
+```
+A real yellow-and-black hazard sign wired to a chain-link fence in a grim industrial yard, red block caps "YOUR NERVE WON'T RESET", black under it "WITHOUT INTERVENTION".
+```
+
+### grunge text wall  (B336)
+```
+Huge distressed white and gold condensed caps filling a dark concrete wall, stacked and slightly tilted: "THEY DON'T WANT YOU TO KNOW". Nothing else.
+```
+
+### text-only card  (B261)
+```
+A plain warm-grey square, a three-line headline centred in a thin grey sans "Top [Expert]: Do This 30-Second [X] Trick Tonight", one small dark rounded button "Read Story".
+```
+
+### quote on dark  (B167)
+```
+A dark photo of a woman's ear and neck with a thin golden glow line, big white condensed quotes on the left: "DID YOU TRY THAT [THING]?" then "THE [PROBLEM] IS ALMOST GONE." then a small "I use it every night.", a purple rounded "TAP BELOW" button.
+```
+
+**THE PERSONA VOLUME PLAY**
+
+### hobby-persona white bar  (the wallet volume play, hundreds of ads across every page)
+```
+A warm, specific phone photo of one person over 65 in their own life (the train set, the fly-tying table, the bowling alley, church steps, the RV, the dock) holding the thing plainly, smiling or mid-task, with a white bar across the top carrying 3 to 6 bold black condensed words that name the moment in the persona's own voice: "Train set Saturday", "Pastor's wife told me", "Door locked. Wallet done."
+```
+Every ad changes the persona, the place and the label; the format never changes.
+
+### "My failed stack" list  (B289)
+```
+A white card: bold black title "My Failed Stack", five numbered rows with a small icon each naming what she already tried (hearing aids, a supplement, ginkgo, sound apps, "live with it"), a photo of the body part on the right, a purple band "IF THAT LIST LOOKS LIKE YOURS", a small line naming the real cause, a purple "Read This" button.
+```
+
+### karaoke-caption UGC still  (most VIDs)
+The video covers: a front-camera selfie of the persona in their place (barn, piano, workshop, church steps), mid-word, one line of bold white caps captions mid-frame with the first word in yellow ("BEFORE EVERY CRUISE, I").
+
+**THE OTHER 11 NETWORK PAGES (added 2026-11-06 after Ryan: "You're missing a lot from other pages that we had from that brand")**
+Ambrosia Aura (205 ads), Lauren Hartwell (149), Larah Maplestine (67), Lily Garcia (35), Harry Keegan (26), Valentina Stewart (22), Evelyn Taylor (16), Addison Hall (15), Hailey Evans (12), Ryan Walker (7), Claire Baker (4). Every ad sends traffic to xeviola.com, trk.donrephblog.com or leadingtechmagazine.com, the same landers as Belesmé. Mostly the Tinnito pen. Examples: `pages/_examples-sheet-2.jpg` (tiles 63 to 112). What stands out: the persona pages each own one shape and run it at volume (Lauren Hartwell's red-to-blue earlobe card about 55 times; Harry Keegan is almost all comparison cards; Claire Baker is only the doll meme).
+
+### line-art trick with a swapped prop  (Ambrosia #41 and about 35 more)
+```
+Black ink line drawing on white: a hand pressing one point on the wrist, a dotted line to a head, and beside the head ONE everyday object drawn as the cause (a speaker, a tractor, a tissue box, a wine glass, an alarm clock). Chunky comic-font headline top, three lines: "Try This [X] Trick Tonight If the [Problem] Started After [the cause]".
+```
+The object changes with each ad's cause; the drawing never does.
+
+### sepia pencil portrait  (Ambrosia #24, #76, #89, #104)
+```
+A rough shaded pencil drawing on warm sepia paper: an older man in bed staring at the ceiling, a few red scribble lines coming from his ear. No text.
+```
+
+### pencil before / after  (Ambrosia #126)
+```
+A pencil sketch on cream paper split down the middle, BEFORE and AFTER in small caps: left the same man with his hands over his ears, frowning; right him smiling, calm. No other text.
+```
+
+### coral text-only card  (Ambrosia #8, #25, #38, #52, #68)
+```
+A flat coral-red square, nothing but white centred text: three lines of the confession ("Nobody Told Me This Ear Trick Could Help After 7 Years of Ringing"), a gap, then "Finally silence !!".
+```
+
+### marker whiteboard diagram  (Ambrosia #132, #140, #141)
+```
+A whiteboard with a quick red and blue marker drawing of the body part, hand labels with arrows (EAR, COCHLEA, OVERACTIVE NERVE), and a red handwritten headline top-left "Watch what [this] does to your [body part]".
+```
+
+### one object on black  (Ambrosia #133, #150, #169)
+```
+Pure black background, three giant everyday objects she uses on the problem (cotton swabs) standing tall on the right, a small white left-aligned headline top-left "How To [Fix] At Home?" and "Learn the Method >>".
+```
+
+### the life she wants, no text  (Ambrosia #122, #131, #166, #175, #177, #178, #194, #203)
+```
+A bright aspirational photo with nothing on it: a Tuscan villa and pool, a manor lawn, an estate garden. The ad copy carries the story.
+```
+Taste note: the "quiet aftermath" lane has died for us; this is their volume, logged as seen.
+
+### small figure in a big room  (Ambrosia #101, #191, #195)
+```
+A wide photo down an ornate gold hotel or casino hallway with a chandelier, red patterned carpet, and one small woman alone on a lounge chair at the far end, on her phone. No text.
+```
+
+### flip-phone text  (Ambrosia #102, #183)
+```
+A hand holding an old grey flip or candybar phone, the small green screen filled with one text message in pixel type from a friend telling the story.
+```
+
+### Recently Deleted screen  (Ambrosia #155, #158, #165)
+```
+A hand holding an iPhone over a granite counter showing the Photos "Recently Deleted" grid (the photos she did not want to keep), a pen lying beside it.
+```
+
+### "5 myths" native card  (Ambrosia #100, #164, #176, #182)
+```
+A cream newspaper-style card: a red anatomical drawing of an older head on the left with "the hidden cause?", a serif title right ("5 MYTHS ABOUT TINNITUS YOU MUST KNOW"), five numbered myth lines in small type, a short story paragraph, a red bar at the bottom "WATCH: WHAT'S REALLY BEHIND THE RINGING".
+```
+
+### two-colour split hook  (Ambrosia #69)
+```
+A square split black and white, one bold sans headline running across both halves in black and red ("HEARING THE SHOW ISN'T THE SAME AS HEARING OVER THE RINGING"), a TV icon on the left half, a glowing ear with sound rings on the right.
+```
+
+### selfie with an avatar caption  (Ambrosia #92, #138, #156)
+```
+A front-camera selfie of a man in his 60s at home, a small round profile-photo badge in the corner, a white rounded caption box low: "HERE'S HOW I QUIETED 8 YEARS OF RINGING AT 63" and a red line "(MY DOCTOR STILL CAN'T EXPLAIN IT)".
+```
+
+### flash-film hug  (Ambrosia #103, #188, #193, #205)
+```
+A dark flash photo, film grain, of an older couple in a tight happy hug in their kitchen at night. No text.
+```
+
+### 2x2 bedtime comic  (Ambrosia #198, #204)
+```
+A 2x2 grid of photo panels under a white header strip ("Does the ringing get louder at bedtime? Then you need to try this."): the man awake with hands over his ears, the same man asleep, the nightstand with the phone, a close detail.
+```
+
+### YouTube thumbnail  (Ambrosia #202)
+```
+A YouTube-style thumbnail: a shocked older man lying awake in bed, six box fans aimed at him from every side, giant white and red caps across the top "STILL AWAKE".
+```
+
+### craft model of the organ  (Ambrosia #179)
+```
+A phone photo of a hand-made clay cutaway model of the body part sitting on crumpled foil on a workbench, a real finger pointing at the one spot.
+```
+
+### macro of the problem on black  (Ambrosia #127)
+```
+An extreme close-up of an ear with a fingertip pressed into it on pure black, white headline top "How To Quiet The Ringing In Your Ears At Home?", a white pill at the bottom.
+```
+
+### red-to-blue earlobe card  (Lauren Hartwell #41 and about 55 more: that page's main ad)
+```
+Left: a red glowing head silhouette with an arrow to a calm blue one. Right: a close photo of a grey-haired person's finger pressing a red glowing dot on the earlobe. Teal and black bold headline that names a persona: "A Retired Korean Acupuncturist's Earlobe Trick for Ear Ringing". A dark teal pill "Watch The Demonstration" with a play icon.
+```
+The persona in the headline changes every ad (yoga teacher, osteopath, chiropractor).
+
+### highlighter tweet  (Lauren Hartwell #24, #52)
+The verified-tweet card with yellow-green highlighter swipes over the key phrases.
+
+### iOS Notes checklist  (Lauren Hartwell #55)
+```
+An iPhone Notes screenshot: "All iCloud", a date, a bold title ("In Just 30 Seconds A Day"), three checked items in purple, each one line. Hand-build it in HTML.
+```
+
+### Day 1 / Day 14 Story  (Lauren Hartwell #114)
+```
+An Instagram Story screenshot: a handle at top, "2 weeks on [it]", two mirror selfies side by side labelled Day 1 and Day 14, hashtags at the bottom.
+```
+
+### tabloid HEALTH caption  (Lauren Hartwell #58, #72)
+```
+A moody portrait of an older woman at home with her hand at her ear, a small white "HEALTH" tag, then big yellow and white condensed caps over the lower half: "THIS [DRUG-FREE THING] IS HELPING THOUSANDS [FIX] - HERE'S WHY DOCTORS ARE TAKING NOTICE", a tiny @handle.
+```
+
+### pulp comic splash  (Lily Garcia #17, #25, #26, #35)
+```
+A vintage pulp comic panel: halftone dots, cream border, a family at Sunday dinner, the older man at the table clutching his ears, giant yellow starburst lettering "EEEEEEE" filling the frame, a caption box "SUNDAY DINNER. EVERY SUNDAY."
+```
+
+### drowning in options cartoon  (Lily Garcia #24)
+```
+An ink-and-watercolour cartoon: an older man up to his chest in a flood of everything he has tried, each item labelled (WHITE NOISE, GINKGO, EAR DROPS, RAIN SOUNDS, EARPLUGS), a speech bubble "WHY DOES NOTHING HELP?", a tag "12 YEARS OF RINGING."
+```
+
+### newspaper comic strip  (Lily Garcia #8)
+```
+A black-and-white newspaper strip, three panels: his wife says "Did you hear me?", he says "What?", the last panel is a huge "EEEEEEE" over him in his chair.
+```
+
+### Night 1 / 2 / 3 / 30 grid  (Lily Garcia #9)
+```
+A flat illustrated 2x2 grid of the same woman in the same bed, labelled NIGHT 1, NIGHT 2, NIGHT 3, NIGHT 30: awake and miserable, then a little better, then asleep and calm.
+```
+
+### before / the 30 seconds / after panels  (Evelyn Taylor #8)
+```
+A flat illustrated card titled "MY NEW BEDTIME ROUTINE": three tall panels BEFORE / THE 30 SECONDS / AFTER, the same woman in each, a one-line caption under each panel.
+```
+
+### raw x-ray with a red arrow  (Lily Garcia #1, #15, #18)
+```
+A plain skull X-ray in profile on black, no viewer and no labels, one red arrow pointing at the one spot.
+```
+
+### family helper candid  (Lily Garcia #6, #13, #14)
+```
+A candid phone photo in a messy living room: a granddaughter holding something to her grandmother's ear while the grandmother looks at the camera, unsure. No text.
+```
+
+### Reddit post  (Larah Maplestine #25, #29)
+```
+A Reddit post card on white: the upvote column (8.4k), "r/Over60" and a username, a bold title ("Millions Are Silencing Tinnitus With This Simple Ear Trick"), two lines of body text, the comment and share row. Hand-build it in HTML.
+```
+
+### WhatsApp group  (Larah Maplestine #54, #66)
+```
+A WhatsApp group chat screenshot, green header "Tinnitus Warriors", five members' messages with names in colour, the last one: "Yes that one. My husband got it and cried because the ringing went quiet." Hand-build it in HTML.
+```
+
+### news push over scenery  (Larah Maplestine #20, #48)
+```
+A calm scenic photo (hydrangeas, a misty dock) with one frosted iOS notification card floating on it: "HealthAlerts · Just Now", bold "Top Audiologist Begs [Sufferers] To Try This Tonight", one grey line.
+```
+
+### words on her skin  (Larah Maplestine #55)
+```
+A close real photo of a woman's face in profile, the words "SHHH FINALLY QUIET" written on her cheek in black marker, her hand at her ear.
+```
+
+### clinician with an inset patient  (Valentina Stewart #5, #7, #11, #14, #15: video covers)
+```
+A nurse or doctor leaning toward the camera over a counter, and lying on the counter in front of her a small photo of a grimacing man holding his ear, like a patient's file she is about to explain.
+```
+
+### "Me: / Doctor:" doll meme  (Claire Baker #1 to #4: the whole page)
+```
+A glossy fashion-doll figure of an older woman sitting in a clinic chair holding her head, static and sound-wave bursts from her ears, a small white "Me:" tag top-left, a white serif box at the bottom: "Doctor: 'Your hearing test is normal. There's nothing wrong - you'll get used to the ringing.'"
+```
+
+### X marks the spot  (Evelyn Taylor #4)
+```
+A cream card: a simple line drawing of a head in profile, a red X behind the ear, a dotted treasure-map trail with a compass rose leading to it, headline "X marks the spot nobody told you about", a small outlined pill "Find the spot".
+```
+
+### parchment scroll  (Evelyn Taylor #11)
+```
+An aged treasure-map scroll on dark wood, burnt edges, brown serif caps "SIMPLE NIGHT HABIT: 30 SECONDS BEHIND THE EAR - SEE WHY PEOPLE WITH RINGING EARS LOVE IT", a stitched leather tab button "SEE THE HABIT".
+```
+
+### selfie holding a sign  (Evelyn Taylor #10)
+```
+A front-camera selfie of an older man in a suit in his car holding up a white card with marker handwriting: "30 SECONDS A NIGHT GAVE ME MY SLEEP BACK".
+```
+
+### anatomy doodle with a ghost button  (Evelyn Taylor #1, #3, #5, #13)
+```
+A cream card with a loose line sketch of the jaw and ear, red arrows showing the cause, a bold black two-line headline "Why clenching your jaw makes the ringing louder", a small outlined "Learn Why" pill bottom-right.
+```
+
+Product-aware from these pages (the pen is the subject; use only on a product-aware slot, or swap the product for her brand-name rivals as a compare quiz): the X-vs-the-pen two columns and the red X / green check table (Harry Keegan #2, #12, Lily Garcia #12); the fork in the road (Harry Keegan #8); the balance scale (Harry Keegan #19); old shelf vs new routine photo split (Harry Keegan #22, #26); tried vs missing slide (Ambrosia #139); the pen in an everyday object, thermostat, dimmer, volume knob (Ambrosia #43 and 11 more); theater curtain "Don't be the LAST ONE" (Ambrosia #134); review widget (Lauren Hartwell #2); radial stat callout (Lauren Hartwell #6); Halloween 60% OFF (Ambrosia #36).
+
+Product-aware only (never on a product-blind page): the product hero card with a "$39.99 · 30-day" pill; "WE MADE TOO MUCH" warehouse overstock with a 50% OFF burst; the 3-step routine card with the product; Black Friday "60% OFF SITEWIDE".
+Left out because they are on the REJECTED line: the blueprint hand (B88) and the Rx pad note "Skip the sound therapy" (B265, doctor's notes).
+
+**FROM THE DEEPER SORT (RANKS 290 TO 1,116)**
+
+### blue-pen notepad sketch  (B523, B571, B581)
+```
+A blue ballpoint cartoon on lined notepaper with the pen lying on it: the threat scene drawn simply (two old women walking out of church, a man passing close with a shoulder bag), handwritten call-outs with arrows ("his shoulder bag", "your purse", "he never touches you"), a boxed handwritten caps headline across the top, a footer "watch how to protect yourself" with an arrow.
+```
+
+### anchor quote poster  (B673)
+```
+A cable-news style poster: the expert's portrait on the left against a city backdrop, a tall white quoted headline on the dark right ("A Scanner Anyone Can Order Online Lets A Thief Standing Behind You In Line Read Every Card In Your Purse Or Wallet."), a yellow credential line ("Ray W., retired U.S. Army electronic-warfare engineer, 22 years"), a yellow button "Watch Him Show The 10-Second Trick That Stops It".
+```
+
+### ear inset bubble  (B952, B965, B1027, B555, B583)
+```
+A quiet mood photo of her life (a woman with a mug at the window, a dark living room at 1:17 a.m.) with a round macro inset of the body part in a lower corner, a small serif caption in the empty space ("Week 3: I notice silence again."), a small pill "Read This".
+```
+
+### waveform timeline  (B507, B627)
+```
+An open palm with a red pressure dot on the left, a sound waveform running right that turns from red RINGING to blue QUIET along a scrub bar marked 0s to 7s, a headline "Doctors Stunned: This Hand Trick Quiets [Problem] In 7 Seconds", a blue play-button "Watch The Demonstration".
+```
+
+### iMessage thread  (B671, B810, B937)
+```
+A phone with an iMessage chat between two friends ("Constant ringing?" / "Did you try that nerve stim pen?" / "The ringing is almost gone"), keyboard up, beside a close photo of the body part with a small label, a small CTA line "Soft close. Read This". Hand-build the chat in HTML.
+```
+
+### threat device prop  (B773, B488, B657)
+```
+POV phone photo of a hand holding the threat device itself inside an open bag in a pharmacy aisle (or unboxed from bubble wrap on a doormat, or a doctor studying a card chip through a magnifier). No text.
+```
+
+### YES / NO buttons  (B916)
+```
+A real photo of an older couple at an airport gate holding the thing up, a white headline on the lower photo "Retired and flying soon?", a small line "Watch the video demonstration", and two big rounded buttons, green YES and red NO.
+```
+
+### cream quote card over a photo  (B1102)
+```
+A warm photo of an older couple at the gate, a cream card in the lower third with a serif quote "We changed our wallets after a friend's trip." and "- Harold, 79", a tiny line under it "Watch the video demonstration".
+```
+
+### red / green before-after tabs  (B786)
+```
+Two side-by-side candid photos of the same woman at a checkout, tense on the left, calm and smiling on the right, a red tab top-left "Before the wallet trick", a green tab top-right "After the wallet trick", a white pill bottom.
+```
+
+### timer-badge UGC still  (B653)
+```
+A shaky video still of hands moving things in a bag at airport security, a red stopwatch badge "0:32" in a corner, a white caps caption "40 SECONDS AT TSA IS ALL THEY NEED", one karaoke subtitle line low.
+```
+
+Also seen, weaker or product-only: the circuit-breaker metaphor with the pen (B608), the printed advertorial page as a desk prop with a price badge (B789, B825), "WAIT WHAT" poster with the pen (B492), the luggage-tag gift flat-lay "Who's on your list?" (B928), a bare macro ear on peach (B202, B639), a gothic mirror still (B473), an empty boardroom with the device (B498), a two-scene clinic split (B745).
+
 ## CANDIDATES (rendered well, ungraded or lukewarm — offer only if the set needs more variety)
 ### not picked 2026-10-29 (Ryan left these out of the eight; offer only if asked)
 #### marker on the body  (Natural Wellness Journal 1 of 53)

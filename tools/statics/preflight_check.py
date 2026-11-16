@@ -28,7 +28,7 @@ Rules enforced:
 """
 import os, re, sys, glob
 
-WS = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", ".."))
+WS = "/Users/ryanconnolly/SkyHouse Exodus"
 FORMATS_MD = f"{WS}/.claude/skills/strategist-images/formats.md"
 ROUND_RE = re.compile(r"^(.*?)-?r(\d+)$")
 

@@ -2,7 +2,7 @@
 
 Ryan's Claude Code skills for ad creative: one-shot video, static images, landers and cold hooks. Each lives in `.claude/skills/<name>/SKILL.md` and is the whole method; read it before running anything.
 
-## The four skills
+## The build skills
 
 | Skill | Say | What it does | Needs |
 |---|---|---|---|
@@ -10,6 +10,24 @@ Ryan's Claude Code skills for ad creative: one-shot video, static images, lander
 | `strategist-images` | "strategist, make images for this ad" | ad statics, lander heroes, thumbnails, before/after pairs on Kie (gpt-image-2, z-image); `formats.md` is the graded format library | `tools/statics/`, `strategist-references/winning-statics-study.md` |
 | `strategist-lander` + `strategist-lander-qa` | "strategist, build the lander" / "QA this lander" | finished advertorial copy to a deploy-ready static HTML page in the house system, then a fresh-agent inspection; `tools/landers/deploy.sh` pushes to Cloudflare R2 behind a gate | `lander-source/` (Ryan's shipped pages), `strategist-references/swipe-learnings.md`, wrangler + Cloudflare keys in `.env` |
 | `hook-writer` | "hooks for <offer>" | short cold Facebook hooks under five rules in `tools/hooks/rules/short-cold.json`, each passed through a mechanical gate and a stranger judge (headless `claude`, needs `claude login`) | `tools/hooks/`, `offers/_examples/short-cold-approved.md` |
+
+## The copy skills (added 2026-11-16)
+
+Every skill Ryan writes with is now in `.claude/skills/`. For a copy-only tool, start with these.
+
+| Skill | What it writes | Reads |
+|---|---|---|
+| `hook-writer` | short cold hooks, gated and judged | `tools/hooks/` |
+| `strategist-ads` | Facebook ad copy: hooks plus primary text | `strategist-references/ryan-voice.md`, `hook-laws.md`, `native-story-framework.md` |
+| `strategist-longform` | 2,500 to 3,500 word first-person story ads | `strategist-references/longform-story-ads.md` |
+| `strategist-advertorial`, `strategist-advertorial-pdp` | advertorial and product-page copy | `strategist-references/swipe-learnings.md` |
+| `talk-like-a-human` | how every spoken or story line should sound; sits under the lane skill | itself |
+| `song-ads` | a finished ad turned into a Suno-ready song | its own `references/` |
+| `.claude/commands/write-video-script.md` | video ad scripts and creative briefs | `strategist-references/feminine-voice.md`, `hook-laws.md` |
+
+Planning and research skills: `strategist` (the hub that routes), `strategist-offer`, `strategist-segments`, `strategist-plan`, `strategist-formats`, `strategist-research`, `strategist-research-brief`, `strategist-netnew`, `strategist-launch`, `intake-check`.
+
+`strategist-references/` holds Ryan's own doctrine files the skills name as required reading. Left out on purpose because this repo is public: the full ad copy corpus (`strategist-references/source/`), the Genesis bot prompts, the swipe folder and the source PDFs. A skill that points at one of those will say the file is missing; ask Ryan for it.
 
 `tools/copygate/` is the cold-read judge the lander and ad lanes call (`python3 tools/copygate/coldread.py judge <file>`), plus three Claude Code hooks. `.claude/settings.example.json` wires them (skill-first gate on copy writes, cold-read note after writes, hook-writer judge stamp on stop); copy it to `.claude/settings.json` if you want the same guardrails.
 

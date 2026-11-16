@@ -12,3 +12,6 @@ offers/*/videos/*/qa/
 offers/*/videos/*/ref/
 *.mp4
 *.bak-*
+tools/copygate/reply-eval.jsonl
+tools/copygate/reply-length-misses.jsonl
+tools/copygate/reply-judge/

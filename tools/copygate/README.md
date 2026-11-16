@@ -97,3 +97,15 @@ transcript, unknown lane, any error). Notes, READMEs, TASK/CONCEPT/BRIEF files, 
 Lane map is the `LANES` list at the top. Tests: `python3 tools/copygate/test_skill_first.py` (24 cases).
 Dry run over past sessions: `python3 -I tools/copygate/hook_skill_first.py --audit --days 7` (11-03: 108 of 250 copy writes in 7 days
 happened without the skill read).
+
+## The reply eval (built 2026-11-06, Ryan: "I don't know what you're saying, literally every single time you respond to me")
+
+`hook_stop_reply.py` (Stop hook, wired in ~/.claude/settings.json) now runs five checks on every reply to Ryan and logs pass or
+fail to `reply-eval.jsonl`. It never blocks. The checks: over 100 words of prose, more than 3 bullets, a tool or file name, a
+number he did not ask for, a first line about what I am doing instead of the answer. Exempt only when the turn wrote copy or he
+asked for depth (diagnose, deep dive, walk me through, full read, explain, in detail, report, write-up, breakdown).
+
+`python3 tools/copygate/reply_eval.py today` writes the day's number to `REPLY-EVAL.md`. `backfill --days 7` rebuilds from the
+transcripts. `complaints --days 30` is Leo's test: does the check flag the replies Ryan then said he could not understand more
+than the rest? On 11-06 it did not (77% vs 76%): nearly every reply is too long, so length does not separate the confusing ones.
+`reply-judge/` holds the blind 40-reply sample (20 he could not understand, 20 he said ok to) used to test a cold reader instead.

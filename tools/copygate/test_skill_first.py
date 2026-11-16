@@ -4,7 +4,7 @@ import json, os, sys, tempfile
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import hook_skill_first as H
 
-ROOT = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", ".."))
+ROOT = "/Users/ryanconnolly/SkyHouse Exodus"
 def asst(name, inp): return json.dumps({"type": "assistant", "message": {"content": [{"type": "tool_use", "name": name, "input": inp}]}})
 def user(txt): return json.dumps({"type": "user", "message": {"content": txt}})
 

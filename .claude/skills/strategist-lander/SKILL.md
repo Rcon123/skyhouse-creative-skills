@@ -298,3 +298,15 @@ this thing that stops you from doing it because it's just wasting my time." The 
    Fix dashes, banned words and long sentences before the judge, not after.
 
 Tool and rules: `tools/copygate/README.md`.
+
+## GRADED (Ryan, Loom 2026-11-05 on refill-v4 at 390, 22 seconds, after the beer page shipped in the same skin)
+His words, cursor on the H1, then the hero pair, then the Note line, then the lead: "This is kind of beefy. I don't really like morning refill either. I think we could do a lot better. This is very long-winded. This image is very weak. I hate this note. All this copy is super chunky. In fact, I think you know what feedback I'm about to give you because I've given it a million times."
+- A 30-word H1 is beefy. Cut to one plain sentence, 12 to 15 words, the first words carrying it.
+- "Morning Refill" as the nickname is out. (Morning Habit, the plain-English pick from 10-30, stands until he says otherwise.)
+- The HealthWise "Note:" line under the button is hated. Drop it; no page gets one.
+- The same-woman before/after pair as the hero is "very weak". A hero is one loud impossible thing (law 7), never a face pair.
+- "Chunky" again: a lead paragraph of three or four sentences is chunky even in plain words. One or two sentence beats, cut words, not just split lines.
+Applied the same hour to the beer page (same skin, same four misses). The lesson is not the notes; it is that a page built in his liked skin still got all four, so run this list over any page before the first deploy.
+
+## CAPTURE RULE (2026-11-05, beer page, Ryan: "there's still a Check Availability button literally one line from each other")
+A Playwright `full_page=True` screenshot paints the position:fixed sticky bar at the original viewport's bottom edge, which on a page with a hero button lands directly under that button. The served page never showed two buttons (scanned every 100px of scroll), but the board I sent him did, twice, and he graded the board. Before any full-page capture for him: `document.getElementById('sticky').remove()`, and send the phone's real first screen (viewport capture at scroll 0) beside it. Also his two notes on the same look: an 800-weight five-line H1 is "unreadable, chunky and ugly" (12 to 15 words, 700 weight, three or four lines at 390), and the client's product render with swoosh lines is "fucking awful" (use a real photo of a person holding the bottle).

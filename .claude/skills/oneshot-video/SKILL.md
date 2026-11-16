@@ -15,6 +15,33 @@ Script and idea in, `final.mp4` out. You are the director and the editor: you de
 
 The older route, one text-to-speech voiceover driving every shot (`voice.mode: "tts"`), still works and still syncs. Use it only when Ryan asks for a specific TTS voice or supplies a recorded voiceover.
 
+## What a working video is (measured 2026-11-04, after Ryan graded a 27 s build "not acceptable")
+
+Four working videos shot by shot (`offers/prodenta/videos/winner-study-2026-11-04/STUDY.md`: the client's three live ProDenta winners and our TPS VID863) against the dead build. The gap was not the voice. It was the pictures:
+
+| | Working videos | The dead build |
+|---|---|---|
+| Shots in the first 20 s / 60 s | 9 to 13 / 18 to 31 | 7 / (10 in 27 s) |
+| Presenter on screen | 38 to 41% (client), 88% (Camera Talk) | 62% |
+| Presenter face width | 35 to 47% of the frame (72% in a car) | 21%, a small woman in a wide room |
+| Stills | 0 | 4 of 10 shots, one photo pushed in four times |
+| Different pictures in a minute | 12 to 18 | 4 |
+| Cutaways | moving phone clips: a hand feeding, pouring, lifting a lip; the dog chewing, drinking, licking, on the table | push-ins on a still |
+
+Hard rules from it, checked by `validate` where it can:
+
+1. **Picked frames only.** A master comes from a round Ryan graded (a PICKS folder, a grade in memory). An ungraded round is not a master, however good it looks; the dead build's woman and dog were from one he had already read as AI. If nothing is picked: frame sheet, his pick, then video.
+2. **The presenter frame is a phone selfie.** Head and shoulders, face 40 to 50% of the frame width, the dog's head below her chin, her own couch. Never a wide room shot. Alternate zoom 1.0 / 1.14 on the same frame.
+3. **Cut budget, held shots.** Never fewer than 6 pictures in the first 20 s (boredom), and never a flicker: every shot held 2.3 s or more, one idea per shot in sentence order, no sliver of face between two cutaways, no picture twice. Ryan 11-04: a 10-picture 21 s open with slivers = "completely chaotic, a mess"; a 4-shot 12 s insert held 3 s each with a bed = "awesome." On a client-shape video the presenter is on screen under half the time.
+4. **Every cutaway moves and shows the noun.** A hand or the dog doing the thing the line names, phone-look, handheld. No still push-ins (`"still": true` only for a photo the script names, and the winners have zero). No picture twice.
+5. **A mouth every 20 to 30 s.** Real brown macro early, real white macro at every "now" and "today".
+6. **Mechanism inserts are allowed to be renders.** The client cuts to 3D dental renders, a tooth cross-section and a drawn breath cloud for 2 to 5 s over the voice. The premise ban is on the presenter only (no coats, scrubs, glass dogs as the main picture).
+7. **Ladder of spend.** A 5 s test to Ryan before a 20 s build, a 20 s build before a full one. The sync gate and the listening judge are measurements, not the grade; his eye is.
+
+## The X method (researched 2026-11-04; read `tools/video/research/x-deep-2026-11-04-STACK.md` before any realism build)
+
+What the people Ryan follows actually do for ultra-realistic UGC, in order: one iPhone-real character still reused everywhere; motion from a REAL video (a winner as Video1, the character as Image1, Seedance 2.5 swap, "keep everything else the same", captions stripped from the master first, duration automatic); the voice made FIRST by a voice tool (ElevenLabs v4) and the real file laid back over the finished picture, because every video model re-records or band-limits a reference voice (that is the "phone call" sound Ryan heard on 11-04); 2 takes generated per 1 used with a human picking; pauses tightened, captions redone, Topaz once at the end. Proven here on 11-04: the swap put our woman and dog on her couch with a real person's motion on the first try. Missing here: an ElevenLabs key (none in the workspace; ElevenLabs on Kie is TTS-only and unreliable). A native-voice build is the fallback, never the goal.
+
 ## Read before you plan (every time)
 
 1. `references/lessons.md`: what past builds learned. Short. Read it first, add to it last.

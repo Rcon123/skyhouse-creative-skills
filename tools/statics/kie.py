@@ -6,7 +6,7 @@ z-image (real-looking people for pairs BEFORE; prompt < 800 chars; never end a z
 Never nano-banana-pro. Realism stack (REA r8 / Cloud9 rule 7) lives in DEG. House pair recipe = pairs.py HEAD/TAIL (copied verbatim).
 """
 import os, json, time, base64, subprocess, threading, urllib.request
-WS = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", ".."))
+WS = "/Users/ryanconnolly/SkyHouse Exodus"
 env = dict(l.strip().split("=", 1) for l in open(f"{WS}/.env") if "=" in l and not l.startswith("#"))
 KEY = env["KIE_API_KEY"]
 H = {"Authorization": f"Bearer {KEY}", "Content-Type": "application/json"}
@@ -64,9 +64,17 @@ def grab(url, path):
 def upload(path):
     b = base64.b64encode(open(path, "rb").read()).decode(); tmp = path + ".up.json"
     json.dump({"base64Data": "data:image/png;base64," + b, "uploadPath": "images/user", "fileName": os.path.basename(path)}, open(tmp, "w"))
-    out = subprocess.run(["curl", "-s", "-X", "POST", "https://kieai.redpandaai.co/api/file-base64-upload", "-H", f"Authorization: Bearer {KEY}",
-                          "-H", "Content-Type: application/json", "-A", "Mozilla/5.0", "--data-binary", f"@{tmp}"], capture_output=True, text=True).stdout
-    os.remove(tmp); return json.loads(out).get("data", {}).get("downloadUrl")
+    url = None
+    for attempt in range(4):  # 2026-11-10: the upload host dropped connections mid-body (curl 000); retry with a long timeout
+        out = subprocess.run(["curl", "-s", "--max-time", "180", "-X", "POST", "https://kieai.redpandaai.co/api/file-base64-upload", "-H", f"Authorization: Bearer {KEY}",
+                              "-H", "Content-Type: application/json", "-A", "Mozilla/5.0", "--data-binary", f"@{tmp}"], capture_output=True, text=True).stdout
+        try:
+            url = json.loads(out).get("data", {}).get("downloadUrl")
+        except Exception:
+            url = None
+        if url: break
+        print("UPLOAD RETRY", os.path.basename(path), attempt + 1, flush=True); time.sleep(5 * (attempt + 1))
+    os.remove(tmp); return url
 
 
 def one(name, prompt, outdir, model="gpt-image-2-text-to-image", refs=None, aspect="1:1", retry=1):

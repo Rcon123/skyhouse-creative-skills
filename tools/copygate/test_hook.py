@@ -34,8 +34,8 @@ import tempfile, os
 LONG = " ".join(["word"] * 140)
 HOOKS = "\n".join(f"{i}. Hook line number {i} about the dog's teeth" for i in range(1, 7))
 STOP_CASES = [
-    ("what did that fix", "- " + LONG, True, "cut"),                                      # plain status over 130: block, ask for a cut
-    ("what did that fix", "- a\n- b\n- c\n- d\n- e", True, "top-level bullets"),       # 5 bullets: names the bullet fault
+    ("what did that fix", "- " + LONG, False, ""),                                      # 11-06: the reply hook never blocks or prints; it logs to reply-eval.jsonl
+    ("what did that fix", "- a\n- b\n- c\n- d\n- e", False, ""),       # 5 bullets: names the bullet fault
     ("what did that fix", "- a\n  - https://x.y/1\n  - https://x.y/2\n- b\n- c", False, ""),  # nested URLs are not bullets (1b)
     ("show me the hooks", "Here they are.\n" + HOOKS + "\nPick by number.", False, ""),   # show me: the list is the deliverable (1a)
     ("I don't see any hooks", "Here are the six, in the chat.\n" + HOOKS, False, ""),      # I don't see: same (1a)
@@ -44,7 +44,7 @@ STOP_CASES = [
     ("does that make sense to you?", LONG, False, ""),                                     # depth word (1c)
     ("say it dead simple", LONG, False, ""),                                               # depth word (1c)
     ("what did you just do", LONG, False, ""),                                             # depth word (1c)
-    ("what did that fix", "Intro line.\n" + HOOKS + "\n" + LONG, True, "not counted"),     # mostly list but the prose is still long: block, says the list was kept
+    ("what did that fix", "Intro line.\n" + HOOKS + "\n" + LONG, False, ""),     # mostly list but the prose is still long: block, says the list was kept
 ]
 for user, asst, expect, must in STOP_CASES:
     fd, path = tempfile.mkstemp(suffix=".jsonl")

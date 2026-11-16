@@ -93,7 +93,7 @@ NATIVE_ENGINES = {
     "seedance25": {"model": "bytedance/seedance-2-5", "family": "seedance", "res": "720p", "min": 4, "max": 30, "rate": 63, "ref": True, "adaptive": True},
     "wan3": {"model": "wan/3-0-video", "family": "wan3", "res": "720P", "min": 2, "max": 30, "rate": 16, "ref": True},
     "minimax-h3": {"model": "minimax-h3/image-to-video", "family": "h3", "res": "768P", "min": 4, "max": 15, "rate": 8, "ref": True},
-    "kling3": {"model": "kling-3.0/video", "family": "kling", "res": "std", "min": 3, "max": 15, "rate": 20, "ref": False},
+    "kling3": {"model": "kling-3.0/video", "family": "kling", "res": "std", "min": 3, "max": 15, "rate": 20, "ref": True},  # voice lock via kling_elements audio (2026-11-04)
     "veo-lite": {"model": "veo3_lite", "family": "veo", "res": "720p", "min": 8, "max": 8, "rate": 3.75, "ref": False},
     "veo-fast": {"model": "veo3_fast", "family": "veo", "res": "720p", "min": 8, "max": 8, "rate": 7.5, "ref": False},
 }
@@ -406,6 +406,23 @@ def validate(pr):
                 errs.append(f"{c['id']}: 'on' phrase {c['on']!r} not found in the beat text")
             if re.search(r"\b(talk|speak|say|says|conversation|dialogue)", c.get("motion", ""), re.I):
                 warns.append(f"{c['id']}: speech words in a b-roll motion prompt make mouths flap. Describe the action only.")
+    # winner-study 2026-11-04 (offers/prodenta/videos/winner-study-2026-11-04/STUDY.md): working videos have 9 to 13 picture changes
+    # in the first 20 s, zero stills, no picture twice. Count what this plan would show in its first ~53 words (20 s at 160 wpm).
+    changes, words_so_far, used_frames = 0, 0, {}
+    for b in pr.beats:
+        items = b.get("cutaways", []) + (b.get("shots", []) if b.get("visual") == "broll" else [])
+        if words_so_far < 53:
+            changes += 1 + 2 * len([c for c in items if c.get("on")]) + len([c for c in items if not c.get("on")])   # a cutaway = out and back
+        words_so_far += len(b["text"].split())
+        for c in items:
+            if c.get("still"):
+                warns.append(f"{c['id']}: a still push-in. The four working videos measured 2026-11-04 have zero stills; render it as a moving clip (a hand holds the photo, a thumb lifts the lip).")
+            used_frames.setdefault(c.get("frame"), []).append(c["id"])
+    for fr, ids_ in used_frames.items():
+        if fr and len(ids_) > 1:
+            warns.append(f"frame {fr!r} is shown {len(ids_)} times ({', '.join(ids_)}). Working videos never show the same picture twice in a minute; make each one a different clip.")
+    if changes < 9:
+        warns.append(f"about {changes} picture changes in the first 20 s; working videos have 9 to 13. Add moving cutaways on the nouns (a hand doing the thing, the dog doing the thing, the mouth).")
     for b, it in pr.source_items():
         src = it["source"]
         f = _source_file(pr, src.get("file"))
@@ -806,6 +823,19 @@ def _native_request(pr, b, eng, img, anchor, dur):
                                                      "reference_audio_urls": [anchor], "aspect_ratio": "9:16", "duration": dur, "resolution": e["res"]}
         return e["model"], {"prompt": body, "first_frame_url": img, "duration": dur, "resolution": e["res"]}
     if fam == "kling":
+        if anchor:
+            # Kling 3.0 locks a character's voice through kling_elements[].element_input_audio_urls (5 to 30 s clip).
+            # The element needs 2 to 4 images of the character: the start frame plus speakers.<spk>.element_frames (frame ids).
+            name = re.sub(r"[^a-z0-9_]", "_", _speaker_of(pr, b).lower()) or "speaker"
+            extra = [pr.kie.upload(_frame_path(pr, f)) for f in (spk.get("element_frames") or [])]
+            imgs = [img] + [u for u in extra if u != img]
+            if len(imgs) < 2:
+                imgs = imgs + imgs[:1]
+            return e["model"], {"prompt": f"{scene} The woman is @{name}, and she speaks in @{name}'s own voice.\n[Speaker: {voice}]\n"
+                                          f"[@{name}, natural]: \"{line}\"\nQuiet room tone. No music. No subtitles.",
+                                "image_urls": [img], "sound": True, "duration": str(dur), "aspect_ratio": "9:16", "mode": e["res"], "multi_shots": False,
+                                "kling_elements": [{"name": name, "description": f"The woman in the start frame. Voice: {voice[:300]}",
+                                                    "element_input_urls": imgs[:4], "element_input_audio_urls": [anchor]}]}
         return e["model"], {"prompt": f"{scene}\n[Speaker: {voice}]\n[Speaker, natural]: \"{line}\"\nQuiet room tone. No music. No subtitles.",
                             "image_urls": [img], "sound": True, "duration": str(dur), "aspect_ratio": "9:16", "mode": e["res"], "multi_shots": False}
     raise SystemExit(f"native engine {eng} has no request builder")
@@ -1053,7 +1083,11 @@ def render_native(pr, b, anchor_url=None, bump=0, engine=None):
         ok = _legacy_veo(pr, e["model"], img, prompt, dest, f"native:{bid}:{eng}", silent=False)
         state = "success" if ok else "fail"
     else:
-        model, inp = _native_request(pr, b, eng, img, anchor_url if e["ref"] else None, dur)
+        # voice.lock: false renders every line WITHOUT the voice reference (2026-11-04: Kling takes locked through kling_elements
+        # audio roll off at 1.7 to 2.2 kHz, "bad reception"; unlocked takes from the same frame + voice paragraph measured 3.3 to 5.1 kHz
+        # and matched each other 0.85). The anchor is still cast and every line is still checked against it.
+        lock = pr.plan.get("voice", {}).get("lock", True)
+        model, inp = _native_request(pr, b, eng, img, anchor_url if (e["ref"] and lock) else None, dur)
         resume, remember = _pending(pr, bid)
         if bump:
             resume = None
@@ -1261,10 +1295,19 @@ def step_native(pr, only=None, force=False):
     anchors = {spk: pr.kie.upload(anchor_path(spk)) for spk in speakers}
     anchor_beats = {v["beat"] for v in pr.state.get("anchors", {}).values()}
 
+    # voice.max_attempts (default 4): a beat that has been rendered this many times is never rerolled again by a plain
+    # `native` run; it is reported instead. 2026-11-04: one line was rendered 8 times across four runs ($9.60) because every
+    # run re-tried the not-ok beat. Ryan's rule: 3 to 4 takes, then ship the best and say so.
+    cap = int(pr.plan.get("voice", {}).get("max_attempts", 4))
     def needs(b):
         if b.get("source") or _speaker_of(pr, b) in real:
             return False
         if b["id"] in anchor_beats and not (only and b["id"] in only):
+            return False
+        tried = pr.state.get("clips", {}).get(b["id"], {}).get("attempts", 0)
+        if tried >= cap and not (force or (only and b["id"] in only)):
+            if not qa.get(b["id"], {}).get("ok"):
+                print(f"  {b['id']}: {tried} takes already, not rerolling again (voice.max_attempts {cap}); keeping the current take, run `takes` or --only to force", flush=True)
             return False
         return force or (only and b["id"] in only) or not os.path.exists(pr.p(f"clips/{b['id']}.mp4")) or not qa.get(b["id"], {}).get("ok")
 
@@ -1830,6 +1873,13 @@ def _seg_filter(zoom, face=None):
 
 
 def step_assemble(pr):
+    # tighten.py shifts state words to its cut timeline for the caption pass; an assemble after that must start from the
+    # untightened timings or the cutaways land in the wrong places (2026-11-04: 29 segments instead of 57). Restore first.
+    if pr.state.get("tighten") and pr.state.get("words_untightened"):
+        pr.state["words"] = pr.state.pop("words_untightened")
+        pr.state.pop("tighten", None); pr.state.pop("words_before_retime", None)
+        pr.save()
+        print("assemble: restored untightened word timings (a tighten pass had shifted them)", flush=True)
     segs = plan_segments(pr)
     beats, gate = pr.state["beats"], pr.state.get("gate", {})
     build = pr.p("build")
@@ -1938,7 +1988,11 @@ def _mix(pr, total):
     music = (pr.plan.get("music") or {}).get("file")
     tone_db = (pr.plan.get("finish") or {}).get("room_tone_db", -52)
     ins = ["-i", master, "-f", "lavfi", "-t", f"{total:.3f}", "-i", "anoisesrc=color=brown:sample_rate=48000:amplitude=0.6"]
-    filt = [f"[0:a]aresample=48000,apad=whole_dur={total:.3f},atrim=0:{total:.3f},asplit=2[v][sc]",
+    # finish.voice_eq: an ffmpeg audio filter chain on the voice only (2026-11-04, Ryan: "clearer, like it's coming from an iPhone").
+    # Timing untouched; EQ, compression and de-essing only. Example: "highpass=f=80,equalizer=f=3000:width_type=q:width=1:g=3,acompressor=threshold=-20dB:ratio=2"
+    veq = (pr.plan.get("finish") or {}).get("voice_eq") or ""
+    veq = (veq.strip().rstrip(",") + ",") if veq.strip() else ""
+    filt = [f"[0:a]aresample=48000,{veq}apad=whole_dur={total:.3f},atrim=0:{total:.3f},asplit=2[v][sc]",
             f"[1:a]lowpass=f=1800,volume={tone_db}dB[tone]"]
     mixin = "[v][tone]"
     n = 2

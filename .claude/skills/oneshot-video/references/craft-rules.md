@@ -64,7 +64,7 @@ Say what stays and what changes. One change per edit. Do not re-describe her fac
 **Realism for UGC-style frames.** Ask for a plain iPhone photo: deep focus, no background blur, flat natural indoor light, real skin with pores, lines and age spots, slightly imperfect framing, an ordinary lived-in room. Ban the words that summon the AI look: cinematic, 8K, studio lighting, bokeh, 85mm, flawless. Ryan's rule for statics applies here too: if it looks like it cost money, it dies.
 
 **The AI look is the premise and the set, not the texture (ProDenta client, 2026-10-28: "looked AI").** Measured against the client's winners, sharpness and grain were identical; what differed was everything else. Rules:
-- No premise, no costume. The presenter is an owner in her own clothes on her own couch. No white coats, no scrubs, no kids as doctors, no glass dogs or 3D tooth renders. Mechanism pictures are the client's kind: a thumb on real teeth, a clock, a gloved hand.
+- No premise, no costume ON THE PRESENTER. The presenter is an owner in her own clothes on her own couch, head and shoulders, face 40 to 50% of the frame width. No white coats, no scrubs, no kids as doctors, no glass dog as the main picture. Cutaways may be the client's kind: a thumb on real teeth, a clock, a gloved hand, and (measured 2026-11-04, winner-study) a 3D dental render, a tooth cross-section, a drawn breath cloud, an AI vet in a coat for the vet's one sentence, each 2 to 5 s over her voice.
 - The room is somebody's, not a set. Name the clutter in the prompt: the arm of a brown couch with a fleece throw, a lamp, a side table with a remote and a mug, a TV off to the side, a dog bed. Window light from one side, slightly under-exposed. Never the bright white designer kitchen.
 - The dog is old when the script says old: grey muzzle, reddish tear stains, scruffy uneven fur, a little matted around the mouth. A groomed show dog with brown teeth is a toy.
 - Muted colour: saturation 0.2 to 0.3 measured on the frame (theirs), never 0.4 (ours). Keep saturation down in the finish.
@@ -95,7 +95,7 @@ Say what stays and what changes. One change per edit. Do not re-describe her fac
 
 **Never reuse a shot.**
 
-**Stills are shots too.** A photo the script points at (before and after, the class picture) is a `still` with a slow push-in toward the part she is talking about. Free, and more believable than animating it.
+**Stills are the exception, not a shot type.** The four working videos measured 2026-11-04 have zero stills in their first minute; even a photo the script names is held in a hand or drifts on a phone. A `still` push-in reads as a slideshow and was part of what Ryan graded "AI weird things". Use one only for a photo the script names, once, and prefer a moving clip of the photo being shown (a hand holding the phone, a thumb scrolling).
 
 ## 5. Seams (every talking shot restarts the head pose)
 
@@ -112,7 +112,7 @@ Beat length: 8 to 30 words. Short enough that one bad take is cheap to redo, lon
 ## 6. Pacing for paid social
 
 - The first frame has to work as a still and motion starts inside the first second. Open on the thing in her hands, not on a neutral face.
-- A visual change every 2 to 4 seconds in the first 15 seconds (cutaway, punch-in, photo), then every 4 to 6.
+- A different moving picture every 2 s in the first 20 s (9 or more shots), 25 or more in the first minute, median shot about 2 s (winner-study 2026-11-04). A punch-in on the same frame counts as a cut only once in a row; the rest are cutaways on the nouns. The presenter is on screen under half the time on a client-shape video.
 - Before and after inside the first 12 seconds when the script has one (Ryan's yapper shape).
 - Ryan's yappers run 60 to 90 seconds. Drama scenes run 2 to 3 minutes with many cuts.
 

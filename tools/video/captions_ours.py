@@ -79,6 +79,16 @@ def main():
     out = os.path.join(P, a.out)
     st = json.load(open(os.path.join(P, "state.json")))
     words = st["words"]
+    # plan captions.replace: how a spoken phrase is displayed ("thirteen" -> "13"); single-word keys only here (2026-11-04)
+    try:
+        _rep = (json.load(open(os.path.join(P, "plan.json"))).get("captions") or {}).get("replace") or {}
+    except Exception:
+        _rep = {}
+    for _w in words:
+        _k = _w["w"].strip(".,?!;:\"").lower()
+        if _k in {k.lower() for k in _rep}:
+            _v = next(v for k, v in _rep.items() if k.lower() == _k)
+            _w["w"] = _w["w"].replace(_w["w"].strip(".,?!;:\""), _v)
     os.makedirs(os.path.join(P, "qa"), exist_ok=True)
     os.makedirs(os.path.join(P, "build", "cap"), exist_ok=True)
     faces_path = os.path.join(P, "qa", "faces_final.json")

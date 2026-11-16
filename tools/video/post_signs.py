@@ -21,7 +21,7 @@ from PIL import Image, ImageDraw, ImageFont
 HERE = os.path.abspath(sys.argv[1])
 W, H = 1080, 1920
 IMPACT = "/System/Library/Fonts/Supplemental/Impact.ttf"
-SANS = os.path.join(os.path.dirname(os.path.abspath(__file__)), "fonts", "Montserrat-VF.ttf")
+SANS = "/Users/ryanconnolly/SkyHouse Exodus/tools/video/fonts/Montserrat-VF.ttf"
 RED, WHITE, BLACK, NAVY = (226, 28, 28), (255, 255, 255), (0, 0, 0), (26, 36, 84)
 OV = os.path.join(HERE, "build", "ov"); os.makedirs(OV, exist_ok=True)
 

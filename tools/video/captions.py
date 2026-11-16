@@ -16,6 +16,7 @@ Plan options (all optional), under "captions":
   color        "#FFFFFF"
   highlight    "#FFE600"   the word being spoken
   stroke       8
+  italic       false       rightward shear (italic_shear 0.2) for the reel style caption
   weight       "ExtraBold"
   replace      {"twenty twenty six": "2026"}   spoken phrase -> how it should display
 
@@ -132,6 +133,10 @@ def render_band(page, active, conf, band_h):
             d.text((x, y), texts[i], font=font, fill=fill, stroke_width=stroke, stroke_fill="#000000")
             x += widths[i] + space
         y += line_h
+    if conf.get("italic"):
+        # a rightward lean by shear (Montserrat-VF has no italic axis); k = 0.2 is the reel's slant
+        k = float(conf.get("italic_shear", 0.2)); cy = band_h / 2
+        img = img.transform(img.size, Image.AFFINE, (1, k, -k * cy, 0, 1, 0), resample=Image.BICUBIC)
     return img
 
 

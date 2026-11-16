@@ -1,0 +1,15 @@
+{
+ "run": "tools/hooks/eval/2026-11-06-baseline",
+ "rows": [
+  "akka 34/34",
+  "cloud9 29/32",
+  "olavita 23/30",
+  "osteoshield 28/30",
+  "prodenta 30/30"
+ ],
+ "passed": 144,
+ "total": 156,
+ "fails": {
+  "SC-12": 12
+ }
+}
